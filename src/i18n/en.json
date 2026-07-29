@@ -83,5 +83,38 @@
     "hours": "Hours: Saturday–Friday, 11:00 am–5:30 pm. Closed Sundays.",
     "address": "2487 Kaladar Avenue, Ottawa, ON K1V",
     "submitError": "Something went wrong sending your message. Please try again or email sahrasaid845@gmail.com directly."
+  },
+  "home": {
+    "hero": {
+      "title": "You deserve a space to be truly heard.",
+      "subtitle": "Compassionate, culturally sensitive counselling and psychotherapy in Ottawa — in person and online, in English, French, and Somali."
+    },
+    "intro": {
+      "heading": "Meet Sahra",
+      "body": "Sahra Haji-Mohamed Said is a Registered Social Worker (RSW) with over a decade of clinical experience and up to fifteen years of community work supporting children, teens, adults, seniors, and families. She offers a warm, non-judgmental space where your story is heard with care — and where your cultural and spiritual background is honoured, not sidelined. Sahra believes you already carry the strength to reclaim control of your life; her role is simply to help you see your own resilience."
+    },
+    "servicesPreview": {
+      "heading": "How we can help",
+      "individual": { "title": "Individual Psychotherapy", "description": "One-on-one sessions to work through anxiety, stress, trauma, grief, and more, at your own pace." },
+      "couple": { "title": "Couple Therapy", "description": "A guided space to rebuild communication, trust, and connection with your partner." },
+      "group": { "title": "Group Therapy", "description": "Shared healing in a supportive group setting guided by a trained facilitator." },
+      "spiritual": { "title": "Spiritual Therapy", "description": "Counselling that welcomes faith and spirituality as part of your healing journey, including Islamic counselling." }
+    },
+    "approachSummary": {
+      "heading": "Our approach",
+      "cbt": { "title": "Cognitive Behavioural Therapy", "description": "Practical tools to understand and reshape unhelpful thought patterns." },
+      "narrative": { "title": "Narrative Therapy", "description": "Reframing your story so the problem is the problem — not you." },
+      "mindfulness": { "title": "Mindfulness", "description": "Grounding techniques to stay present and ease overwhelm." },
+      "artTherapy": { "title": "Art Therapy", "description": "Creative, playful approaches especially suited to children and teens." }
+    },
+    "reassurance": {
+      "modalities": "In-person in Ottawa and online across Ontario",
+      "languages": "Services offered in English, French, and Somali",
+      "insurance": "Detailed receipts provided for insurance reimbursement",
+      "confidentiality": "Your privacy and confidentiality always come first"
+    },
+    "testimonialsPreview": { "heading": "What clients are saying" },
+    "blogPreview": { "heading": "From the blog" },
+    "finalCta": { "heading": "Ready to take the first step?" }
   }
 }

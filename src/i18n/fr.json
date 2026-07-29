@@ -83,5 +83,38 @@
     "hours": "Heures : samedi au vendredi, 11 h à 17 h 30. Fermé le dimanche.",
     "address": "2487, avenue Kaladar, Ottawa, ON K1V",
     "submitError": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer ou écrire directement à sahrasaid845@gmail.com."
+  },
+  "home": {
+    "hero": {
+      "title": "Vous méritez un espace où être vraiment entendu(e).",
+      "subtitle": "Un accompagnement psychothérapeutique bienveillant et culturellement sensible à Ottawa — en personne et en ligne, en anglais, en français et en somali."
+    },
+    "intro": {
+      "heading": "Rencontrez Sahra",
+      "body": "Sahra Haji-Mohamed Said est travailleuse sociale autorisée (RSW) avec plus de dix ans d'expérience clinique et jusqu'à quinze ans d'engagement communautaire auprès des enfants, adolescents, adultes, aînés et familles. Elle offre un espace chaleureux et sans jugement où votre histoire est accueillie avec soin — et où votre bagage culturel et spirituel est honoré, jamais mis de côté. Sahra croit que vous portez déjà la force de reprendre le contrôle de votre vie; son rôle est simplement de vous aider à voir votre propre résilience."
+    },
+    "servicesPreview": {
+      "heading": "Comment nous pouvons vous aider",
+      "individual": { "title": "Psychothérapie individuelle", "description": "Des séances individuelles pour traverser l'anxiété, le stress, le trauma, le deuil et plus encore, à votre propre rythme." },
+      "couple": { "title": "Thérapie de couple", "description": "Un espace guidé pour reconstruire la communication, la confiance et la connexion avec votre partenaire." },
+      "group": { "title": "Thérapie de groupe", "description": "Une guérison partagée dans un cadre de groupe bienveillant, animé par une intervenante formée." },
+      "spiritual": { "title": "Thérapie spirituelle", "description": "Un accompagnement qui accueille la foi et la spiritualité dans votre parcours de guérison, incluant le counselling islamique." }
+    },
+    "approachSummary": {
+      "heading": "Notre approche",
+      "cbt": { "title": "Thérapie cognitivo-comportementale", "description": "Des outils concrets pour comprendre et transformer les schémas de pensée qui vous nuisent." },
+      "narrative": { "title": "Thérapie narrative", "description": "Reformuler votre histoire pour que le problème soit le problème — pas vous." },
+      "mindfulness": { "title": "Pleine conscience", "description": "Des techniques d'ancrage pour rester présent(e) et apaiser le sentiment d'être dépassé(e)." },
+      "artTherapy": { "title": "Art-thérapie", "description": "Des approches créatives et ludiques particulièrement adaptées aux enfants et aux adolescents." }
+    },
+    "reassurance": {
+      "modalities": "En personne à Ottawa et en ligne partout en Ontario",
+      "languages": "Services offerts en anglais, en français et en somali",
+      "insurance": "Reçus détaillés fournis pour le remboursement par assurance",
+      "confidentiality": "Votre vie privée et votre confidentialité passent toujours en premier"
+    },
+    "testimonialsPreview": { "heading": "Ce que disent nos clients" },
+    "blogPreview": { "heading": "Sur le blogue" },
+    "finalCta": { "heading": "Prêt(e) à faire le premier pas?" }
   }
 }
