@@ -21,6 +21,14 @@
       "readMore": "Read more",
       "viewAll": "View all"
     },
-    "tagline": "Healing at nature's pace"
+    "tagline": "Healing at nature's pace",
+    "crisis": {
+      "text": "In an emergency, call 911. Suicide Crisis Helpline: 988. Ottawa Distress Centre: 613-238-3311."
+    },
+    "footer": {
+      "address": "2487 Kaladar Avenue, Ottawa, ON K1V",
+      "privacy": "Privacy Policy",
+      "rights": "All rights reserved."
+    }
   }
 }

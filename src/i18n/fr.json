@@ -21,6 +21,14 @@
       "readMore": "Lire la suite",
       "viewAll": "Tout voir"
     },
-    "tagline": "Guérir au rythme de la nature"
+    "tagline": "Guérir au rythme de la nature",
+    "crisis": {
+      "text": "En cas d'urgence, composez le 911. Ligne d'aide en cas de crise de suicide : 988. Centre de détresse d'Ottawa : 613-238-3311."
+    },
+    "footer": {
+      "address": "2487, avenue Kaladar, Ottawa, ON K1V",
+      "privacy": "Politique de confidentialité",
+      "rights": "Tous droits réservés."
+    }
   }
 }
