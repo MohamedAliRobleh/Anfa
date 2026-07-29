@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Anfa favicon">
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="#F1F7F5"/>
+  <polygon points="16,47 32,16 48,47" fill="#14A69C"/>
+  <polygon points="32,16 48,47 39,47 32,31" fill="#DDB067"/>
+  <path d="M15,51 Q23,45 32,51 T49,51" stroke="#0B5C57" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 84" role="img" aria-label="Anfa">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&amp;display=swap');</style>
+  <polygon points="10,62 32,18 54,62" fill="#14A69C"/>
+  <polygon points="32,18 54,62 41,62 32,39" fill="#DDB067"/>
+  <path d="M8,68 Q20,60 32,68 T56,68" stroke="#0B5C57" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="70" y="52" font-family="Fraunces, Georgia, serif" font-weight="500" font-size="36" fill="#1C2926">Anfa</text>
+</svg>
