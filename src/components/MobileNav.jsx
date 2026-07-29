@@ -15,7 +15,7 @@ export function MobileNav() {
   return (
     <div className="md:hidden">
       <button
-        aria-label={open ? 'Close menu' : 'Open menu'}
+        aria-label={open ? t('common.nav.closeMenu') : t('common.nav.openMenu')}
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
         className="p-2"

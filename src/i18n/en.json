@@ -11,7 +11,9 @@
       "faq": "FAQ",
       "blog": "Blog",
       "testimonials": "Testimonials",
-      "resources": "Resources"
+      "resources": "Resources",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
     },
     "cta": {
       "bookFree": "Book a free 15-minute consultation",

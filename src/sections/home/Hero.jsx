@@ -18,7 +18,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" />
       <div className="relative z-10 mx-auto max-w-3xl px-4 pb-20 text-sand">
-        <h1 className="font-display text-4xl md:text-5xl mb-4">{t('home.hero.title')}</h1>
+        <h1 className="font-display text-sand text-4xl md:text-5xl mb-4">{t('home.hero.title')}</h1>
         <p className="text-lg mb-8">{t('home.hero.subtitle')}</p>
         <div className="flex flex-wrap gap-4">
           <Link to="/booking" className="rounded-full bg-sunlit text-ink px-6 py-3 font-semibold">{t('common.cta.bookFree')}</Link>

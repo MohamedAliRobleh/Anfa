@@ -11,7 +11,9 @@
       "faq": "FAQ",
       "blog": "Blogue",
       "testimonials": "Témoignages",
-      "resources": "Ressources"
+      "resources": "Ressources",
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu"
     },
     "cta": {
       "bookFree": "Réserver une consultation gratuite de 15 min",
