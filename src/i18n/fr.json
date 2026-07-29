@@ -116,5 +116,59 @@
     "testimonialsPreview": { "heading": "Ce que disent nos clients" },
     "blogPreview": { "heading": "Sur le blogue" },
     "finalCta": { "heading": "Prêt(e) à faire le premier pas?" }
+  },
+  "about": {
+    "heading": "À propos de Sahra",
+    "bio": "Depuis plus de dix ans, j'accompagne des enfants, des adolescents, des adultes, des aînés et des familles à travers certains des chapitres les plus difficiles de leur vie. Mon parcours a commencé dans l'éducation à la petite enfance et le travail communautaire — jusqu'à quinze ans d'engagement — avant de devenir travailleuse sociale autorisée, et cet ancrage communautaire façonne encore aujourd'hui ma pratique : avec patience, humilité et un profond respect pour le parcours de chaque personne. Je suis née dans une tradition culturelle et spirituelle riche, et j'apporte cette même sensibilité en séance, que nous parlions anglais, français ou somali. Vos croyances, votre structure familiale, votre communauté — rien de tout cela n'a besoin d'être mis de côté ici. Cela fait partie de ce avec quoi nous travaillons, pas de ce que nous contournons.",
+    "philosophy": "Je crois que vous avez la force de reprendre le contrôle; laissez-moi vous aider à voir votre résilience.",
+    "credentialsHeading": "Titres et formation",
+    "credentials": {
+      "rsw": "Travailleuse sociale autorisée (RSW), Ordre des travailleurs sociaux et des techniciens en travail social de l'Ontario — permis n° 825579",
+      "msw": "Maîtrise en travail social (MSW), Université Carleton, 2005",
+      "rece": "Éducatrice de la petite enfance autorisée (RECE), Collège Algonquin, 2011",
+      "addiction": "Certificat en dépendance et santé mentale, Collège Algonquin, 2025"
+    },
+    "communitiesHeading": "Auprès de qui je travaille",
+    "communities": "Je travaille avec des enfants, des adolescents, des adultes, des aînés et des familles, et je porte un engagement particulier envers les communautés multiculturelles d'Ottawa, avec chaleur, humilité et sensibilité culturelle et religieuse — incluant le counselling islamique pour les client(e)s qui souhaitent que leur foi fasse partie du processus, plutôt que d'en être exclue. Chaque séance est un espace confidentiel et sécuritaire, peu importe votre parcours ou votre histoire.",
+    "intro": "Découvrez Sahra Haji-Mohamed Said, RSW, MSW — son parcours, ses titres et sa philosophie de soins."
+  },
+  "services": {
+    "heading": "Nos services",
+    "intro": "Une thérapie adaptée à votre réalité — individuelle, de couple, de groupe et intégrant la dimension spirituelle.",
+    "items": {
+      "individual": { "title": "Psychothérapie individuelle — 170 $", "description": "Des séances individuelles construites autour de vos objectifs, à un rythme qui respecte votre point de départ." },
+      "couple": { "title": "Thérapie de couple — 227 $", "description": "Un espace guidé pour que deux personnes reconstruisent la confiance, la communication et la connexion." },
+      "group": { "title": "Thérapie de groupe", "description": "Une guérison partagée et un soutien entre pairs dans un cadre de groupe sécuritaire et encadré." },
+      "spiritual": { "title": "Thérapie spirituelle", "description": "Un accompagnement qui accueille la foi comme partie intégrante de la guérison, incluant le counselling islamique." }
+    },
+    "expertiseHeading": "Champs d'expertise",
+    "expertiseList": "Dépression, dépendance, enjeux relationnels, anxiété, stress, épuisement professionnel, trauma et TSPT, TDAH, deuil, gestion de la colère, estime de soi, enjeux familiaux et scolaires, counselling islamique, ainsi que le jeu thérapeutique et l'art-thérapie pour enfants."
+  },
+  "approach": {
+    "heading": "Notre approche",
+    "intro": "Un ensemble de méthodes fondées sur des données probantes, choisies et adaptées pour vous.",
+    "methods": {
+      "cbt": { "title": "Thérapie cognitivo-comportementale (TCC)", "description": "Repérer et transformer les schémas de pensée qui entretiennent l'anxiété, le stress ou la baisse de moral." },
+      "narrative": { "title": "Thérapie narrative", "description": "Séparer votre identité du problème afin de réécrire l'histoire que vous vous racontez sur vous-même." },
+      "act": { "title": "Thérapie d'acceptation et d'engagement (ACT)", "description": "Apprendre à accueillir les émotions difficiles avec moins de lutte, tout en avançant vers ce qui compte pour vous." },
+      "mindfulness": { "title": "Pleine conscience", "description": "Des pratiques d'ancrage qui construisent un sentiment de sécurité dans le moment présent." },
+      "artTherapy": { "title": "Art-thérapie", "description": "L'expression créative comme voie douce vers des émotions difficiles à mettre en mots." },
+      "playTherapy": { "title": "Jeu thérapeutique", "description": "Une approche guidée par l'enfant qui l'aide à traiter ses expériences à travers le jeu." },
+      "motivational": { "title": "Entretien motivationnel", "description": "Un style collaboratif qui vous aide à trouver et renforcer votre propre motivation au changement." },
+      "culturallySensitive": { "title": "Approche centrée sur la personne et culturellement sensible", "description": "Une thérapie façonnée autour de votre identité, votre foi et votre communauté — jamais malgré elles." }
+    },
+    "firstSessionHeading": "À quoi s'attendre lors de votre première séance",
+    "firstSession": "Votre première séance vise à créer un climat de confort, pas à vous diagnostiquer. Nous discuterons de ce qui vous amène, de ce que vous espérez voir changer, et de toutes vos questions sur le fonctionnement de la thérapie. Vous n'êtes jamais obligé(e) de partager plus que ce pour quoi vous êtes prêt(e). À la fin, nous aurons une idée de ce à quoi pourraient ressembler les prochaines séances — une idée que vous aurez contribué à façonner."
+  },
+  "fees": {
+    "heading": "Tarifs et assurances",
+    "intro": "Une tarification claire, des modes de paiement flexibles et un accompagnement pour naviguer vos assurances.",
+    "individual": "Séance individuelle : 170 $",
+    "couple": "Séance de couple : 227 $",
+    "slidingScale": "Une échelle mobile est offerte selon l'admissibilité — n'hésitez pas à nous en parler.",
+    "paymentHeading": "Modes de paiement",
+    "paymentMethods": "Nous acceptons l'argent comptant, Visa, Mastercard et le virement Interac. Le paiement en ligne n'est pas offert pour le moment.",
+    "insuranceHeading": "Assurances",
+    "insuranceDetails": "Nous fournissons des reçus détaillés afin que vous puissiez demander un remboursement auprès de votre assurance. La facturation directe est en cours d'implantation et inclura Desjardins, la Régie de la santé des Premières Nations (First Nations Health Authority) et les conseils scolaires une fois active — demandez-nous où en est la mise en œuvre."
   }
 }

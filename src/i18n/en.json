@@ -116,5 +116,59 @@
     "testimonialsPreview": { "heading": "What clients are saying" },
     "blogPreview": { "heading": "From the blog" },
     "finalCta": { "heading": "Ready to take the first step?" }
+  },
+  "about": {
+    "heading": "About Sahra",
+    "bio": "For over ten years, I have walked alongside children, teens, adults, seniors, and families as they work through some of the hardest chapters of their lives. My path began in early childhood education and community work — up to fifteen years of it — before I became a Registered Social Worker, and that community grounding still shapes how I practice today: with patience, humility, and deep respect for where each person comes from. I was born into a rich cultural and spiritual tradition, and I bring that same sensitivity into the therapy room, whether we're speaking English, French, or Somali. Your beliefs, your family structure, your community — none of it needs to be set aside here. It's part of what we work with, not around.",
+    "philosophy": "I believe you have the strength to reclaim control; let me help you see your resilience.",
+    "credentialsHeading": "Credentials & Training",
+    "credentials": {
+      "rsw": "Registered Social Worker (RSW), Ontario College of Social Workers and Social Service Workers — Registration #825579",
+      "msw": "Master of Social Work (MSW), Carleton University, 2005",
+      "rece": "Registered Early Childhood Educator (RECE), Algonquin College, 2011",
+      "addiction": "Addiction & Mental Health Certificate, Algonquin College, 2025"
+    },
+    "communitiesHeading": "Who I Work With",
+    "communities": "I work with children, teens, adults, seniors, and families, and I hold a particular commitment to serving Ottawa's multicultural communities with warmth, humility, and cultural and religious sensitivity — including Islamic counselling for clients who want their faith held as part of the process, not set aside from it. Every session is a confidential, safe space, whatever your background or story.",
+    "intro": "Learn about Sahra Haji-Mohamed Said, RSW, MSW — her background, credentials, and philosophy of care."
+  },
+  "services": {
+    "heading": "Our Services",
+    "intro": "Therapy tailored to where you are — individual, couple, group, and spiritually-integrated care.",
+    "items": {
+      "individual": { "title": "Individual Psychotherapy — $170", "description": "One-on-one sessions built around your goals, at a pace that respects where you're starting from." },
+      "couple": { "title": "Couple Therapy — $227", "description": "A guided space for two people to rebuild trust, communication, and connection." },
+      "group": { "title": "Group Therapy", "description": "Shared healing and peer support in a safe, facilitated group setting." },
+      "spiritual": { "title": "Spiritual Therapy", "description": "Counselling that welcomes faith as part of healing, including Islamic counselling." }
+    },
+    "expertiseHeading": "Areas of Expertise",
+    "expertiseList": "Depression, addiction, relationship issues, anxiety, stress, burnout, trauma and PTSD, ADHD, grief, anger management, self-esteem, family and school issues, Islamic counselling, and play therapy and art therapy for children."
+  },
+  "approach": {
+    "heading": "Our Approach",
+    "intro": "A blend of evidence-based methods, chosen and adapted to fit you.",
+    "methods": {
+      "cbt": { "title": "Cognitive Behavioural Therapy (CBT)", "description": "Identifying and reshaping thought patterns that keep anxiety, stress, or low mood in place." },
+      "narrative": { "title": "Narrative Therapy", "description": "Separating you from the problem so you can rewrite the story you tell about yourself." },
+      "act": { "title": "Acceptance and Commitment Therapy (ACT)", "description": "Learning to hold difficult feelings with less struggle while moving toward what matters to you." },
+      "mindfulness": { "title": "Mindfulness", "description": "Grounding practices that build a felt sense of safety in the present moment." },
+      "artTherapy": { "title": "Art Therapy", "description": "Creative expression as a gentle path into feelings that are hard to put into words." },
+      "playTherapy": { "title": "Play Therapy", "description": "A child-led approach that helps young clients process experiences through play." },
+      "motivational": { "title": "Motivational Interviewing", "description": "A collaborative style that helps you find and strengthen your own motivation for change." },
+      "culturallySensitive": { "title": "Culturally Sensitive, Person-Centred Care", "description": "Therapy shaped around your identity, faith, and community — never in spite of them." }
+    },
+    "firstSessionHeading": "What to Expect in Your First Session",
+    "firstSession": "Your first session is about getting comfortable, not diagnosing you. We'll talk through what brought you in, what you're hoping will feel different, and any questions you have about how therapy works. There's no pressure to share more than you're ready to. By the end, we'll have a plan for what the next few sessions might look like — one you helped shape."
+  },
+  "fees": {
+    "heading": "Fees & Insurance",
+    "intro": "Clear pricing, flexible payment, and support navigating insurance.",
+    "individual": "Individual session: $170",
+    "couple": "Couple session: $227",
+    "slidingScale": "A sliding scale is available based on eligibility — ask us about it.",
+    "paymentHeading": "Payment Methods",
+    "paymentMethods": "We accept cash, Visa, Mastercard, and e-transfer. Online payment is not currently available.",
+    "insuranceHeading": "Insurance",
+    "insuranceDetails": "We provide detailed receipts so you can submit for reimbursement through your insurance plan. Direct billing is being introduced and will include Desjardins, First Nations Health Authority, and school boards once active — ask us for the current status."
   }
 }
