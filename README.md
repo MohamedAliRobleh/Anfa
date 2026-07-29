@@ -3,14 +3,15 @@
 Bilingual (EN/FR, Somali-ready), responsive, accessible marketing and booking website for
 Anfa Counselling & Psychotherapy, a psychotherapy practice in Ottawa, Ontario.
 
-**Stack:** React 18 + Vite, React Router, Tailwind CSS, Framer Motion, Supabase, EmailJS,
-react-helmet-async. Deployed as a static SPA on Vercel.
+**Stack:** React 18 + Vite, React Router, Tailwind CSS, Framer Motion, Supabase, Brevo
+(via a Vercel serverless function), react-helmet-async. Deployed as a static SPA + one
+API route on Vercel.
 
 ## Prerequisites
 
 - Node.js 18+
 - A [Supabase](https://supabase.com) project (free tier is fine)
-- An [EmailJS](https://www.emailjs.com) account (free tier is fine)
+- A [Brevo](https://www.brevo.com) account (free tier is fine) with a verified sender email
 
 ## 1. Install dependencies
 
@@ -30,10 +31,14 @@ cp .env.example .env
   into `VITE_SUPABASE_URL` and the `anon` *public* key into `VITE_SUPABASE_ANON_KEY`.
   **Never use the `service_role` key here** — only the public anon key belongs in
   client-side code.
-- **EmailJS**: create an account, connect an email service (e.g. Gmail), and create two
-  email templates — one for booking confirmations, one for contact form notifications.
-  Copy the service ID, public key, and both template IDs into the matching `VITE_EMAILJS_*`
-  variables.
+- **Brevo**: create an account, then under *Senders, Domains & Dedicated IPs → Senders*
+  verify the email address you want to send from (Brevo requires this before it will
+  relay mail). Copy your API key from *SMTP & API → API Keys* into `BREVO_API_KEY`, and
+  the verified address into `BREVO_SENDER_EMAIL`. These are read only by the
+  `api/send-email.js` serverless function — **never prefix them with `VITE_`**, or they'd
+  be bundled into the client-side JavaScript and exposed to every visitor.
+  `PRACTICE_EMAIL` is optional and defaults to `sahrasaid845@gmail.com`; it's the inbox
+  that receives contact-form notifications.
 
 ## 3. Run the Supabase migration
 
@@ -74,12 +79,12 @@ npm run preview   # serve the production build locally to sanity-check it
 1. Push this repository to GitHub (or your Git provider of choice).
 2. In Vercel, import the repository as a new project. Vercel auto-detects the Vite
    framework preset — no custom build command is required.
-3. In the Vercel project's **Settings → Environment Variables**, add the same six
-   variables from your `.env` file (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`,
-   `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_PUBLIC_KEY`,
-   `VITE_EMAILJS_BOOKING_TEMPLATE_ID`, `VITE_EMAILJS_CONTACT_TEMPLATE_ID`).
+3. In the Vercel project's **Settings → Environment Variables**, add the same variables
+   from your `.env` file (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`, `BREVO_API_KEY`,
+   `BREVO_SENDER_EMAIL`, and optionally `PRACTICE_EMAIL`).
 4. Deploy. `vercel.json` includes a rewrite rule so client-side routes (e.g. `/booking`)
-   don't 404 on a hard refresh.
+   don't 404 on a hard refresh; Vercel auto-detects `api/send-email.js` as a serverless
+   function alongside the static build, no extra config needed.
 5. Vercel Analytics is wired in behind the cookie consent banner — enable the Analytics
    add-on in the Vercel dashboard for the project if you want traffic data.
 
@@ -107,13 +112,14 @@ supabase/migrations/  SQL schema + RLS policies
   phone, an optional short message, and a consent checkbox. No diagnosis, symptom, or
   medication fields exist anywhere on the public site.
 - **Anti-spam**: both public forms include a hidden honeypot field and a client-side
-  submission throttle (see `src/lib/antiSpam.js`), since EmailJS's free tier has no
-  server-side rate limiting of its own. This is a client-side mitigation only — if abuse
-  becomes a problem, the recommended upgrade path is moving email sending to Brevo behind
-  a Vercel serverless function (the `src/lib/email.js` module is the single integration
-  point to swap).
-- All email sending goes through `src/lib/email.js` — no component calls the EmailJS SDK
-  directly.
+  submission throttle (see `src/lib/antiSpam.js`). This is a client-side mitigation only;
+  it deters casual bots but doesn't rate-limit the API route itself. If abuse becomes a
+  problem, add rate limiting inside `api/send-email.js` (e.g. Vercel's Edge Config/KV, or
+  a service like Upstash) keyed on IP address.
+- **Email sending**: the browser never talks to Brevo directly — it POSTs to our own
+  `/api/send-email` serverless function, which holds the `BREVO_API_KEY` server-side and
+  is the only thing that calls Brevo's API. `src/lib/email.js` is the single client-side
+  integration point; no component calls `fetch('/api/send-email', ...)` directly.
 
 ## Content you'll likely want to replace
 

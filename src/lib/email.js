@@ -1,14 +1,19 @@
-import emailjs from '@emailjs/browser'
-
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-const BOOKING_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_BOOKING_TEMPLATE_ID
-const CONTACT_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID
+async function postEmail(type, payload) {
+  const res = await fetch('/api/send-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, payload }),
+  })
+  if (!res.ok) {
+    throw new Error('Failed to send email')
+  }
+  return res.json()
+}
 
 export async function sendBookingConfirmation(booking) {
-  return emailjs.send(SERVICE_ID, BOOKING_TEMPLATE_ID, booking, PUBLIC_KEY)
+  return postEmail('booking', booking)
 }
 
 export async function sendContactNotification(message) {
-  return emailjs.send(SERVICE_ID, CONTACT_TEMPLATE_ID, message, PUBLIC_KEY)
+  return postEmail('contact', message)
 }

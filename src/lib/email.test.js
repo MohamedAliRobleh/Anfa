@@ -1,26 +1,35 @@
-import { vi } from 'vitest'
-
-const { sendMock } = vi.hoisted(() => ({ sendMock: vi.fn(() => Promise.resolve({ status: 200 })) }))
-vi.mock('@emailjs/browser', () => ({ default: { send: sendMock } }))
-
+import { vi, beforeEach } from 'vitest'
 import { sendBookingConfirmation, sendContactNotification } from './email'
 
-test('sendBookingConfirmation sends with booking template and params', async () => {
-  await sendBookingConfirmation({ fullName: 'Jane Doe', email: 'jane@example.com', service: 'individual' })
-  expect(sendMock).toHaveBeenCalledWith(
-    expect.any(String),
-    expect.any(String),
-    expect.objectContaining({ fullName: 'Jane Doe', email: 'jane@example.com' }),
-    expect.any(String)
-  )
+beforeEach(() => {
+  global.fetch = vi.fn(() => Promise.resolve({ ok: true, json: () => Promise.resolve({ ok: true }) }))
 })
 
-test('sendContactNotification sends with contact template and params', async () => {
+test('sendBookingConfirmation posts to /api/send-email with type "booking" and the payload', async () => {
+  await sendBookingConfirmation({ fullName: 'Jane Doe', email: 'jane@example.com', service: 'individual' })
+  expect(fetch).toHaveBeenCalledWith('/api/send-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      type: 'booking',
+      payload: { fullName: 'Jane Doe', email: 'jane@example.com', service: 'individual' },
+    }),
+  })
+})
+
+test('sendContactNotification posts to /api/send-email with type "contact" and the payload', async () => {
   await sendContactNotification({ fullName: 'Jane Doe', email: 'jane@example.com', subject: 'Question', message: 'Hi' })
-  expect(sendMock).toHaveBeenCalledWith(
-    expect.any(String),
-    expect.any(String),
-    expect.objectContaining({ subject: 'Question' }),
-    expect.any(String)
-  )
+  expect(fetch).toHaveBeenCalledWith('/api/send-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      type: 'contact',
+      payload: { fullName: 'Jane Doe', email: 'jane@example.com', subject: 'Question', message: 'Hi' },
+    }),
+  })
+})
+
+test('throws when the API responds with a non-ok status', async () => {
+  global.fetch = vi.fn(() => Promise.resolve({ ok: false }))
+  await expect(sendContactNotification({ fullName: 'Jane Doe', email: 'jane@example.com' })).rejects.toThrow()
 })
