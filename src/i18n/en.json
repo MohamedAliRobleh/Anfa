@@ -1,0 +1,26 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "approach": "Approach",
+      "fees": "Fees & Insurance",
+      "booking": "Booking",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "testimonials": "Testimonials",
+      "resources": "Resources"
+    },
+    "cta": {
+      "bookFree": "Book a free 15-minute consultation",
+      "discoverServices": "Discover our services",
+      "bookNow": "Book now",
+      "sendMessage": "Send message",
+      "readMore": "Read more",
+      "viewAll": "View all"
+    },
+    "tagline": "Healing at nature's pace"
+  }
+}
