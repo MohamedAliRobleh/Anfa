@@ -20,6 +20,7 @@ export default function Services() {
               ctaLabel={t('common.cta.bookNow')}
               ctaTo="/booking"
               image={s.image}
+              accent={s.accent}
             />
           ))}
         </div>

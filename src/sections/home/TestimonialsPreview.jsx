@@ -11,8 +11,8 @@ export function TestimonialsPreview() {
       <h2 className="font-display text-3xl text-sea-deep mb-10 text-center">{t('home.testimonialsPreview.heading')}</h2>
       <div className="grid gap-6 sm:grid-cols-2">
         {preview.map((tm) => (
-          <blockquote key={tm.id} className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-ink/5">
-            <QuoteIcon className="mb-2 h-7 w-7 text-sunlit/70" />
+          <blockquote key={tm.id} className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-lavender/25">
+            <QuoteIcon className="mb-2 h-7 w-7 text-lavender/70" />
             <p className="mb-4 italic text-ink/80">"{t(`testimonials.items.${tm.id}.quote`)}"</p>
             <footer className="text-sm font-semibold text-sea-deep">— {tm.initial}, {t(`testimonials.items.${tm.id}.reason`)}</footer>
           </blockquote>

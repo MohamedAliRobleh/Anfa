@@ -17,6 +17,7 @@ export function ServicesPreview() {
               ctaLabel={t('common.cta.viewAll')}
               ctaTo="/services"
               image={s.image}
+              accent={s.accent}
             />
           ))}
         </div>

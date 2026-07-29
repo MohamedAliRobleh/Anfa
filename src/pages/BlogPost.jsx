@@ -38,7 +38,7 @@ export default function BlogPost() {
           className="mb-6 h-64 w-full rounded-3xl object-cover shadow-[0_20px_45px_-15px_rgba(11,92,87,0.3)] ring-1 ring-ink/5 md:h-80"
           loading="lazy"
         />
-        <p className="mb-2 inline-flex items-center rounded-full bg-mist px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sea-deep">
+        <p className="mb-2 inline-flex items-center rounded-full bg-lavender-soft px-3 py-1 text-xs font-semibold uppercase tracking-wide text-lavender-ink">
           {post.category} · {post.readMinutes} min
         </p>
         <h1 className="font-display text-4xl mb-6 mt-2">{content.title}</h1>

@@ -16,7 +16,7 @@ const METHODS = [
 export default function Approach() {
   const { t } = useTranslation()
   return (
-    <div className="bg-gradient-to-b from-mist/60 via-sand to-sand py-14 md:py-20">
+    <div className="bg-gradient-to-b from-lavender-wash via-sand to-sand py-14 md:py-20">
       <SEO title="Approach" description={t('approach.intro')} path="/approach" />
       <div className="mx-auto max-w-5xl px-4">
         <h1 className="font-display text-4xl mb-2">{t('approach.heading')}</h1>
