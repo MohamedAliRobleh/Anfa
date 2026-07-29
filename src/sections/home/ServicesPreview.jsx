@@ -5,9 +5,9 @@ import { services } from '../../content/services'
 export function ServicesPreview() {
   const { t } = useTranslation()
   return (
-    <section className="bg-mist py-16">
+    <section className="bg-mist py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="font-display text-3xl mb-8 text-center">{t('home.servicesPreview.heading')}</h2>
+        <h2 className="font-display text-3xl text-sea-deep mb-10 text-center">{t('home.servicesPreview.heading')}</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <Card

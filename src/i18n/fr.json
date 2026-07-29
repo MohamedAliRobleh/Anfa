@@ -12,6 +12,7 @@
       "blog": "Blogue",
       "testimonials": "Témoignages",
       "resources": "Ressources",
+      "learnMore": "En savoir plus",
       "openMenu": "Ouvrir le menu",
       "closeMenu": "Fermer le menu"
     },
@@ -21,7 +22,8 @@
       "bookNow": "Réserver",
       "sendMessage": "Envoyer le message",
       "readMore": "Lire la suite",
-      "viewAll": "Tout voir"
+      "viewAll": "Tout voir",
+      "getDirections": "Obtenir l'itinéraire"
     },
     "tagline": "Guérir au rythme de la nature",
     "crisis": {
@@ -39,18 +41,28 @@
   },
   "booking": {
     "title": "Réserver une séance",
+    "subtitle": "Quelques étapes rapides pour trouver un moment qui vous convient — aucun paiement requis pour commencer.",
+    "progress": {
+      "service": "Service",
+      "modality": "Modalité",
+      "datetime": "Date et heure",
+      "details": "Coordonnées"
+    },
     "step1": {
       "heading": "Choisissez un service",
       "individual": "Individuel — 170 $",
       "couple": "Couple — 227 $",
       "group": "Thérapie de groupe",
       "spiritual": "Thérapie spirituelle",
-      "freeConsult": "Consultation gratuite de 15 minutes"
+      "freeConsult": "Consultation gratuite de 15 minutes",
+      "noCommitment": "Aucun engagement — juste une conversation"
     },
     "step2": {
       "heading": "Choisissez une modalité",
       "inPerson": "En personne",
-      "online": "En ligne"
+      "online": "En ligne",
+      "inPersonHelper": "À notre bureau d'Ottawa",
+      "onlineHelper": "Partout en Ontario"
     },
     "step3": {
       "heading": "Choisissez une date et une heure",
@@ -69,13 +81,18 @@
     "next": "Suivant",
     "success": {
       "title": "Merci!",
-      "body": "Votre demande a été reçue. Nous vous contacterons bientôt pour confirmer."
+      "body": "Votre demande a été reçue. Nous vous contacterons bientôt pour confirmer.",
+      "backHome": "Retour à l'accueil"
     },
     "throttled": "Il semble que vous ayez déjà soumis ce formulaire. Nous vous contacterons bientôt.",
     "submitError": "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer ou nous appeler au (613) 791-0284."
   },
   "contact": {
     "title": "Nous joindre",
+    "subtitle": "Une question avant de réserver? Nous sommes là pour vous aider — contactez-nous de la façon qui vous convient.",
+    "preferTalk": "Vous préférez d'abord en parler?",
+    "formHeading": "Envoyer un message",
+    "formIntro": "Vous préférez écrire plutôt que réserver? Partagez ce qui vous préoccupe et nous vous répondrons bientôt.",
     "fullName": "Nom complet",
     "email": "Courriel",
     "subject": "Sujet",
@@ -93,7 +110,10 @@
     },
     "intro": {
       "heading": "Rencontrez Sahra",
-      "body": "Sahra Haji-Mohamed Said est travailleuse sociale autorisée (RSW) avec plus de dix ans d'expérience clinique et jusqu'à quinze ans d'engagement communautaire auprès des enfants, adolescents, adultes, aînés et familles. Elle offre un espace chaleureux et sans jugement où votre histoire est accueillie avec soin — et où votre bagage culturel et spirituel est honoré, jamais mis de côté. Sahra croit que vous portez déjà la force de reprendre le contrôle de votre vie; son rôle est simplement de vous aider à voir votre propre résilience."
+      "body": "Sahra Haji-Mohamed Said est travailleuse sociale autorisée (RSW) avec plus de dix ans d'expérience clinique et jusqu'à quinze ans d'engagement communautaire auprès des enfants, adolescents, adultes, aînés et familles. Elle offre un espace chaleureux et sans jugement où votre histoire est accueillie avec soin — et où votre bagage culturel et spirituel est honoré, jamais mis de côté. Sahra croit que vous portez déjà la force de reprendre le contrôle de votre vie; son rôle est simplement de vous aider à voir votre propre résilience.",
+      "badge1": "Travailleuse sociale autorisée (RSW)",
+      "badge2": "Plus de 10 ans d'expérience",
+      "badge3": "Anglais · Français · Somali"
     },
     "servicesPreview": {
       "heading": "Comment nous pouvons vous aider",

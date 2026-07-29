@@ -1,10 +1,12 @@
 import { useState, useRef } from 'react'
 import { useTranslation } from '../i18n/useTranslation'
+import { BookingProgress } from './BookingProgress'
 import { StepService } from './StepService'
 import { StepModality } from './StepModality'
 import { StepDateTime } from './StepDateTime'
 import { StepContact } from './StepContact'
 import { Confirmation } from './Confirmation'
+import { ArrowLeftIcon } from '../components/icons'
 import { validateBookingContact } from '../lib/bookingSchema'
 import { insertBooking } from '../lib/supabaseClient'
 import { sendBookingConfirmation } from '../lib/email'
@@ -13,6 +15,14 @@ import { isHoneypotTriggered, isWithinThrottle, recordSubmission, isTooFast } fr
 const THROTTLE_KEY = 'anfa-booking-last-submit'
 const THROTTLE_MS = 60000
 const MIN_FILL_MS = 2000
+
+function Chip({ children }) {
+  return (
+    <span className="inline-flex items-center rounded-full border border-sea-deep/15 bg-mist/60 px-3 py-1 text-xs font-semibold text-sea-deep">
+      {children}
+    </span>
+  )
+}
 
 export function BookingWizard() {
   const { t, lang } = useTranslation()
@@ -78,9 +88,29 @@ export function BookingWizard() {
 
   if (done) return <Confirmation throttled={throttled} />
 
+  const formattedDate = date
+    ? new Date(`${date}T00:00:00`).toLocaleDateString(lang === 'fr' ? 'fr-CA' : 'en-CA', {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric',
+      })
+    : ''
+
   return (
     <form onSubmit={step === 4 ? handleSubmit : (e) => e.preventDefault()}>
-      <h1 className="font-display text-3xl mb-6">{t('booking.title')}</h1>
+      <h1 className="font-display text-3xl text-sea-deep mb-1">{t('booking.title')}</h1>
+      <p className="text-ink/60 mb-8">{t('booking.subtitle')}</p>
+
+      <BookingProgress current={step} />
+
+      {step > 1 && (
+        <div className="mb-8 flex flex-wrap gap-2">
+          {service && <Chip>{t(`booking.step1.${service}`)}</Chip>}
+          {step > 2 && modality && <Chip>{t(`booking.step2.${modality}`)}</Chip>}
+          {step > 3 && date && time && <Chip>{formattedDate} · {time}</Chip>}
+        </div>
+      )}
+
       {step === 1 && <StepService value={service} onSelect={(v) => { setService(v); setStep(2) }} />}
       {step === 2 && <StepModality value={modality} onSelect={(v) => { setModality(v); setStep(3) }} />}
       {step === 3 && (
@@ -95,10 +125,32 @@ export function BookingWizard() {
           onHoneypotChange={setHoneypot}
         />
       )}
-      {submitError && <p role="alert" className="text-sm text-red-700 mt-4">{submitError}</p>}
-      <div className="flex justify-between mt-6">
-        {step > 1 && <button type="button" onClick={() => setStep((s) => s - 1)}>{t('booking.back')}</button>}
-        {step === 4 && <button type="submit" className="rounded-full bg-sunlit px-6 py-2 font-semibold">{t('booking.submit')}</button>}
+      {submitError && (
+        <p role="alert" className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700">
+          {submitError}
+        </p>
+      )}
+      <div className="mt-10 flex items-center justify-between border-t border-ink/5 pt-6">
+        {step > 1 ? (
+          <button
+            type="button"
+            onClick={() => setStep((s) => s - 1)}
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink/60 transition-colors duration-300 hover:text-sea-deep"
+          >
+            <ArrowLeftIcon className="h-4 w-4" />
+            {t('booking.back')}
+          </button>
+        ) : (
+          <span />
+        )}
+        {step === 4 && (
+          <button
+            type="submit"
+            className="rounded-full bg-sunlit px-8 py-3 text-sm font-semibold text-ink shadow-[0_2px_10px_rgba(221,176,103,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(221,176,103,0.45)]"
+          >
+            {t('booking.submit')}
+          </button>
+        )}
       </div>
     </form>
   )

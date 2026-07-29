@@ -12,6 +12,7 @@
       "blog": "Blog",
       "testimonials": "Testimonials",
       "resources": "Resources",
+      "learnMore": "Learn more",
       "openMenu": "Open menu",
       "closeMenu": "Close menu"
     },
@@ -21,7 +22,8 @@
       "bookNow": "Book now",
       "sendMessage": "Send message",
       "readMore": "Read more",
-      "viewAll": "View all"
+      "viewAll": "View all",
+      "getDirections": "Get directions"
     },
     "tagline": "Healing at nature's pace",
     "crisis": {
@@ -39,18 +41,28 @@
   },
   "booking": {
     "title": "Book a session",
+    "subtitle": "A few quick steps to find a time that works — no payment needed to get started.",
+    "progress": {
+      "service": "Service",
+      "modality": "Modality",
+      "datetime": "Date & time",
+      "details": "Details"
+    },
     "step1": {
       "heading": "Choose a service",
       "individual": "Individual — $170",
       "couple": "Couple — $227",
       "group": "Group therapy",
       "spiritual": "Spiritual therapy",
-      "freeConsult": "Free 15-minute consultation"
+      "freeConsult": "Free 15-minute consultation",
+      "noCommitment": "No commitment — just a conversation"
     },
     "step2": {
       "heading": "Choose a modality",
       "inPerson": "In-person",
-      "online": "Online"
+      "online": "Online",
+      "inPersonHelper": "At our Ottawa office",
+      "onlineHelper": "From anywhere in Ontario"
     },
     "step3": {
       "heading": "Choose a date and time",
@@ -69,13 +81,18 @@
     "next": "Next",
     "success": {
       "title": "Thank you!",
-      "body": "Your request has been received. We'll be in touch soon to confirm."
+      "body": "Your request has been received. We'll be in touch soon to confirm.",
+      "backHome": "Back to home"
     },
     "throttled": "It looks like you already submitted this form. We'll be in touch soon.",
     "submitError": "Something went wrong sending your request. Please try again or call us at (613) 791-0284."
   },
   "contact": {
     "title": "Contact us",
+    "subtitle": "Have a question before you book? We're happy to help — reach out any way that feels comfortable.",
+    "preferTalk": "Prefer to talk it through first?",
+    "formHeading": "Send a message",
+    "formIntro": "Prefer to write instead of book? Share what's on your mind and we'll get back to you soon.",
     "fullName": "Full name",
     "email": "Email",
     "subject": "Subject",
@@ -93,7 +110,10 @@
     },
     "intro": {
       "heading": "Meet Sahra",
-      "body": "Sahra Haji-Mohamed Said is a Registered Social Worker (RSW) with over a decade of clinical experience and up to fifteen years of community work supporting children, teens, adults, seniors, and families. She offers a warm, non-judgmental space where your story is heard with care — and where your cultural and spiritual background is honoured, not sidelined. Sahra believes you already carry the strength to reclaim control of your life; her role is simply to help you see your own resilience."
+      "body": "Sahra Haji-Mohamed Said is a Registered Social Worker (RSW) with over a decade of clinical experience and up to fifteen years of community work supporting children, teens, adults, seniors, and families. She offers a warm, non-judgmental space where your story is heard with care — and where your cultural and spiritual background is honoured, not sidelined. Sahra believes you already carry the strength to reclaim control of your life; her role is simply to help you see your own resilience.",
+      "badge1": "Registered Social Worker (RSW)",
+      "badge2": "10+ years of experience",
+      "badge3": "English · French · Somali"
     },
     "servicesPreview": {
       "heading": "How we can help",

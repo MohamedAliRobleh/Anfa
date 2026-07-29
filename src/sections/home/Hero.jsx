@@ -7,17 +7,17 @@ export function Hero() {
   const { t } = useTranslation()
   const prefersReduced = useReducedMotion()
   return (
-    <section className="relative h-[85vh] min-h-[560px] flex items-end overflow-hidden">
+    <section className="relative h-[75vh] min-h-[480px] flex items-center overflow-hidden">
       <motion.img
         src="/img/hero-mountain-sea.webp"
         alt="Misty mountain meeting a turquoise sea at golden hour"
         className="absolute inset-0 h-full w-full object-cover"
-        initial={prefersReduced ? false : { scale: 1.08 }}
-        animate={prefersReduced ? false : { scale: 1 }}
-        transition={{ duration: 8, ease: 'easeOut' }}
+        initial={prefersReduced ? false : { scale: 1 }}
+        animate={prefersReduced ? false : { scale: [1, 1.08, 1] }}
+        transition={prefersReduced ? undefined : { duration: 24, ease: 'easeInOut', repeat: Infinity }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" />
-      <div className="relative z-10 mx-auto max-w-3xl px-4 pb-20 text-sand">
+      <div className="relative z-10 mx-auto max-w-3xl px-4 pb-10 text-sand">
         <h1 className="font-display text-sand text-4xl md:text-5xl mb-4">{t('home.hero.title')}</h1>
         <p className="text-lg mb-8">{t('home.hero.subtitle')}</p>
         <div className="flex flex-wrap gap-4">

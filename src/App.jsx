@@ -1,11 +1,19 @@
-import { Suspense, lazy, useState } from 'react'
-import { BrowserRouter, MemoryRouter, Routes, Route } from 'react-router-dom'
+import { Suspense, lazy, useEffect, useState } from 'react'
+import { BrowserRouter, MemoryRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { Analytics } from '@vercel/analytics/react'
 import { I18nProvider } from './i18n/I18nProvider'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { CookieConsent } from './components/CookieConsent'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
@@ -54,6 +62,7 @@ export default function App({ initialEntries }) {
     <HelmetProvider>
       <I18nProvider>
         <Router {...routerProps}>
+          <ScrollToTop />
           <Header />
           <main>
             <AppRoutes />
