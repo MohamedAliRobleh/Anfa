@@ -204,5 +204,10 @@
     "intro": "How Anfa Counselling & Psychotherapy collects, uses, and protects your information.",
     "body": "Anfa Counselling & Psychotherapy is committed to protecting your privacy in accordance with Ontario's Personal Health Information Protection Act (PHIPA) and the federal Personal Information Protection and Electronic Documents Act (PIPEDA). Our public website forms (booking requests and contact messages) collect only your name, email, phone number, and any short message you choose to share, along with your explicit consent to be contacted — we never ask for diagnoses, symptoms, or other sensitive health information through these forms. Submissions are stored securely in our database, which is configured so that this website can only add new entries and can never read, alter, or delete existing ones; only our practice can access stored submissions directly. This site uses cookies to understand general site usage, which you can decline. If you have questions about your privacy or wish to request that your information be corrected or deleted, please contact us directly.",
     "contact": "Questions about this policy? Email sahrasaid845@gmail.com or call (613) 791-0284."
+  },
+  "blog": {
+    "heading": "Blog",
+    "intro": "Insights and gentle guidance from Anfa Counselling & Psychotherapy.",
+    "notFound": "Sorry, that article could not be found."
   }
 }

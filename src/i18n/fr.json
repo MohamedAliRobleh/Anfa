@@ -204,5 +204,10 @@
     "intro": "Comment Anfa Counselling & Psychotherapy recueille, utilise et protège vos renseignements.",
     "body": "Anfa Counselling & Psychotherapy s'engage à protéger votre vie privée conformément à la Loi de 2004 sur la protection des renseignements personnels sur la santé (LPRPS) de l'Ontario et à la Loi fédérale sur la protection des renseignements personnels et les documents électroniques (LPRPDE). Les formulaires publics de notre site (demandes de réservation et messages de contact) ne recueillent que votre nom, votre courriel, votre numéro de téléphone et un court message que vous choisissez de partager, ainsi que votre consentement explicite à être contacté(e) — nous ne demandons jamais de diagnostic, de symptômes ou d'autres renseignements de santé sensibles par ces formulaires. Les soumissions sont stockées de façon sécurisée dans notre base de données, configurée pour que ce site puisse seulement y ajouter de nouvelles entrées, sans jamais pouvoir lire, modifier ou supprimer les entrées existantes; seule notre pratique peut accéder directement aux soumissions enregistrées. Ce site utilise des témoins pour comprendre l'utilisation générale du site, que vous pouvez refuser. Si vous avez des questions sur votre vie privée ou souhaitez demander la correction ou la suppression de vos renseignements, veuillez nous contacter directement.",
     "contact": "Des questions sur cette politique? Écrivez à sahrasaid845@gmail.com ou appelez au (613) 791-0284."
+  },
+  "blog": {
+    "heading": "Blogue",
+    "intro": "Réflexions et conseils bienveillants d'Anfa Counselling & Psychotherapy.",
+    "notFound": "Désolé, cet article est introuvable."
   }
 }
