@@ -7,6 +7,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/setupTests.js',
+    clearMocks: true,
     env: {
       VITE_SUPABASE_URL: 'https://test-project.supabase.co',
       VITE_SUPABASE_ANON_KEY: 'test-anon-key',

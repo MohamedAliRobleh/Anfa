@@ -71,5 +71,17 @@
     },
     "throttled": "It looks like you already submitted this form. We'll be in touch soon.",
     "submitError": "Something went wrong sending your request. Please try again or call us at (613) 791-0284."
+  },
+  "contact": {
+    "title": "Contact us",
+    "fullName": "Full name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Thank you! We've received your message and will respond soon.",
+    "hours": "Hours: Saturday–Friday, 11:00 am–5:30 pm. Closed Sundays.",
+    "address": "2487 Kaladar Avenue, Ottawa, ON K1V",
+    "submitError": "Something went wrong sending your message. Please try again or email sahrasaid845@gmail.com directly."
   }
 }
