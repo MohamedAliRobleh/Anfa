@@ -29,6 +29,10 @@
       "address": "2487 Kaladar Avenue, Ottawa, ON K1V",
       "privacy": "Privacy Policy",
       "rights": "All rights reserved."
+    },
+    "cookie": {
+      "text": "We use cookies to understand site usage. No personal health data is collected.",
+      "accept": "Accept"
     }
   }
 }
