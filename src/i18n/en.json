@@ -209,5 +209,8 @@
     "heading": "Blog",
     "intro": "Insights and gentle guidance from Anfa Counselling & Psychotherapy.",
     "notFound": "Sorry, that article could not be found."
+  },
+  "notFound": {
+    "body": "This page could not be found."
   }
 }

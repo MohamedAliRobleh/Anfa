@@ -209,5 +209,8 @@
     "heading": "Blogue",
     "intro": "Réflexions et conseils bienveillants d'Anfa Counselling & Psychotherapy.",
     "notFound": "Désolé, cet article est introuvable."
+  },
+  "notFound": {
+    "body": "Cette page est introuvable."
   }
 }
