@@ -170,5 +170,39 @@
     "paymentMethods": "Nous acceptons l'argent comptant, Visa, Mastercard et le virement Interac. Le paiement en ligne n'est pas offert pour le moment.",
     "insuranceHeading": "Assurances",
     "insuranceDetails": "Nous fournissons des reçus détaillés afin que vous puissiez demander un remboursement auprès de votre assurance. La facturation directe est en cours d'implantation et inclura Desjardins, la Régie de la santé des Premières Nations (First Nations Health Authority) et les conseils scolaires une fois active — demandez-nous où en est la mise en œuvre."
+  },
+  "faq": {
+    "heading": "Foire aux questions",
+    "intro": "Réponses aux questions fréquentes sur les séances, les tarifs, la confidentialité et plus encore.",
+    "items": {
+      "firstSession": { "question": "Que se passe-t-il lors de ma première séance?", "answer": "Nous commencerons par faire connaissance. Vous partagerez ce qui vous amène et ce que vous espérez, et je vous expliquerai comment je travaille. Vous n'êtes jamais obligé(e) de partager plus que ce pour quoi vous êtes à l'aise — le but est simplement de voir si nous formons une bonne combinaison." },
+      "onlineSessions": { "question": "Les séances en ligne sont-elles offertes?", "answer": "Oui. Les séances sont offertes en personne à notre bureau d'Ottawa ainsi qu'en ligne par appel vidéo sécurisé, selon ce qui vous convient le mieux." },
+      "feesInsurance": { "question": "Quels sont vos tarifs, et acceptez-vous les assurances?", "answer": "Les séances individuelles sont à 170 $ et les séances de couple à 227 $, avec une échelle mobile offerte selon l'admissibilité. Nous fournissons des reçus détaillés pour le remboursement par assurance, et la facturation directe est en cours d'implantation." },
+      "freeConsult": { "question": "Comment fonctionne la consultation gratuite de 15 minutes?", "answer": "Il s'agit d'un court appel ou vidéo sans engagement pour voir si nous formons une bonne combinaison, poser vos questions et décider ensemble des prochaines étapes — sans frais, sans pression." },
+      "confidentiality": { "question": "Comment ma vie privée est-elle protégée?", "answer": "Tout ce que vous partagez est confidentiel, conformément aux normes professionnelles et légales encadrant les travailleurs sociaux en Ontario. Les détails se trouvent dans notre politique de confidentialité." },
+      "languages": { "question": "Dans quelles langues offrez-vous vos services?", "answer": "Les séances sont offertes en anglais, en français et en somali." },
+      "culturalSensitivity": { "question": "Offrez-vous un counselling culturellement ou religieusement sensible?", "answer": "Oui. J'apporte une humilité et une sensibilité culturelles à chaque séance, incluant le counselling islamique pour les client(e)s qui souhaitent que leur foi fasse partie du processus." }
+    }
+  },
+  "testimonials": {
+    "heading": "Ce que disent nos clients",
+    "intro": "Découvrez ce que disent les client(e)s d'Anfa Counselling & Psychotherapy.",
+    "disclaimer": "Ces témoignages sont des exemples anonymisés présentés à titre illustratif et seront remplacés par de véritables avis de clients ayant donné leur consentement.",
+    "items": {
+      "anxiety1": { "quote": "Je suis arrivée submergée par une anxiété que je n'arrivais à expliquer à personne. Sahra ne m'a jamais brusquée — elle m'a aidée à trouver des outils qui fonctionnent vraiment, et pour la première fois depuis des années, j'ai l'impression de pouvoir respirer.", "reason": "en quête de soutien pour l'anxiété" },
+      "couple1": { "quote": "Nous nous parlions à peine avant de commencer. Sahra nous a offert un espace où nous nous sentions tous les deux entendus, pas seulement gérés. Nous communiquons maintenant d'une façon que nous n'aurions jamais crue possible.", "reason": "en quête de thérapie de couple" },
+      "grief1": { "quote": "Perdre quelqu'un que j'aimais m'a donné l'impression de devoir cacher à quel point je souffrais. Sahra m'a permis de vivre mon deuil sans jugement, à mon propre rythme, et m'a aidée à retrouver mon équilibre.", "reason": "en quête de soutien face au deuil" }
+    }
+  },
+  "resources": {
+    "heading": "Ressources",
+    "intro": "Ressources utiles et informations de soutien en cas de crise.",
+    "body": "Au-delà des séances individuelles et de couple, la guérison bénéficie souvent d'un soutien communautaire et autonome. Nous constituons actuellement une bibliothèque d'articles éducatifs ici — en attendant, des organismes comme l'Association canadienne pour la santé mentale, ConnexOntario et Jeunesse, J'écoute offrent un soutien gratuit et confidentiel partout en Ontario. Si vous êtes en situation de crise en ce moment, veuillez consulter les ressources ci-dessous."
+  },
+  "privacy": {
+    "heading": "Politique de confidentialité",
+    "intro": "Comment Anfa Counselling & Psychotherapy recueille, utilise et protège vos renseignements.",
+    "body": "Anfa Counselling & Psychotherapy s'engage à protéger votre vie privée conformément à la Loi de 2004 sur la protection des renseignements personnels sur la santé (LPRPS) de l'Ontario et à la Loi fédérale sur la protection des renseignements personnels et les documents électroniques (LPRPDE). Les formulaires publics de notre site (demandes de réservation et messages de contact) ne recueillent que votre nom, votre courriel, votre numéro de téléphone et un court message que vous choisissez de partager, ainsi que votre consentement explicite à être contacté(e) — nous ne demandons jamais de diagnostic, de symptômes ou d'autres renseignements de santé sensibles par ces formulaires. Les soumissions sont stockées de façon sécurisée dans notre base de données, configurée pour que ce site puisse seulement y ajouter de nouvelles entrées, sans jamais pouvoir lire, modifier ou supprimer les entrées existantes; seule notre pratique peut accéder directement aux soumissions enregistrées. Ce site utilise des témoins pour comprendre l'utilisation générale du site, que vous pouvez refuser. Si vous avez des questions sur votre vie privée ou souhaitez demander la correction ou la suppression de vos renseignements, veuillez nous contacter directement.",
+    "contact": "Des questions sur cette politique? Écrivez à sahrasaid845@gmail.com ou appelez au (613) 791-0284."
   }
 }

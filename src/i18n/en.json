@@ -170,5 +170,39 @@
     "paymentMethods": "We accept cash, Visa, Mastercard, and e-transfer. Online payment is not currently available.",
     "insuranceHeading": "Insurance",
     "insuranceDetails": "We provide detailed receipts so you can submit for reimbursement through your insurance plan. Direct billing is being introduced and will include Desjardins, First Nations Health Authority, and school boards once active — ask us for the current status."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "intro": "Answers to common questions about sessions, fees, confidentiality, and more.",
+    "items": {
+      "firstSession": { "question": "What happens in my first session?", "answer": "We'll start by getting to know each other. You'll share what brought you in and what you're hoping for, and I'll explain how I work. There's no obligation to share more than you're comfortable with — the goal is simply to see if we're a good fit." },
+      "onlineSessions": { "question": "Are online sessions available?", "answer": "Yes. Sessions are available both in person at our Ottawa office and online via secure video call, whichever works best for you." },
+      "feesInsurance": { "question": "What are your fees, and do you accept insurance?", "answer": "Individual sessions are $170 and couple sessions are $227, with a sliding scale available based on eligibility. We provide detailed receipts for insurance reimbursement, and direct billing is being introduced." },
+      "freeConsult": { "question": "How does the free 15-minute consultation work?", "answer": "It's a short, no-obligation call or video chat to see if we're a good fit, ask any questions, and decide on next steps together — no cost, no pressure." },
+      "confidentiality": { "question": "How is my privacy protected?", "answer": "Everything you share is confidential, in line with professional and legal standards for social workers in Ontario. Details are in our Privacy Policy." },
+      "languages": { "question": "What languages do you offer services in?", "answer": "Sessions are available in English, French, and Somali." },
+      "culturalSensitivity": { "question": "Do you offer culturally or religiously sensitive counselling?", "answer": "Yes. I bring cultural humility and sensitivity to every session, including Islamic counselling for clients who want their faith held as part of the process." }
+    }
+  },
+  "testimonials": {
+    "heading": "What Our Clients Say",
+    "intro": "Read what clients say about working with Anfa Counselling & Psychotherapy.",
+    "disclaimer": "These testimonials are anonymized composites shared for illustration and will be replaced with real, consented client reviews.",
+    "items": {
+      "anxiety1": { "quote": "I came in overwhelmed by anxiety I couldn't explain to anyone. Sahra never rushed me — she helped me find tools that actually work, and for the first time in years I feel like I can breathe.", "reason": "sought support for anxiety" },
+      "couple1": { "quote": "We were barely speaking to each other before we started. Sahra gave us a space where we both felt heard, not just managed. We're communicating in ways we never thought possible.", "reason": "sought couple therapy" },
+      "grief1": { "quote": "Losing someone I loved left me feeling like I had to hide how much I was struggling. Sahra let me grieve without judgment, at my own pace, and helped me find my footing again.", "reason": "sought support through grief" }
+    }
+  },
+  "resources": {
+    "heading": "Resources",
+    "intro": "Helpful resources and crisis support information.",
+    "body": "Beyond individual and couple sessions, healing often benefits from community and self-guided support. We're building out a library of educational articles here — in the meantime, organizations like the Canadian Mental Health Association, ConnexOntario, and Kids Help Phone offer free, confidential support across Ontario. If you're in crisis right now, please see the resources below."
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "intro": "How Anfa Counselling & Psychotherapy collects, uses, and protects your information.",
+    "body": "Anfa Counselling & Psychotherapy is committed to protecting your privacy in accordance with Ontario's Personal Health Information Protection Act (PHIPA) and the federal Personal Information Protection and Electronic Documents Act (PIPEDA). Our public website forms (booking requests and contact messages) collect only your name, email, phone number, and any short message you choose to share, along with your explicit consent to be contacted — we never ask for diagnoses, symptoms, or other sensitive health information through these forms. Submissions are stored securely in our database, which is configured so that this website can only add new entries and can never read, alter, or delete existing ones; only our practice can access stored submissions directly. This site uses cookies to understand general site usage, which you can decline. If you have questions about your privacy or wish to request that your information be corrected or deleted, please contact us directly.",
+    "contact": "Questions about this policy? Email sahrasaid845@gmail.com or call (613) 791-0284."
   }
 }
