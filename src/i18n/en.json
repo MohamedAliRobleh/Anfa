@@ -34,5 +34,42 @@
       "text": "We use cookies to understand site usage. No personal health data is collected.",
       "accept": "Accept"
     }
+  },
+  "booking": {
+    "title": "Book a session",
+    "step1": {
+      "heading": "Choose a service",
+      "individual": "Individual — $170",
+      "couple": "Couple — $227",
+      "group": "Group therapy",
+      "spiritual": "Spiritual therapy",
+      "freeConsult": "Free 15-minute consultation"
+    },
+    "step2": {
+      "heading": "Choose a modality",
+      "inPerson": "In-person",
+      "online": "Online"
+    },
+    "step3": {
+      "heading": "Choose a date and time",
+      "noSlots": "This day is closed. Please choose another date (Sunday closed)."
+    },
+    "step4": {
+      "heading": "Your details",
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Short message (optional)",
+      "consent": "I consent to being contacted about this booking request."
+    },
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "success": {
+      "title": "Thank you!",
+      "body": "Your request has been received. We'll be in touch soon to confirm."
+    },
+    "throttled": "It looks like you already submitted this form. We'll be in touch soon.",
+    "submitError": "Something went wrong sending your request. Please try again or call us at (613) 791-0284."
   }
 }

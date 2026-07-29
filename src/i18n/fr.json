@@ -34,5 +34,42 @@
       "text": "Nous utilisons des témoins pour comprendre l'utilisation du site. Aucune donnée de santé personnelle n'est recueillie.",
       "accept": "Accepter"
     }
+  },
+  "booking": {
+    "title": "Réserver une séance",
+    "step1": {
+      "heading": "Choisissez un service",
+      "individual": "Individuel — 170 $",
+      "couple": "Couple — 227 $",
+      "group": "Thérapie de groupe",
+      "spiritual": "Thérapie spirituelle",
+      "freeConsult": "Consultation gratuite de 15 minutes"
+    },
+    "step2": {
+      "heading": "Choisissez une modalité",
+      "inPerson": "En personne",
+      "online": "En ligne"
+    },
+    "step3": {
+      "heading": "Choisissez une date et une heure",
+      "noSlots": "Ce jour est fermé. Veuillez choisir une autre date (dimanche fermé)."
+    },
+    "step4": {
+      "heading": "Vos coordonnées",
+      "fullName": "Nom complet",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "message": "Message court (facultatif)",
+      "consent": "Je consens à être contacté(e) au sujet de cette demande de réservation."
+    },
+    "submit": "Envoyer",
+    "back": "Retour",
+    "next": "Suivant",
+    "success": {
+      "title": "Merci!",
+      "body": "Votre demande a été reçue. Nous vous contacterons bientôt pour confirmer."
+    },
+    "throttled": "Il semble que vous ayez déjà soumis ce formulaire. Nous vous contacterons bientôt.",
+    "submitError": "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer ou nous appeler au (613) 791-0284."
   }
 }
