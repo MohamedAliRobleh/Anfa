@@ -50,7 +50,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="relative mt-10 overflow-hidden rounded-3xl shadow-[0_25px_60px_-20px_rgba(11,92,87,0.25)] ring-1 ring-ink/5">
+        <div className="relative mt-10 overflow-hidden rounded-3xl shadow-[0_25px_60px_-20px_rgba(122,107,168,0.25)] ring-1 ring-ink/5">
           <iframe
             title="Map to 2487 Kaladar Avenue, Ottawa"
             src={MAPS_EMBED_URL}

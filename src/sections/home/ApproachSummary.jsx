@@ -13,7 +13,7 @@ export function ApproachSummary() {
   const { t } = useTranslation()
   return (
     <section className="bg-lavender-wash py-16 md:py-20">
-      <HorizonDivider tone="lavender" className="h-6 w-full md:h-8" />
+      <HorizonDivider className="h-6 w-full md:h-8" />
       <div className="mx-auto max-w-5xl px-4">
         <h2 className="font-display text-3xl text-sea-deep mb-10 text-center">{t('home.approachSummary.heading')}</h2>
         <ul className="grid gap-5 sm:grid-cols-2">

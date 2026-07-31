@@ -16,7 +16,7 @@ export default function About() {
             <img
               src="/img/sahra-portrait.webp"
               alt="Sahra Haji-Mohamed Said, RSW"
-              className="relative w-full rounded-3xl object-cover shadow-[0_25px_50px_-15px_rgba(11,92,87,0.3)] ring-1 ring-ink/5"
+              className="relative w-full rounded-3xl object-cover shadow-[0_25px_50px_-15px_rgba(122,107,168,0.3)] ring-1 ring-ink/5"
               loading="lazy"
             />
           </div>

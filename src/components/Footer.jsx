@@ -34,7 +34,7 @@ export function Footer() {
       >
         <defs>
           <linearGradient id="footer-horizon-gradient" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#14A69C" />
+            <stop offset="0%" stopColor="#9C8FCB" />
             <stop offset="100%" stopColor="#DDB067" />
           </linearGradient>
         </defs>
