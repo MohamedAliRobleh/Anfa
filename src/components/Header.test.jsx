@@ -37,3 +37,20 @@ test('logo does not shrink when the page is scrolled', () => {
 
   expect(logo).toHaveClass('h-24')
 })
+
+test('active nav link shows a solid pill, inactive links show pill on hover', () => {
+  render(
+    <MemoryRouter initialEntries={['/']}>
+      <I18nProvider><Header /></I18nProvider>
+    </MemoryRouter>
+  )
+  const home = screen.getByRole('link', { name: 'Home' })
+  const contact = screen.getByRole('link', { name: 'Contact' })
+
+  expect(home).toHaveClass('bg-lavender-soft')
+  expect(home).toHaveClass('text-sea-deep')
+  expect(home).not.toHaveClass('after:w-full')
+
+  expect(contact).toHaveClass('hover:bg-lavender-soft')
+  expect(contact).not.toHaveClass('bg-lavender-soft')
+})

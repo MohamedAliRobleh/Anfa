@@ -51,7 +51,9 @@ export function NavDropdown({ label, items, linkBase, itemLabel }) {
         className={[
           linkBase,
           'inline-flex items-center gap-1',
-          isActive ? 'text-sea-deep after:w-full after:bg-sea-deep' : 'text-ink/60 hover:text-sea-deep after:w-0 after:bg-sunlit hover:after:w-full',
+          isActive
+            ? 'bg-lavender-soft text-sea-deep'
+            : 'text-ink/60 hover:bg-lavender-soft hover:text-sea-deep',
         ].join(' ')}
       >
         {label}

@@ -22,14 +22,14 @@ const LEARN_GROUP = [
 ]
 
 const linkBase =
-  "relative shrink-0 whitespace-nowrap py-1 text-[13px] font-semibold uppercase tracking-wide transition-colors duration-300 after:absolute after:left-0 after:-bottom-1.5 after:h-px after:transition-all after:duration-300 after:content-['']"
+  'relative shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors duration-300'
 
 function navLinkClassName({ isActive }) {
   return [
     linkBase,
     isActive
-      ? 'text-sea-deep after:w-full after:bg-sea-deep'
-      : 'text-ink/60 hover:text-sea-deep after:w-0 after:bg-sunlit hover:after:w-full',
+      ? 'bg-lavender-soft text-sea-deep'
+      : 'text-ink/60 hover:bg-lavender-soft hover:text-sea-deep',
   ].join(' ')
 }
 
