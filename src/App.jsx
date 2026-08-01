@@ -12,6 +12,20 @@ function ScrollToTop() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [pathname])
+
+  useEffect(() => {
+    function handleClick(event) {
+      const anchor = event.target.closest('a[href]')
+      if (!anchor) return
+      const url = new URL(anchor.href, window.location.origin)
+      if (url.pathname === pathname) {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    }
+    document.addEventListener('click', handleClick)
+    return () => document.removeEventListener('click', handleClick)
+  }, [pathname])
+
   return null
 }
 
