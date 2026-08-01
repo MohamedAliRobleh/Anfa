@@ -50,24 +50,39 @@ export function Header() {
     <header
       className={`sticky top-0 z-40 border-b backdrop-blur-md transition-[box-shadow,border-color] duration-300 ${
         scrolled
-          ? 'bg-sand/95 border-ink/5 shadow-[0_4px_24px_rgba(11,92,87,0.07)]'
+          ? 'bg-sand/95 border-ink/5 shadow-[0_4px_24px_rgba(122,107,168,0.07)]'
           : 'bg-sand/80 border-transparent'
       }`}
     >
       <div
         className={`mx-auto flex max-w-[100rem] items-center justify-between px-6 transition-[padding] duration-300 lg:px-8 ${
-          scrolled ? 'py-3' : 'py-5'
+          scrolled ? 'py-2' : 'py-4'
         }`}
       >
         <NavLink
           to="/"
           aria-label="Anfa Counselling & Psychotherapy home"
-          className="shrink-0 transition-transform duration-300 hover:scale-[1.03]"
+          className="shrink-0 transition-transform duration-300 hover:scale-[1.02]"
         >
-          <Logo variant="full-color" className="hidden lg:block h-14 min-[1440px]:h-16" />
-          <Logo variant="compact" className="lg:hidden h-10" />
+          <Logo
+            variant="full-color"
+            className={`hidden lg:block transition-[height] duration-300 ${scrolled ? 'h-16' : 'h-20'}`}
+          />
+          <Logo variant="compact" className="lg:hidden h-14" />
         </NavLink>
-        <nav className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-4">
+          <LanguageToggle />
+          <NavLink
+            to="/booking"
+            className="shrink-0 whitespace-nowrap rounded-full bg-sunlit px-6 py-2.5 text-sm font-semibold text-ink shadow-[0_2px_10px_rgba(221,176,103,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(221,176,103,0.45)]"
+          >
+            {t('common.cta.bookFree')}
+          </NavLink>
+        </div>
+        <MobileNav />
+      </div>
+      <div className="hidden border-t border-ink/5 lg:block">
+        <nav className="mx-auto flex max-w-[100rem] items-center justify-center gap-8 px-6 py-3 lg:px-8">
           <NavLink to="/" end className={navLinkClassName}>
             {t('common.nav.home')}
           </NavLink>
@@ -78,17 +93,6 @@ export function Header() {
             {t('common.nav.contact')}
           </NavLink>
         </nav>
-        <div className="hidden lg:flex items-center gap-4">
-          <span className="hidden h-6 w-px bg-ink/10 min-[1440px]:block" aria-hidden="true" />
-          <LanguageToggle />
-          <NavLink
-            to="/booking"
-            className="shrink-0 whitespace-nowrap rounded-full bg-sunlit px-6 py-2.5 text-sm font-semibold text-ink shadow-[0_2px_10px_rgba(221,176,103,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(221,176,103,0.45)]"
-          >
-            {t('common.cta.bookFree')}
-          </NavLink>
-        </div>
-        <MobileNav />
       </div>
     </header>
   )
