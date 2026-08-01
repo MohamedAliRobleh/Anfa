@@ -22,14 +22,14 @@ const LEARN_GROUP = [
 ]
 
 const linkBase =
-  "relative shrink-0 whitespace-nowrap py-1 text-[13px] font-semibold uppercase tracking-wide transition-colors duration-300 after:absolute after:left-0 after:-bottom-1.5 after:h-px after:transition-all after:duration-300 after:content-['']"
+  'relative shrink-0 whitespace-nowrap rounded-full px-2 py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors duration-300 xl:px-4'
 
 function navLinkClassName({ isActive }) {
   return [
     linkBase,
     isActive
-      ? 'text-sea-deep after:w-full after:bg-sea-deep'
-      : 'text-ink/60 hover:text-sea-deep after:w-0 after:bg-sunlit hover:after:w-full',
+      ? 'bg-lavender-soft text-ink'
+      : 'text-ink/60 hover:bg-lavender-soft hover:text-ink',
   ].join(' ')
 }
 
@@ -55,7 +55,7 @@ export function Header() {
       }`}
     >
       <div
-        className={`mx-auto flex max-w-[100rem] items-center justify-between px-6 transition-[padding] duration-300 lg:px-8 ${
+        className={`mx-auto flex max-w-[100rem] items-center gap-4 px-6 transition-[padding] duration-300 lg:px-8 ${
           scrolled ? 'py-2' : 'py-4'
         }`}
       >
@@ -64,25 +64,10 @@ export function Header() {
           aria-label="Anfa Counselling & Psychotherapy home"
           className="shrink-0 transition-transform duration-300 hover:scale-[1.02]"
         >
-          <Logo
-            variant="full-color"
-            className={`hidden lg:block transition-[height] duration-300 ${scrolled ? 'h-16' : 'h-20'}`}
-          />
+          <Logo variant="full-color" className="hidden h-16 lg:block xl:h-24" />
           <Logo variant="compact" className="lg:hidden h-14" />
         </NavLink>
-        <div className="hidden lg:flex items-center gap-4">
-          <LanguageToggle />
-          <NavLink
-            to="/booking"
-            className="shrink-0 whitespace-nowrap rounded-full bg-sunlit px-6 py-2.5 text-sm font-semibold text-ink shadow-[0_2px_10px_rgba(221,176,103,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(221,176,103,0.45)]"
-          >
-            {t('common.cta.bookFree')}
-          </NavLink>
-        </div>
-        <MobileNav />
-      </div>
-      <div className="hidden border-t border-ink/5 lg:block">
-        <nav className="mx-auto flex max-w-[100rem] items-center justify-center gap-8 px-6 py-3 lg:px-8">
+        <nav className="hidden flex-1 items-center justify-center gap-0.5 lg:flex xl:gap-1">
           <NavLink to="/" end className={navLinkClassName}>
             {t('common.nav.home')}
           </NavLink>
@@ -93,6 +78,10 @@ export function Header() {
             {t('common.nav.contact')}
           </NavLink>
         </nav>
+        <div className="hidden shrink-0 items-center lg:flex">
+          <LanguageToggle />
+        </div>
+        <MobileNav />
       </div>
     </header>
   )
