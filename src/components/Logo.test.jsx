@@ -2,10 +2,17 @@ import { render, screen } from '@testing-library/react'
 import { Logo } from './Logo'
 
 test.each([
-  ['full-color', '/img/anfa-logo-full-color.svg'],
-  ['compact', '/img/anfa-logo-compact.svg'],
+  ['icon', '/img/lotus-icon.png'],
+  ['color-on-dark', '/img/anfa-logo-color-on-dark.svg'],
 ])('variant %s maps to %s', (variant, expectedSrc) => {
   render(<Logo variant={variant} />)
   const img = screen.getByAltText('Anfa Counselling & Psychotherapy')
   expect(img).toHaveAttribute('src', expectedSrc)
+})
+
+test('alt prop overrides the default accessible name', () => {
+  const { container } = render(<Logo variant="icon" alt="" />)
+  const img = container.querySelector('img')
+  expect(img).toHaveAttribute('src', '/img/lotus-icon.png')
+  expect(img).toHaveAttribute('alt', '')
 })

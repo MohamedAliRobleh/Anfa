@@ -62,10 +62,17 @@ export function Header() {
         <NavLink
           to="/"
           aria-label="Anfa Counselling & Psychotherapy home"
-          className="shrink-0 transition-transform duration-300 hover:scale-[1.02]"
+          className="flex shrink-0 items-center gap-2 transition-transform duration-300 hover:scale-[1.02] sm:gap-3 xl:gap-4"
         >
-          <Logo variant="full-color" className="hidden h-16 lg:block xl:h-24" />
-          <Logo variant="compact" className="lg:hidden h-14" />
+          <Logo variant="icon" alt="" className="h-10 sm:h-12 lg:h-16 xl:h-20" />
+          <span className="flex flex-col leading-none">
+            <span className="font-display text-sm font-medium text-ink sm:text-base lg:text-lg xl:text-xl">
+              Anfa Counselling
+            </span>
+            <span className="mt-0.5 text-[8px] font-semibold uppercase tracking-[0.1em] text-sea-deep sm:text-[9px] lg:mt-1 lg:text-[10px] lg:tracking-[0.14em] xl:text-[11px]">
+              and Psychotherapy
+            </span>
+          </span>
         </NavLink>
         <nav className="hidden flex-1 items-center justify-center gap-0.5 lg:flex xl:gap-1">
           <NavLink to="/" end className={navLinkClassName}>

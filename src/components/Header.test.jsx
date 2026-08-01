@@ -29,14 +29,25 @@ test('logo does not shrink when the page is scrolled', () => {
       <I18nProvider><Header /></I18nProvider>
     </MemoryRouter>
   )
-  const logo = container.querySelector('img[src="/img/anfa-logo-full-color.svg"]')
-  expect(logo).toHaveClass('xl:h-24')
+  const logo = container.querySelector('img[src="/img/lotus-icon.png"]')
+  expect(logo).toHaveClass('xl:h-20')
   const classNameBeforeScroll = logo.className
 
   Object.defineProperty(window, 'scrollY', { value: 100, configurable: true })
   window.dispatchEvent(new Event('scroll'))
 
   expect(logo.className).toBe(classNameBeforeScroll)
+})
+
+test('renders the wordmark beside the icon in the home link', () => {
+  render(
+    <MemoryRouter>
+      <I18nProvider><Header /></I18nProvider>
+    </MemoryRouter>
+  )
+  const homeLink = screen.getByRole('link', { name: 'Anfa Counselling & Psychotherapy home' })
+  expect(homeLink).toHaveTextContent('Anfa Counselling')
+  expect(homeLink).toHaveTextContent('and Psychotherapy')
 })
 
 test('active nav link shows a solid pill, inactive links show pill on hover', () => {

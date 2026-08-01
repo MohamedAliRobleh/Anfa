@@ -1,14 +1,13 @@
 const VARIANT_SRC = {
-  'full-color': '/img/anfa-logo-full-color.svg',
+  icon: '/img/lotus-icon.png',
   'color-on-dark': '/img/anfa-logo-color-on-dark.svg',
-  compact: '/img/anfa-logo-compact.svg',
 }
 
-export function Logo({ variant = 'full-color', className = '' }) {
+export function Logo({ variant = 'icon', alt = 'Anfa Counselling & Psychotherapy', className = '' }) {
   return (
     <img
       src={VARIANT_SRC[variant]}
-      alt="Anfa Counselling & Psychotherapy"
+      alt={alt}
       className={className}
     />
   )

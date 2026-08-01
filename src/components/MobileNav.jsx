@@ -15,7 +15,7 @@ export function MobileNav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="lg:hidden">
+    <div className="ml-auto lg:hidden">
       <button
         aria-label={open ? t('common.nav.closeMenu') : t('common.nav.openMenu')}
         aria-expanded={open}
