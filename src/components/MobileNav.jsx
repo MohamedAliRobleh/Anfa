@@ -48,13 +48,6 @@ export function MobileNav() {
               ))}
             </div>
           ))}
-          <NavLink
-            to="/booking"
-            onClick={() => setOpen(false)}
-            className="mt-4 rounded-full bg-sunlit px-5 py-2.5 text-center text-sm font-semibold text-ink"
-          >
-            {t('common.cta.bookFree')}
-          </NavLink>
         </nav>
       )}
     </div>
