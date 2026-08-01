@@ -34,7 +34,7 @@ export function SEO({ title, description, path = '/', jsonLd }) {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={`${SITE_URL}/img/anfa-icon.svg`} />
+      <meta property="og:image" content={`${SITE_URL}/img/lotus-icon.png`} />
       {jsonLd && (
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       )}

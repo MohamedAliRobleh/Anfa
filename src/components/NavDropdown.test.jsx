@@ -25,5 +25,5 @@ test('active dropdown trigger shows a solid pill', () => {
   )
   const trigger = screen.getByRole('button', { name: /About/ })
   expect(trigger).toHaveClass('bg-lavender-soft')
-  expect(trigger).toHaveClass('text-sea-deep')
+  expect(trigger).toHaveClass('text-ink')
 })
