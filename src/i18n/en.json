@@ -5,6 +5,7 @@
       "about": "About",
       "services": "Services",
       "approach": "Approach",
+      "whatWeHelpWith": "What We Help With",
       "fees": "Fees & Insurance",
       "products": "Products",
       "booking": "Booking",
@@ -183,6 +184,45 @@
     },
     "firstSessionHeading": "What to Expect in Your First Session",
     "firstSession": "Your first session is about getting comfortable, not diagnosing you. We'll talk through what brought you in, what you're hoping will feel different, and any questions you have about how therapy works. There's no pressure to share more than you're ready to. By the end, we'll have a plan for what the next few sessions might look like — one you helped shape."
+  },
+  "whatWeHelpWith": {
+    "heading": "What We Help With",
+    "intro": "Every path into therapy is different. Here are some of the concerns clients bring to us most often — and how our approach supports each one.",
+    "treatmentsLabel": "How we can help",
+    "items": {
+      "anxiety": {
+        "title": "Anxiety",
+        "description": "Anxiety can show up as constant worry, restlessness, or a racing mind that won't settle — even when things seem fine on the surface. Therapy helps you understand what's driving it and build practical tools to feel steadier, day to day."
+      },
+      "depression": {
+        "title": "Depression",
+        "description": "Depression can make everyday life feel heavier — low motivation, flat mood, or a sense of disconnection from things you used to enjoy. We work together to gently rebuild a sense of momentum and meaning."
+      },
+      "grief": {
+        "title": "Grief & Loss",
+        "description": "Grief doesn't follow a timeline, and it isn't only about death — it can follow any significant loss. Support here means space to feel what you feel, without being rushed toward \"moving on.\""
+      },
+      "relationships": {
+        "title": "Relationship & Couple Concerns",
+        "description": "Communication breakdowns, trust, recurring conflict, or feeling distant from a partner — couple and relationship work focuses on rebuilding understanding, not deciding who's right."
+      },
+      "trauma": {
+        "title": "Trauma & Post-Traumatic Stress",
+        "description": "Past experiences — whether a single event or ongoing hardship — can stay with the body and mind long after they've ended. Trauma-informed therapy moves at a pace that feels safe, never forced."
+      },
+      "stressBurnout": {
+        "title": "Stress & Burnout",
+        "description": "Chronic stress and burnout can leave you exhausted, irritable, or running on empty, even when you're doing \"everything right.\" Therapy helps you identify what's unsustainable and build a more sustainable pace."
+      },
+      "lifeTransitions": {
+        "title": "Life Transitions",
+        "description": "Immigration, parenthood, career change, divorce, or any major life shift can bring up uncertainty even when the change is welcome. Support here helps you find steady footing as things shift around you."
+      },
+      "childrenTeens": {
+        "title": "Children & Teens",
+        "description": "Children and teens often process big feelings differently than adults — through play, art, and story rather than conversation alone. We meet them where they are, at their own pace."
+      }
+    }
   },
   "fees": {
     "heading": "Fees & Insurance",

@@ -5,6 +5,7 @@
       "about": "À propos",
       "services": "Services",
       "approach": "Approche",
+      "whatWeHelpWith": "Nos domaines d'aide",
       "fees": "Tarifs et assurances",
       "products": "Produits",
       "booking": "Réservation",
@@ -183,6 +184,45 @@
     },
     "firstSessionHeading": "À quoi s'attendre lors de votre première séance",
     "firstSession": "Votre première séance vise à créer un climat de confort, pas à vous diagnostiquer. Nous discuterons de ce qui vous amène, de ce que vous espérez voir changer, et de toutes vos questions sur le fonctionnement de la thérapie. Vous n'êtes jamais obligé(e) de partager plus que ce pour quoi vous êtes prêt(e). À la fin, nous aurons une idée de ce à quoi pourraient ressembler les prochaines séances — une idée que vous aurez contribué à façonner."
+  },
+  "whatWeHelpWith": {
+    "heading": "Ce avec quoi nous pouvons vous accompagner",
+    "intro": "Chaque parcours vers la thérapie est différent. Voici quelques-unes des préoccupations que nos client(e)s nous apportent le plus souvent — et comment notre approche répond à chacune.",
+    "treatmentsLabel": "Comment nous pouvons vous aider",
+    "items": {
+      "anxiety": {
+        "title": "Anxiété",
+        "description": "L'anxiété peut se manifester par une inquiétude constante, de l'agitation ou un esprit qui s'emballe — même lorsque tout semble aller bien en surface. La thérapie vous aide à comprendre ce qui l'alimente et à développer des outils concrets pour vous sentir plus stable au quotidien."
+      },
+      "depression": {
+        "title": "Dépression",
+        "description": "La dépression peut alourdir le quotidien — manque de motivation, humeur basse ou sentiment de déconnexion par rapport à ce que vous aimiez auparavant. Nous travaillons ensemble à reconstruire doucement un sentiment d'élan et de sens."
+      },
+      "grief": {
+        "title": "Deuil et perte",
+        "description": "Le deuil ne suit pas un échéancier, et il ne concerne pas seulement le décès — il peut suivre toute perte importante. Le soutien ici, c'est l'espace de ressentir ce que vous ressentez, sans être poussé(e) à « passer à autre chose »."
+      },
+      "relationships": {
+        "title": "Préoccupations relationnelles et de couple",
+        "description": "Ruptures de communication, confiance, conflits récurrents ou sentiment de distance avec un partenaire — le travail de couple et relationnel vise à reconstruire la compréhension, pas à déterminer qui a raison."
+      },
+      "trauma": {
+        "title": "Traumatisme et stress post-traumatique",
+        "description": "Les expériences passées — qu'il s'agisse d'un événement unique ou de difficultés prolongées — peuvent rester ancrées dans le corps et l'esprit bien après qu'elles soient terminées. La thérapie tenant compte des traumatismes avance à un rythme qui vous semble sécuritaire, jamais forcé."
+      },
+      "stressBurnout": {
+        "title": "Stress et épuisement professionnel",
+        "description": "Le stress chronique et l'épuisement professionnel peuvent vous laisser épuisé(e), irritable ou à bout de ressources, même en faisant « tout comme il faut ». La thérapie vous aide à cerner ce qui n'est pas viable et à adopter un rythme plus durable."
+      },
+      "lifeTransitions": {
+        "title": "Transitions de vie",
+        "description": "L'immigration, la parentalité, un changement de carrière, un divorce ou tout grand changement de vie peut susciter de l'incertitude, même lorsque le changement est bienvenu. Le soutien ici vous aide à retrouver un équilibre pendant que les choses changent autour de vous."
+      },
+      "childrenTeens": {
+        "title": "Enfants et adolescents",
+        "description": "Les enfants et les adolescents traitent souvent leurs grandes émotions différemment des adultes — par le jeu, l'art et le récit plutôt que par la seule conversation. Nous les rencontrons là où ils sont, à leur propre rythme."
+      }
+    }
   },
   "fees": {
     "heading": "Tarifs et assurances",

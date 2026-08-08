@@ -33,6 +33,7 @@ const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
 const Services = lazy(() => import('./pages/Services'))
 const Approach = lazy(() => import('./pages/Approach'))
+const WhatWeHelpWith = lazy(() => import('./pages/WhatWeHelpWith'))
 const FeesInsurance = lazy(() => import('./pages/FeesInsurance'))
 const Products = lazy(() => import('./pages/Products'))
 const Booking = lazy(() => import('./pages/Booking'))
@@ -53,6 +54,7 @@ function AppRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/approach" element={<Approach />} />
+        <Route path="/what-we-help-with" element={<WhatWeHelpWith />} />
         <Route path="/fees" element={<FeesInsurance />} />
         <Route path="/products" element={<Products />} />
         <Route path="/booking" element={<Booking />} />

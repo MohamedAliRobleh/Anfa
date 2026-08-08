@@ -9,11 +9,11 @@ import { NavDropdown } from './NavDropdown'
 const ABOUT_GROUP = [
   ['about', '/about'],
   ['approach', '/approach'],
+  ['whatWeHelpWith', '/what-we-help-with'],
 ]
 const SERVICES_GROUP = [
   ['services', '/services'],
   ['fees', '/fees'],
-  ['products', '/products'],
 ]
 const LEARN_GROUP = [
   ['faq', '/faq'],
@@ -81,6 +81,9 @@ export function Header() {
           </NavLink>
           <NavDropdown label={t('common.nav.about')} items={ABOUT_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
           <NavDropdown label={t('common.nav.services')} items={SERVICES_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
+          <NavLink to="/products" className={navLinkClassName}>
+            {t('common.nav.products')}
+          </NavLink>
           <NavDropdown label={t('common.nav.learnMore')} items={LEARN_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
           <NavLink to="/contact" className={navLinkClassName}>
             {t('common.nav.contact')}
