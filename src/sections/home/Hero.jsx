@@ -43,7 +43,7 @@ export function Hero() {
         <h1 className="font-display text-sand text-4xl md:text-5xl mb-4">{t('home.hero.title')}</h1>
         <p className="text-lg mb-8">{t('home.hero.subtitle')}</p>
         <div className="flex flex-wrap gap-4">
-          <Link to="/booking" className="rounded-full bg-sunlit text-ink px-6 py-3 font-semibold">{t('common.cta.bookFree')}</Link>
+          <Link to="/booking" className="rounded-full bg-sunlit hover:bg-sea-deep text-sand transition-colors duration-300 px-6 py-3 font-semibold">{t('common.cta.bookFree')}</Link>
           <Link to="/services" className="rounded-full border border-sand px-6 py-3 font-semibold">{t('common.cta.discoverServices')}</Link>
         </div>
       </div>

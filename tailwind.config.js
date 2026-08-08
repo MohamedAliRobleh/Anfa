@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        sea: '#9C8FCB',
-        'sea-deep': '#7A6BA8',
-        sunlit: '#DDB067',
+        sea: '#0E7A85',
+        'sea-deep': '#085F68',
+        sunlit: '#5F5E82',
         lavender: {
-          DEFAULT: '#9C8FCB',
-          ink: '#7A6BA8',
-          soft: '#EDE9F7',
-          wash: '#F3F0FA',
+          DEFAULT: '#8584AA',
+          ink: '#5F5E82',
+          soft: '#E9E8F0',
+          wash: '#F2F1F6',
         },
-        mist: '#EAE6F5',
+        mist: '#E1EFEC',
         sand: '#F7F4ED',
         ink: '#1C2926',
       },

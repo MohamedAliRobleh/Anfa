@@ -60,7 +60,7 @@ export function NavDropdown({ label, items, linkBase, itemLabel }) {
         <ChevronIcon open={open} />
       </button>
       <div
-        className={`absolute left-1/2 top-full z-10 mt-3 w-52 -translate-x-1/2 rounded-2xl bg-white p-2 shadow-[0_16px_40px_-12px_rgba(122,107,168,0.25)] ring-1 ring-ink/10 transition-all duration-200 ${
+        className={`absolute left-1/2 top-full z-10 mt-3 w-52 -translate-x-1/2 rounded-2xl bg-white p-2 shadow-[0_16px_40px_-12px_rgba(8,95,104,0.25)] ring-1 ring-ink/10 transition-all duration-200 ${
           open ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-1 opacity-0'
         }`}
       >

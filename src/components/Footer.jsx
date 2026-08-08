@@ -27,19 +27,19 @@ export function Footer() {
     <footer className="relative bg-sea-deep text-sand">
       <svg
         role="img"
-        aria-label="Mountain ridge meeting the sea, a horizon line"
+        aria-label="Rolling waves, a horizon line"
         viewBox="0 0 1200 80"
         className="h-8 w-full md:h-10"
         preserveAspectRatio="none"
       >
         <defs>
           <linearGradient id="footer-horizon-gradient" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#9C8FCB" />
+            <stop offset="0%" stopColor="#B0CD8C" />
             <stop offset="100%" stopColor="#DDB067" />
           </linearGradient>
         </defs>
         <path
-          d="M0,60 L150,20 L300,55 Q450,10 600,50 T900,45 Q1050,15 1200,55 L1200,80 L0,80 Z"
+          d="M0,42 Q100,6 200,42 Q300,74 400,42 Q500,6 600,42 Q700,74 800,42 Q900,6 1000,42 Q1100,74 1200,42 L1200,80 L0,80 Z"
           fill="url(#footer-horizon-gradient)"
         />
       </svg>
@@ -53,14 +53,14 @@ export function Footer() {
             <a
               href="#"
               aria-label="Facebook"
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-sand/10 transition-colors duration-300 hover:bg-sunlit hover:text-ink"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-sand/10 transition-colors duration-300 hover:bg-sunlit hover:text-sand"
             >
               <FacebookIcon className="h-4 w-4" />
             </a>
             <a
               href="#"
               aria-label="Psychology Today"
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-sand/10 transition-colors duration-300 hover:bg-sunlit hover:text-ink"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-sand/10 transition-colors duration-300 hover:bg-sunlit hover:text-sand"
             >
               <ExternalLinkIcon className="h-4 w-4" />
             </a>
@@ -118,7 +118,7 @@ export function Footer() {
           </ul>
           <NavLink
             to="/booking"
-            className="mt-5 inline-flex rounded-full bg-sunlit px-5 py-2.5 text-sm font-semibold text-ink shadow-[0_2px_10px_rgba(221,176,103,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(221,176,103,0.45)]"
+            className="mt-5 inline-flex rounded-full bg-sunlit hover:bg-lavender px-5 py-2.5 text-sm font-semibold text-sand shadow-[0_2px_10px_rgba(95,94,130,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(95,94,130,0.45)]"
           >
             {t('common.cta.bookFree')}
           </NavLink>

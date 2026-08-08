@@ -13,6 +13,7 @@ const ABOUT_GROUP = [
 const SERVICES_GROUP = [
   ['services', '/services'],
   ['fees', '/fees'],
+  ['products', '/products'],
 ]
 const LEARN_GROUP = [
   ['faq', '/faq'],
@@ -50,7 +51,7 @@ export function Header() {
     <header
       className={`sticky top-0 z-40 border-b backdrop-blur-md transition-[box-shadow,border-color] duration-300 ${
         scrolled
-          ? 'bg-sand/95 border-ink/5 shadow-[0_4px_24px_rgba(122,107,168,0.07)]'
+          ? 'bg-sand/95 border-ink/5 shadow-[0_4px_24px_rgba(8,95,104,0.07)]'
           : 'bg-sand/80 border-transparent'
       }`}
     >

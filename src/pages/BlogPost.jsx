@@ -35,7 +35,7 @@ export default function BlogPost() {
         <img
           src={post.coverImage}
           alt=""
-          className="mb-6 h-64 w-full rounded-3xl object-cover shadow-[0_20px_45px_-15px_rgba(122,107,168,0.3)] ring-1 ring-ink/5 md:h-80"
+          className="mb-6 h-64 w-full rounded-3xl object-cover shadow-[0_20px_45px_-15px_rgba(8,95,104,0.3)] ring-1 ring-ink/5 md:h-80"
           loading="lazy"
         />
         <p className="mb-2 inline-flex items-center rounded-full bg-lavender-soft px-3 py-1 text-xs font-semibold uppercase tracking-wide text-lavender-ink">

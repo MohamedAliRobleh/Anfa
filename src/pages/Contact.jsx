@@ -39,7 +39,7 @@ export default function Contact() {
               <p className="font-display text-lg text-sea-deep mb-3">{t('contact.preferTalk')}</p>
               <NavLink
                 to="/booking"
-                className="inline-flex items-center rounded-full bg-sunlit px-5 py-2.5 text-sm font-semibold text-ink shadow-[0_2px_10px_rgba(221,176,103,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(221,176,103,0.45)]"
+                className="inline-flex items-center rounded-full bg-sunlit hover:bg-sea-deep px-5 py-2.5 text-sm font-semibold text-sand shadow-[0_2px_10px_rgba(95,94,130,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(95,94,130,0.45)]"
               >
                 {t('common.cta.bookFree')}
               </NavLink>
@@ -50,7 +50,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="relative mt-10 overflow-hidden rounded-3xl shadow-[0_25px_60px_-20px_rgba(122,107,168,0.25)] ring-1 ring-ink/5">
+        <div className="relative mt-10 overflow-hidden rounded-3xl shadow-[0_25px_60px_-20px_rgba(8,95,104,0.25)] ring-1 ring-ink/5">
           <iframe
             title="Map to 2487 Kaladar Avenue, Ottawa"
             src={MAPS_EMBED_URL}

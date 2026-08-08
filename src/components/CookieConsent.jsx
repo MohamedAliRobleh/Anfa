@@ -18,7 +18,7 @@ export function CookieConsent({ onAccept }) {
       <p className="text-sm">{t('common.cookie.text')}</p>
       <button
         onClick={() => { localStorage.setItem(KEY, 'accepted'); setAccepted(true) }}
-        className="rounded-full bg-sunlit text-ink px-5 py-2 text-sm font-semibold"
+        className="rounded-full bg-sunlit hover:bg-sea-deep text-sand transition-colors duration-300 px-5 py-2 text-sm font-semibold"
       >
         {t('common.cookie.accept')}
       </button>

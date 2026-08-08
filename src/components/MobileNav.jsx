@@ -5,7 +5,7 @@ import { useTranslation } from '../i18n/useTranslation'
 const SECTIONS = [
   { items: [['home', '/']] },
   { label: 'about', items: [['about', '/about'], ['approach', '/approach']] },
-  { label: 'services', items: [['services', '/services'], ['fees', '/fees']] },
+  { label: 'services', items: [['services', '/services'], ['fees', '/fees'], ['products', '/products']] },
   { items: [['contact', '/contact']] },
   { label: 'learnMore', items: [['faq', '/faq'], ['blog', '/blog'], ['testimonials', '/testimonials'], ['resources', '/resources']] },
 ]
