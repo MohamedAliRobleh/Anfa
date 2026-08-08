@@ -221,7 +221,9 @@
   "resources": {
     "heading": "Resources",
     "intro": "Helpful resources and crisis support information.",
-    "body": "Beyond individual and couple sessions, healing often benefits from community and self-guided support. We're building out a library of educational articles here — in the meantime, organizations like the Canadian Mental Health Association, ConnexOntario, and Kids Help Phone offer free, confidential support across Ontario. If you're in crisis right now, please see the resources below."
+    "body": "Beyond individual and couple sessions, healing often benefits from community and self-guided support. We're building out a library of educational articles here — in the meantime, organizations like the Canadian Mental Health Association, ConnexOntario, and Kids Help Phone offer free, confidential support across Ontario. If you're in crisis right now, please see the resources below.",
+    "guideHeading": "Guide to Further Support",
+    "guideIntro": "A curated list of trusted organizations for anxiety, mood, OCD, and trauma-related support."
   },
   "products": {
     "heading": "Products",

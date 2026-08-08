@@ -25,28 +25,17 @@ export function Footer() {
   const { t } = useTranslation()
   return (
     <footer className="relative bg-sea-deep text-sand">
-      <svg
-        role="img"
-        aria-label="Rolling waves, a horizon line"
-        viewBox="0 0 1200 80"
-        className="h-8 w-full md:h-10"
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <linearGradient id="footer-horizon-gradient" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#B0CD8C" />
-            <stop offset="100%" stopColor="#DDB067" />
-          </linearGradient>
-        </defs>
-        <path
-          d="M0,42 Q100,6 200,42 Q300,74 400,42 Q500,6 600,42 Q700,74 800,42 Q900,6 1000,42 Q1100,74 1200,42 L1200,80 L0,80 Z"
-          fill="url(#footer-horizon-gradient)"
-        />
-      </svg>
-
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
         <div className="sm:col-span-2 md:col-span-1">
-          <Logo variant="color-on-dark" className="h-14 mb-4" />
+          <div className="mb-4 flex items-center gap-3">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sand p-2 shadow-sm">
+              <Logo variant="icon" alt="" className="h-full w-full object-contain" />
+            </span>
+            <span className="flex flex-col leading-none">
+              <span className="font-display text-lg font-medium text-sand">Anfa Counselling</span>
+              <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-sand/70">and Psychotherapy</span>
+            </span>
+          </div>
           <p className="mb-5 italic text-sand/80">{t('common.tagline')}</p>
           <div className="flex gap-3">
             {/* FUTURE: replace # with the practice's real Facebook and Psychology Today profile URLs once provided */}
@@ -99,20 +88,20 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className={`group flex items-start gap-2 ${linkClass}`}
               >
-                <PinIcon className="mt-0.5 h-4 w-4 shrink-0 text-sunlit" />
+                <PinIcon className="mt-0.5 h-4 w-4 shrink-0 text-sand" />
                 <span>{t('common.footer.address')}</span>
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <PhoneIcon className="h-4 w-4 shrink-0 text-sunlit" />
+              <PhoneIcon className="h-4 w-4 shrink-0 text-sand" />
               <a href="tel:+16137910284" className={linkClass}>(613) 791-0284</a>
             </li>
             <li className="flex items-center gap-2">
-              <MailIcon className="h-4 w-4 shrink-0 text-sunlit" />
+              <MailIcon className="h-4 w-4 shrink-0 text-sand" />
               <a href="mailto:sahrasaid845@gmail.com" className={linkClass}>sahrasaid845@gmail.com</a>
             </li>
             <li className="flex items-start gap-2 text-sand/60">
-              <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-sunlit" />
+              <ClockIcon className="mt-0.5 h-4 w-4 shrink-0 text-sand" />
               <span>{t('contact.hours')}</span>
             </li>
           </ul>

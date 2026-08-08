@@ -3,7 +3,6 @@ import { Logo } from './Logo'
 
 test.each([
   ['icon', '/img/lotus-icon.png'],
-  ['color-on-dark', '/img/anfa-logo-color-on-dark.svg'],
 ])('variant %s maps to %s', (variant, expectedSrc) => {
   render(<Logo variant={variant} />)
   const img = screen.getByAltText('Anfa Counselling & Psychotherapy')

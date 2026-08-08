@@ -221,7 +221,9 @@
   "resources": {
     "heading": "Ressources",
     "intro": "Ressources utiles et informations de soutien en cas de crise.",
-    "body": "Au-delà des séances individuelles et de couple, la guérison bénéficie souvent d'un soutien communautaire et autonome. Nous constituons actuellement une bibliothèque d'articles éducatifs ici — en attendant, des organismes comme l'Association canadienne pour la santé mentale, ConnexOntario et Jeunesse, J'écoute offrent un soutien gratuit et confidentiel partout en Ontario. Si vous êtes en situation de crise en ce moment, veuillez consulter les ressources ci-dessous."
+    "body": "Au-delà des séances individuelles et de couple, la guérison bénéficie souvent d'un soutien communautaire et autonome. Nous constituons actuellement une bibliothèque d'articles éducatifs ici — en attendant, des organismes comme l'Association canadienne pour la santé mentale, ConnexOntario et Jeunesse, J'écoute offrent un soutien gratuit et confidentiel partout en Ontario. Si vous êtes en situation de crise en ce moment, veuillez consulter les ressources ci-dessous.",
+    "guideHeading": "Guide de soutien supplémentaire",
+    "guideIntro": "Une liste organisée d'organismes de confiance pour le soutien lié à l'anxiété, l'humeur, le TOC et les traumatismes."
   },
   "products": {
     "heading": "Produits",

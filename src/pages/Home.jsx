@@ -20,8 +20,8 @@ export default function Home() {
       <ApproachSummary />
       <ReassuranceBar />
       <TestimonialsPreview />
-      <BlogPreview />
       <FinalCta />
+      <BlogPreview />
     </div>
   )
 }
