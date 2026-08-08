@@ -25,7 +25,7 @@
       "readMore": "Read more",
       "viewAll": "View all",
       "getDirections": "Get directions",
-      "askAboutProduct": "Ask about this"
+      "shopProduct": "Shop this product"
     },
     "tagline": "Healing at nature's pace",
     "crisis": {
@@ -225,13 +225,8 @@
   },
   "products": {
     "heading": "Products",
-    "intro": "Self-guided guides and workshops you can work through between sessions or on your own.",
-    "disclaimer": "Online checkout is coming soon. For now, reach out and we'll arrange payment and delivery directly.",
-    "items": {
-      "anxietyGuide": { "title": "Understanding Your Anxiety", "description": "A self-guided workbook with grounding exercises and practical tools for everyday anxiety.", "format": "Digital workbook (PDF)", "price": "$15" },
-      "griefWorkshop": { "title": "Navigating Grief", "description": "A recorded workshop walking through the stages of grief with gentle, practical guidance.", "format": "Recorded workshop (video)", "price": "$35" },
-      "couplesWorkbook": { "title": "Strengthening Your Relationship", "description": "Guided exercises for couples to rebuild communication and connection together.", "format": "Digital workbook (PDF)", "price": "$20" }
-    }
+    "intro": "Wellness and skincare products independently distributed through Opulence Global.",
+    "disclaimer": "These products are sold separately from Anfa's therapy services through Opulence Global's own store. Selecting a product takes you to their site to complete your purchase securely."
   },
   "privacy": {
     "heading": "Privacy Policy",

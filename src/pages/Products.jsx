@@ -1,14 +1,7 @@
-import { Link } from 'react-router-dom'
 import { useTranslation } from '../i18n/useTranslation'
 import { SEO } from '../components/SEO'
-import { products } from '../content/products'
-import { BookIcon, HeartIcon, LeafIcon, TagIcon } from '../components/icons'
-
-const ICONS = {
-  anxietyGuide: BookIcon,
-  griefWorkshop: LeafIcon,
-  couplesWorkbook: HeartIcon,
-}
+import { products, BRAND_ORDER } from '../content/products'
+import { TagIcon, ExternalLinkIcon } from '../components/icons'
 
 export default function Products() {
   const { t } = useTranslation()
@@ -21,36 +14,42 @@ export default function Products() {
         <p className="mb-10 max-w-2xl rounded-2xl bg-lavender-wash px-4 py-3 text-sm text-lavender-ink">
           {t('products.disclaimer')}
         </p>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map(({ key }) => {
-            const Icon = ICONS[key]
-            return (
-              <div
-                key={key}
-                className="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5"
-              >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-mist text-sea-deep">
-                  <Icon className="h-5 w-5" />
-                </div>
-                <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-ink/40">
-                  {t(`products.items.${key}.format`)}
-                </p>
-                <h3 className="font-display text-xl mb-2">{t(`products.items.${key}.title`)}</h3>
-                <p className="mb-4 flex-1 text-sm text-ink/70">{t(`products.items.${key}.description`)}</p>
-                <div className="mb-4 flex items-center gap-1.5 font-display text-lg text-sea-deep">
-                  <TagIcon className="h-4 w-4" />
-                  {t(`products.items.${key}.price`)}
-                </div>
-                <Link
-                  to="/contact"
-                  className="rounded-full bg-sunlit hover:bg-sea-deep px-5 py-2.5 text-center text-sm font-semibold text-sand transition-all duration-300 hover:-translate-y-0.5"
-                >
-                  {t('common.cta.askAboutProduct')}
-                </Link>
+
+        {BRAND_ORDER.map((brand) => {
+          const items = products.filter((p) => p.brand === brand)
+          if (!items.length) return null
+          return (
+            <div key={brand} className="mb-12">
+              <h2 className="font-display text-2xl mb-5">{brand}</h2>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                {items.map((p) => (
+                  <div
+                    key={p.url}
+                    className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-ink/5"
+                  >
+                    <img src={p.image} alt={p.name} loading="lazy" className="h-40 w-full object-cover" />
+                    <div className="flex flex-1 flex-col p-5">
+                      <h3 className="font-display text-base mb-2 flex-1">{p.name}</h3>
+                      <div className="mb-4 flex items-center gap-1.5 font-display text-lg text-sea-deep">
+                        <TagIcon className="h-4 w-4" />
+                        {p.price}
+                      </div>
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-1.5 rounded-full bg-sunlit hover:bg-sea-deep px-5 py-2.5 text-center text-sm font-semibold text-sand transition-colors duration-300"
+                      >
+                        {t('common.cta.shopProduct')}
+                        <ExternalLinkIcon className="h-3.5 w-3.5" />
+                      </a>
+                    </div>
+                  </div>
+                ))}
               </div>
-            )
-          })}
-        </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )

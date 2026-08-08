@@ -25,7 +25,7 @@
       "readMore": "Lire la suite",
       "viewAll": "Tout voir",
       "getDirections": "Obtenir l'itinéraire",
-      "askAboutProduct": "En savoir plus"
+      "shopProduct": "Acheter ce produit"
     },
     "tagline": "Guérir au rythme de la nature",
     "crisis": {
@@ -225,13 +225,8 @@
   },
   "products": {
     "heading": "Produits",
-    "intro": "Des guides et ateliers autonomes à explorer entre les séances ou à votre rythme.",
-    "disclaimer": "Le paiement en ligne arrive bientôt. Pour l'instant, contactez-nous et nous organiserons le paiement et la livraison directement.",
-    "items": {
-      "anxietyGuide": { "title": "Comprendre son anxiété", "description": "Un cahier autonome avec des exercices d'ancrage et des outils concrets pour l'anxiété du quotidien.", "format": "Cahier numérique (PDF)", "price": "15 $" },
-      "griefWorkshop": { "title": "Traverser le deuil", "description": "Un atelier enregistré qui explore les étapes du deuil avec douceur et des conseils concrets.", "format": "Atelier enregistré (vidéo)", "price": "35 $" },
-      "couplesWorkbook": { "title": "Renforcer sa relation", "description": "Des exercices guidés pour que les couples reconstruisent ensemble communication et connexion.", "format": "Cahier numérique (PDF)", "price": "20 $" }
-    }
+    "intro": "Produits de bien-être et de soins distribués de façon indépendante par Opulence Global.",
+    "disclaimer": "Ces produits sont vendus séparément des services de thérapie d'Anfa, par l'intermédiaire de la boutique d'Opulence Global. Choisir un produit vous amène sur leur site pour compléter votre achat en toute sécurité."
   },
   "privacy": {
     "heading": "Politique de confidentialité",
