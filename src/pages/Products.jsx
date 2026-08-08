@@ -67,7 +67,7 @@ export default function Products() {
                       />
                     </div>
                     <div className="flex flex-1 flex-col p-5">
-                      <p className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-ink/35">{p.brand}</p>
+                      <p className="mb-1 text-[12px] font-semibold uppercase tracking-wide text-ink/35">{p.brand}</p>
                       <h3 className="font-display text-base mb-3 flex-1">{p.name}</h3>
                       <div className="mb-4 flex items-center gap-1.5 font-display text-lg text-sea-deep">
                         <TagIcon className="h-4 w-4" />

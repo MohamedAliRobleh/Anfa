@@ -23,7 +23,7 @@ const LEARN_GROUP = [
 ]
 
 const linkBase =
-  'relative shrink-0 whitespace-nowrap rounded-full px-2 py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors duration-300 xl:px-4'
+  'relative shrink-0 whitespace-nowrap rounded-full px-2 py-2 text-[14px] font-semibold uppercase tracking-wide transition-colors duration-300 xl:px-4'
 
 function navLinkClassName({ isActive }) {
   return [
@@ -70,7 +70,7 @@ export function Header() {
             <span className="font-display text-sm font-medium text-ink sm:text-base lg:text-lg xl:text-xl">
               Anfa Counselling
             </span>
-            <span className="mt-0.5 text-[8px] font-semibold uppercase tracking-[0.1em] text-sea-deep sm:text-[9px] lg:mt-1 lg:text-[10px] lg:tracking-[0.14em] xl:text-[11px]">
+            <span className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.1em] text-sea-deep sm:text-[10px] lg:mt-1 lg:text-[11px] lg:tracking-[0.14em] xl:text-[12px]">
               and Psychotherapy
             </span>
           </span>

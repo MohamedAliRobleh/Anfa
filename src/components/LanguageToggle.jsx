@@ -7,7 +7,7 @@ export function LanguageToggle() {
     <button
       onClick={() => setLang(other)}
       aria-label={`Switch to ${other === 'en' ? 'English' : 'French'}`}
-      className="inline-flex items-center gap-1.5 rounded-full border border-ink/10 px-3.5 py-1.5 text-[13px] font-semibold uppercase tracking-wide text-ink/60 transition-colors duration-300 hover:border-sea-deep/30 hover:bg-mist/60 hover:text-sea-deep"
+      className="inline-flex items-center gap-1.5 rounded-full border border-ink/10 px-3.5 py-1.5 text-[14px] font-semibold uppercase tracking-wide text-ink/60 transition-colors duration-300 hover:border-sea-deep/30 hover:bg-mist/60 hover:text-sea-deep"
     >
       <svg
         width="13"

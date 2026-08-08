@@ -13,7 +13,7 @@ export function BookingProgress({ current }) {
           return (
             <li
               key={key}
-              className={`text-[11px] font-semibold uppercase tracking-wide transition-colors duration-300 ${
+              className={`text-[12px] font-semibold uppercase tracking-wide transition-colors duration-300 ${
                 reached ? 'text-sea-deep' : 'text-ink/35'
               } ${num === 1 ? 'text-left' : num === STEPS.length ? 'text-right' : 'text-center'} flex-1`}
             >
