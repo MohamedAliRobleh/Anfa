@@ -38,13 +38,19 @@ export function Hero() {
           transition={{ duration: 1.6, ease: 'easeInOut' }}
         />
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" />
+      <div className="absolute inset-0 bg-ink/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/50 to-ink/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink/50 via-transparent to-transparent" />
       <div className="relative z-10 mx-auto max-w-3xl px-4 pb-10 text-sand">
-        <h1 className="font-display text-sand text-4xl md:text-5xl mb-4">{t('home.hero.title')}</h1>
-        <p className="text-lg mb-8">{t('home.hero.subtitle')}</p>
-        <div className="flex flex-wrap gap-4">
-          <Link to="/booking" className="rounded-full bg-sunlit hover:bg-sea-deep text-sand transition-colors duration-300 px-6 py-3 font-semibold">{t('common.cta.bookFree')}</Link>
-          <Link to="/services" className="rounded-full border border-sand px-6 py-3 font-semibold">{t('common.cta.discoverServices')}</Link>
+        <div className="rounded-3xl bg-ink/25 px-6 py-8 shadow-[0_25px_60px_-20px_rgba(0,0,0,0.5)] ring-1 ring-sand/15 backdrop-blur-md sm:px-10 sm:py-10">
+          <h1 className="font-display text-sand text-4xl md:text-5xl mb-4 [text-shadow:0_2px_16px_rgba(0,0,0,0.45)]">
+            {t('home.hero.title')}
+          </h1>
+          <p className="text-lg mb-8 text-sand/95 [text-shadow:0_1px_10px_rgba(0,0,0,0.4)]">{t('home.hero.subtitle')}</p>
+          <div className="flex flex-wrap gap-4">
+            <Link to="/booking" className="rounded-full bg-sunlit hover:bg-sea-deep text-sand transition-colors duration-300 px-6 py-3 font-semibold">{t('common.cta.bookFree')}</Link>
+            <Link to="/services" className="rounded-full border border-sand px-6 py-3 font-semibold text-sand transition-colors duration-300 hover:bg-sand/10">{t('common.cta.discoverServices')}</Link>
+          </div>
         </div>
       </div>
       <HorizonDivider animated className="absolute bottom-0 left-0 right-0 w-full h-16" />
