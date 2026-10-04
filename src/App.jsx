@@ -82,8 +82,10 @@ export default function App({ initialEntries }) {
       <I18nProvider>
         <Router {...routerProps}>
           <ScrollToTop />
-          <CrisisResourceStrip />
-          <Header />
+          <div className="sticky top-0 z-50">
+            <CrisisResourceStrip />
+            <Header />
+          </div>
           <main>
             <AppRoutes />
           </main>
