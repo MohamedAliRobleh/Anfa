@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from '../i18n/useTranslation'
 import { Logo } from './Logo'
-import { CrisisResourceStrip } from './CrisisResourceStrip'
 import { PinIcon, PhoneIcon, MailIcon, ClockIcon, FacebookIcon, ExternalLinkIcon } from './icons'
 import { MAPS_DIRECTIONS_URL } from '../lib/location'
 
@@ -122,8 +121,6 @@ export function Footer() {
           </NavLink>
         </div>
       </div>
-
-      <CrisisResourceStrip />
     </footer>
   )
 }

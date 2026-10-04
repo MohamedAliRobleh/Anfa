@@ -39,15 +39,15 @@ export function Hero() {
         />
       </AnimatePresence>
       <div className="absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-transparent" />
-      <div className="relative z-10 mx-auto w-full max-w-[100rem] px-6 pb-20 text-sand sm:pb-24 lg:px-8">
-        <div className="inline-block max-w-md rounded-2xl bg-ink/35 px-5 py-6 shadow-[0_20px_45px_-18px_rgba(0,0,0,0.55)] ring-1 ring-sand/15 backdrop-blur-md sm:max-w-lg sm:px-7 sm:py-7">
-          <h1 className="font-display text-sand text-3xl sm:text-4xl lg:text-5xl leading-[1.1] mb-4 [text-shadow:0_2px_16px_rgba(0,0,0,0.5)]">
+      <div className="relative z-10 mx-auto w-full max-w-[100rem] px-6 pb-16 text-sand sm:pb-20 lg:px-8">
+        <div className="inline-block max-w-sm rounded-2xl bg-ink/60 px-5 py-5 shadow-[0_16px_36px_-16px_rgba(0,0,0,0.55)] ring-1 ring-sand/30 backdrop-blur-sm sm:max-w-md sm:px-6 sm:py-6">
+          <h1 className="font-display text-sand text-2xl sm:text-3xl lg:text-4xl leading-[1.15] mb-3">
             {t('home.hero.title')}
           </h1>
-          <p className="text-base sm:text-lg mb-6 text-sand/95 [text-shadow:0_1px_10px_rgba(0,0,0,0.4)]">{t('home.hero.subtitle')}</p>
-          <div className="flex flex-wrap gap-4">
-            <Link to="/booking" className="rounded-full bg-sunlit hover:bg-sea-deep text-sand transition-colors duration-300 px-6 py-3 font-semibold shadow-[0_10px_28px_-10px_rgba(0,0,0,0.55)]">{t('common.cta.bookFree')}</Link>
-            <Link to="/services" className="rounded-full border border-sand px-6 py-3 font-semibold text-sand transition-colors duration-300 hover:bg-sand/10">{t('common.cta.discoverServices')}</Link>
+          <p className="text-sm sm:text-base mb-5 text-sand/95">{t('home.hero.subtitle')}</p>
+          <div className="flex flex-wrap gap-3">
+            <Link to="/booking" className="rounded-full bg-sunlit hover:bg-sea-deep text-sand transition-colors duration-300 px-5 py-2.5 font-semibold shadow-[0_10px_28px_-10px_rgba(0,0,0,0.55)]">{t('common.cta.bookFree')}</Link>
+            <Link to="/services" className="rounded-full border border-sand px-5 py-2.5 font-semibold text-sand transition-colors duration-300 hover:bg-sand/10">{t('common.cta.discoverServices')}</Link>
           </div>
         </div>
       </div>

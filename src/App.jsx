@@ -6,6 +6,7 @@ import { I18nProvider } from './i18n/I18nProvider'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { CookieConsent } from './components/CookieConsent'
+import { CrisisResourceStrip } from './components/CrisisResourceStrip'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -81,6 +82,7 @@ export default function App({ initialEntries }) {
       <I18nProvider>
         <Router {...routerProps}>
           <ScrollToTop />
+          <CrisisResourceStrip />
           <Header />
           <main>
             <AppRoutes />
