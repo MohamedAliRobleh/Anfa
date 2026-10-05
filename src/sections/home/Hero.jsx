@@ -40,7 +40,7 @@ export function Hero() {
       </AnimatePresence>
       <div className="absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-transparent" />
       <div className="relative z-10 mx-auto w-full max-w-[100rem] px-6 pb-16 text-sand sm:pb-20 lg:px-8">
-        <div className="inline-block max-w-sm rounded-2xl bg-ink/60 px-5 py-5 shadow-[0_16px_36px_-16px_rgba(0,0,0,0.55)] ring-1 ring-sand/30 backdrop-blur-[2px] sm:max-w-md sm:px-6 sm:py-6">
+        <div className="inline-block max-w-sm rounded-2xl bg-ink/60 px-5 py-5 shadow-[0_16px_36px_-16px_rgba(0,0,0,0.55)] ring-1 ring-sand/30 backdrop-blur-[1px] sm:max-w-md sm:px-6 sm:py-6">
           <h1 className="font-display text-sand text-2xl sm:text-3xl lg:text-4xl leading-[1.15] mb-3">
             {t('home.hero.title')}
           </h1>
