@@ -14,7 +14,7 @@ export function CookieConsent({ onAccept }) {
   if (accepted) return null
 
   return (
-    <div role="dialog" aria-label="Cookie consent" className="fixed bottom-0 inset-x-0 z-50 bg-ink text-sand p-4 flex flex-col md:flex-row items-center gap-3 justify-between">
+    <div role="dialog" aria-label="Cookie consent" className="fixed bottom-0 inset-x-0 z-50 bg-[#0B1F3A] text-sand p-4 flex flex-col md:flex-row items-center gap-3 justify-between">
       <p className="text-sm">{t('common.cookie.text')}</p>
       <button
         onClick={() => { localStorage.setItem(KEY, 'accepted'); setAccepted(true) }}
