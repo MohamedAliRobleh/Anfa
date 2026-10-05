@@ -44,6 +44,8 @@ const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Testimonials = lazy(() => import('./pages/Testimonials'))
 const Resources = lazy(() => import('./pages/Resources'))
+const Emergency = lazy(() => import('./pages/Emergency'))
+const SafetyPlan = lazy(() => import('./pages/SafetyPlan'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
@@ -65,6 +67,8 @@ function AppRoutes() {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/emergency" element={<Emergency />} />
+        <Route path="/safety-plan" element={<SafetyPlan />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

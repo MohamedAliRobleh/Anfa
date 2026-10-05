@@ -21,6 +21,10 @@ const LEARN_GROUP = [
   ['testimonials', '/testimonials'],
   ['resources', '/resources'],
 ]
+const EMERGENCY_GROUP = [
+  ['emergency', '/emergency'],
+  ['safetyPlan', '/safety-plan'],
+]
 
 const linkBase =
   'relative shrink-0 whitespace-nowrap rounded-full px-2 py-2 text-[14px] font-semibold uppercase tracking-wide transition-colors duration-300 xl:px-4'
@@ -31,6 +35,15 @@ function navLinkClassName({ isActive }) {
     isActive
       ? 'bg-lavender-soft text-ink'
       : 'text-ink/60 hover:bg-lavender-soft hover:text-ink',
+  ].join(' ')
+}
+
+function emergencyTriggerClassName(isActive) {
+  return [
+    'relative inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border px-2 py-2 text-[14px] font-semibold uppercase tracking-wide transition-colors duration-300 xl:px-4',
+    isActive
+      ? 'border-sunlit bg-sunlit text-sand'
+      : 'border-sunlit/50 text-sea-deep hover:bg-sunlit/15',
   ].join(' ')
 }
 
@@ -81,10 +94,17 @@ export function Header() {
           </NavLink>
           <NavDropdown label={t('common.nav.about')} items={ABOUT_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
           <NavDropdown label={t('common.nav.services')} items={SERVICES_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
+          <NavDropdown label={t('common.nav.learnMore')} items={LEARN_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
+          <NavDropdown
+            label={t('common.nav.emergency')}
+            items={EMERGENCY_GROUP}
+            linkBase={linkBase}
+            itemLabel={itemLabel}
+            triggerClassName={emergencyTriggerClassName}
+          />
           <NavLink to="/products" className={navLinkClassName}>
             {t('common.nav.products')}
           </NavLink>
-          <NavDropdown label={t('common.nav.learnMore')} items={LEARN_GROUP} linkBase={linkBase} itemLabel={itemLabel} />
           <NavLink to="/contact" className={navLinkClassName}>
             {t('common.nav.contact')}
           </NavLink>

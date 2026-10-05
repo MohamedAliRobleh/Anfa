@@ -6,9 +6,10 @@ const SECTIONS = [
   { items: [['home', '/']] },
   { label: 'about', items: [['about', '/about'], ['approach', '/approach'], ['whatWeHelpWith', '/what-we-help-with']] },
   { label: 'services', items: [['services', '/services'], ['fees', '/fees']] },
+  { label: 'learnMore', items: [['faq', '/faq'], ['blog', '/blog'], ['testimonials', '/testimonials'], ['resources', '/resources']] },
+  { label: 'emergency', items: [['emergency', '/emergency'], ['safetyPlan', '/safety-plan']] },
   { items: [['products', '/products']] },
   { items: [['contact', '/contact']] },
-  { label: 'learnMore', items: [['faq', '/faq'], ['blog', '/blog'], ['testimonials', '/testimonials'], ['resources', '/resources']] },
 ]
 
 export function MobileNav() {
@@ -41,7 +42,9 @@ export function MobileNav() {
                   end={path === '/'}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block rounded-lg px-1 py-2 ${isActive ? 'text-sea-deep font-semibold' : 'text-ink'}`
+                    key === 'emergency' || key === 'safetyPlan'
+                      ? `block rounded-lg px-1 py-2 font-semibold text-sea-deep ${isActive ? 'underline' : ''}`
+                      : `block rounded-lg px-1 py-2 ${isActive ? 'text-sea-deep font-semibold' : 'text-ink'}`
                   }
                 >
                   {t(`common.nav.${key}`)}

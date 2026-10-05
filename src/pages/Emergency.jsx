@@ -1,23 +1,40 @@
 import { useTranslation } from '../i18n/useTranslation'
 import { SEO } from '../components/SEO'
-import { CrisisResourceStrip } from '../components/CrisisResourceStrip'
-import { ExternalLinkIcon } from '../components/icons'
+import { PhoneIcon, ExternalLinkIcon } from '../components/icons'
 import { LINKS, GUIDE_LINKS } from '../content/resourceLinks'
 
-export default function Resources() {
+const CALLS = [
+  { tel: '911', labelKey: 'call911Label', descKey: 'call911Desc' },
+  { tel: '988', labelKey: 'callCrisisLabel', descKey: 'callCrisisDesc' },
+  { tel: '+16132383311', labelKey: 'callDistressLabel', descKey: 'callDistressDesc' },
+]
+
+export default function Emergency() {
   const { t } = useTranslation()
   return (
     <div className="bg-gradient-to-b from-mist/60 via-sand to-sand py-14 md:py-20">
-      <SEO title="Resources" description={t('resources.intro')} path="/resources" />
+      <SEO title="Emergency Support" description={t('emergency.intro')} path="/emergency" />
       <div className="mx-auto max-w-3xl px-4">
-        <h1 className="font-display text-4xl mb-2">{t('resources.heading')}</h1>
-        <p className="mb-8 text-ink/60">{t('resources.intro')}</p>
+        <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-sunlit/20 text-sea-deep">
+          <PhoneIcon className="h-6 w-6" />
+        </span>
+        <h1 className="font-display text-4xl mb-2">{t('emergency.heading')}</h1>
+        <p className="mb-8 text-ink/60">{t('emergency.intro')}</p>
 
-        <div className="mb-8 overflow-hidden rounded-2xl border-2 border-sunlit">
-          <CrisisResourceStrip />
+        <div className="grid gap-4 sm:grid-cols-3">
+          {CALLS.map(({ tel, labelKey, descKey }) => (
+            <a
+              key={tel}
+              href={`tel:${tel}`}
+              className="flex flex-col rounded-2xl border-2 border-sunlit bg-white p-5 shadow-sm transition-shadow duration-300 hover:shadow-md"
+            >
+              <span className="mb-1 font-display text-xl text-sea-deep">{t(`emergency.${labelKey}`)}</span>
+              <span className="text-sm text-ink/70">{t(`emergency.${descKey}`)}</span>
+            </a>
+          ))}
         </div>
 
-        <div className="mb-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-ink/5 sm:p-8">
+        <div className="mb-8 mt-10 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-ink/5 sm:p-8">
           <p className="text-ink/80">{t('resources.body')}</p>
         </div>
 

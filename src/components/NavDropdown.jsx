@@ -18,7 +18,7 @@ function ChevronIcon({ open }) {
   )
 }
 
-export function NavDropdown({ label, items, linkBase, itemLabel }) {
+export function NavDropdown({ label, items, linkBase, itemLabel, triggerClassName }) {
   const [open, setOpen] = useState(false)
   const closeTimer = useRef(null)
   const { pathname } = useLocation()
@@ -48,13 +48,17 @@ export function NavDropdown({ label, items, linkBase, itemLabel }) {
         type="button"
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
-        className={[
-          linkBase,
-          'inline-flex items-center gap-1',
-          isActive
-            ? 'bg-lavender-soft text-ink'
-            : 'text-ink/60 hover:bg-lavender-soft hover:text-ink',
-        ].join(' ')}
+        className={
+          triggerClassName
+            ? triggerClassName(isActive)
+            : [
+                linkBase,
+                'inline-flex items-center gap-1',
+                isActive
+                  ? 'bg-lavender-soft text-ink'
+                  : 'text-ink/60 hover:bg-lavender-soft hover:text-ink',
+              ].join(' ')
+        }
       >
         {label}
         <ChevronIcon open={open} />

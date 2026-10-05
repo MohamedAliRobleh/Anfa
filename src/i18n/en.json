@@ -14,6 +14,8 @@
       "blog": "Blog",
       "testimonials": "Testimonials",
       "resources": "Resources",
+      "emergency": "Emergency",
+      "safetyPlan": "Safety Plan",
       "learnMore": "Learn more",
       "openMenu": "Open menu",
       "closeMenu": "Close menu"
@@ -264,6 +266,20 @@
     "body": "Beyond individual and couple sessions, healing often benefits from community and self-guided support. We're building out a library of educational articles here — in the meantime, organizations like the Canadian Mental Health Association, ConnexOntario, and Kids Help Phone offer free, confidential support across Ontario. If you're in crisis right now, please see the resources below.",
     "guideHeading": "Guide to Further Support",
     "guideIntro": "A curated list of trusted organizations for anxiety, mood, OCD, and trauma-related support."
+  },
+  "emergency": {
+    "heading": "Emergency Support",
+    "intro": "If you or someone you know is in crisis, help is available right now — 24 hours a day, 7 days a week.",
+    "call911Label": "911",
+    "call911Desc": "For any immediate danger or life-threatening emergency.",
+    "callCrisisLabel": "988 — Suicide Crisis Helpline",
+    "callCrisisDesc": "Free, confidential support, available 24/7 across Canada.",
+    "callDistressLabel": "613-238-3311 — Ottawa Distress Centre",
+    "callDistressDesc": "24/7 crisis line for the Ottawa area."
+  },
+  "safetyPlan": {
+    "heading": "Safety Plan",
+    "intro": "This page is coming soon."
   },
   "products": {
     "heading": "Products",
