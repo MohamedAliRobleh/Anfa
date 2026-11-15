@@ -88,6 +88,19 @@ npm run preview   # serve the production build locally to sanity-check it
 5. Vercel Analytics is wired in behind the cookie consent banner — enable the Analytics
    add-on in the Vercel dashboard for the project if you want traffic data.
 
+## Admin CMS (`/admin`)
+
+A password-protected panel lets a non-technical team member edit site text, replace
+images, and change the color palette/fonts at runtime — no code changes, no redeploy.
+See [`docs/ADMIN_SETUP.md`](docs/ADMIN_SETUP.md) for one-time setup (run
+`supabase/migrations/0002_admin_cms.sql`, then `scripts/create-admin.mjs` to create the
+one admin account — there's no public sign-up) and
+[`docs/ADMIN_GUIDE_FR.md`](docs/ADMIN_GUIDE_FR.md) (in French) for day-to-day use.
+
+Every override is additive and reversible: a one-click "reset" in each admin screen
+deletes the override row and the site falls back to its built-in default text/image/theme
+— nothing an admin does there can permanently break the site.
+
 ## Project structure
 
 ```
@@ -97,10 +110,16 @@ src/
   booking/       the 4-step booking wizard and its steps
   components/    shared UI (Header, Footer, Logo, HorizonDivider, SEO, Card, Accordion, ...)
   i18n/          I18nProvider, useTranslation hook, en.json, fr.json
-  lib/           supabaseClient.js, email.js, antiSpam.js, bookingSlots.js, bookingSchema.js
-  content/       structured content data (services, testimonials, FAQ, blog posts)
+  lib/           supabaseClient.js, email.js, antiSpam.js, bookingSlots.js, bookingSchema.js,
+                 contentOverrides.js, mediaOverrides.js, themeOverrides.js (admin CMS data access)
+  content/       structured content data (services, testimonials, FAQ, blog posts),
+                 contentSchema.js + mediaSlots.js (admin CMS field catalogues)
+  media/         MediaOverridesProvider.jsx + useMedia() — runtime image overrides
+  theme/         ThemeProvider.jsx — runtime color/font overrides via CSS variables
+  admin/         the /admin panel (login, layout, content/media/theme editor pages)
 public/img/      logo SVGs and photography (WebP)
 supabase/migrations/  SQL schema + RLS policies
+scripts/create-admin.mjs  one-off script to create the admin account (see docs/ADMIN_SETUP.md)
 ```
 
 ## Security notes
@@ -120,6 +139,12 @@ supabase/migrations/  SQL schema + RLS policies
   `/api/send-email` serverless function, which holds the `BREVO_API_KEY` server-side and
   is the only thing that calls Brevo's API. `src/lib/email.js` is the single client-side
   integration point; no component calls `fetch('/api/send-email', ...)` directly.
+- **Admin CMS**: there's no public sign-up for `/admin` — accounts are created with
+  `scripts/create-admin.mjs` using the Supabase service role key, run locally and never
+  committed. Every write to content/media/theme tables is gated by Postgres RLS checking
+  an `admin_profiles` allowlist, not by a secret embedded in the client. See
+  [`docs/ADMIN_SETUP.md`](docs/ADMIN_SETUP.md) for the full security notes (headers, CSP
+  rollout, rate limiting).
 
 ## Content you'll likely want to replace
 
