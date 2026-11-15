@@ -1,10 +1,11 @@
 import { useTranslation } from '../i18n/useTranslation'
 import { SEO } from '../components/SEO'
 import { Card } from '../components/Card'
-import { services } from '../content/services'
+import { useServicesWithMedia } from '../hooks/useServicesWithMedia'
 
 export default function Services() {
   const { t } = useTranslation()
+  const services = useServicesWithMedia()
   return (
     <div className="bg-gradient-to-b from-mist/60 via-sand to-sand py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4">

@@ -1,9 +1,10 @@
 import { useTranslation } from '../../i18n/useTranslation'
 import { Card } from '../../components/Card'
-import { services } from '../../content/services'
+import { useServicesWithMedia } from '../../hooks/useServicesWithMedia'
 
 export function ServicesPreview() {
   const { t } = useTranslation()
+  const services = useServicesWithMedia()
   return (
     <section className="bg-mist py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
