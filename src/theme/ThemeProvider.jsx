@@ -20,7 +20,7 @@ const COLOR_VARS = {
 
 let fontLinkEl = null
 
-function applyColors(colors) {
+export function applyColors(colors) {
   if (!colors) return
   const root = document.documentElement.style
   for (const [key, cssVar] of Object.entries(COLOR_VARS)) {
@@ -29,7 +29,7 @@ function applyColors(colors) {
   }
 }
 
-function applyFonts(fonts) {
+export function applyFonts(fonts) {
   if (!fonts) return
   const root = document.documentElement.style
   if (fonts.displayCss) root.setProperty('--font-display', fonts.displayCss)
