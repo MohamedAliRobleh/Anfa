@@ -1,10 +1,12 @@
 import { useTranslation } from '../../i18n/useTranslation'
 import { CheckIcon } from '../../components/icons'
+import { useMedia } from '../../media/MediaOverridesProvider'
 
 const BADGES = ['badge1', 'badge2', 'badge3']
 
 export function IntroSahra() {
   const { t } = useTranslation()
+  const portraitSrc = useMedia('home.intro.portrait', '/img/sahra-portrait.webp')
   return (
     <section className="relative overflow-hidden py-16 md:py-24">
       <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-sunlit/10 blur-3xl" aria-hidden="true" />
@@ -13,7 +15,7 @@ export function IntroSahra() {
         <div className="relative">
           <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-sea/20 via-transparent to-sunlit/20" aria-hidden="true" />
           <img
-            src="/img/sahra-portrait.webp"
+            src={portraitSrc}
             alt="Sahra Haji-Mohamed Said, RSW"
             className="relative w-full rounded-3xl object-cover shadow-[0_25px_50px_-15px_rgba(8,95,104,0.3)] ring-1 ring-ink/5"
             loading="lazy"

@@ -1,5 +1,6 @@
 import { useTranslation } from '../i18n/useTranslation'
 import { SEO } from '../components/SEO'
+import { useMedia } from '../media/MediaOverridesProvider'
 
 const METHODS = [
   ['cbt', 'https://images.unsplash.com/photo-1644412448740-40e5b6ded2dc?q=80&w=600&auto=format&fit=crop'],
@@ -22,23 +23,29 @@ export default function Approach() {
         <p className="mb-10 max-w-2xl text-ink/60">{t('approach.intro')}</p>
 
         <div className="mb-12 grid gap-5 sm:grid-cols-2">
-          {METHODS.map(([key, image]) => (
-            <div
-              key={key}
-              className="flex gap-4 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5 transition-shadow duration-300 hover:shadow-md"
-            >
-              <img
-                src={image}
-                alt=""
-                loading="lazy"
-                className="h-16 w-16 shrink-0 rounded-xl object-cover"
-              />
-              <div>
-                <h3 className="font-display text-lg mb-1">{t(`approach.methods.${key}.title`)}</h3>
-                <p className="text-sm text-ink/70">{t(`approach.methods.${key}.description`)}</p>
+          {METHODS.map(([key, defaultImage]) => {
+            // METHODS is a static, module-level constant of fixed length and
+            // order, so calling the hook here inside .map() never changes
+            // the hook call order across renders.
+            const image = useMedia(`approach.methods.${key}.image`, defaultImage)
+            return (
+              <div
+                key={key}
+                className="flex gap-4 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5 transition-shadow duration-300 hover:shadow-md"
+              >
+                <img
+                  src={image}
+                  alt=""
+                  loading="lazy"
+                  className="h-16 w-16 shrink-0 rounded-xl object-cover"
+                />
+                <div>
+                  <h3 className="font-display text-lg mb-1">{t(`approach.methods.${key}.title`)}</h3>
+                  <p className="text-sm text-ink/70">{t(`approach.methods.${key}.description`)}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-ink/5 sm:p-8">

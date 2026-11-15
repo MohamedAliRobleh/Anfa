@@ -3,18 +3,24 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useTranslation } from '../../i18n/useTranslation'
 import { HorizonDivider } from '../../components/HorizonDivider'
+import { useMedia } from '../../media/MediaOverridesProvider'
 
-const SLIDES = [
-  { src: '/img/hero-mountain-sea.webp', alt: 'Misty mountain meeting a turquoise sea at golden hour' },
-  { src: '/img/hero-mountain-stream.webp', alt: 'A snow-capped mountain valley with a clear alpine stream and spring wildflowers' },
-  { src: '/img/hero-forest-path.webp', alt: 'A sunlit winding path through a green forest meadow' },
-]
 const SLIDE_DURATION = 7000
 
 export function Hero() {
   const { t } = useTranslation()
   const prefersReduced = useReducedMotion()
   const [index, setIndex] = useState(0)
+
+  const slide1Src = useMedia('home.hero.slide1', '/img/hero-mountain-sea.webp')
+  const slide2Src = useMedia('home.hero.slide2', '/img/hero-mountain-stream.webp')
+  const slide3Src = useMedia('home.hero.slide3', '/img/hero-forest-path.webp')
+
+  const SLIDES = [
+    { src: slide1Src, alt: 'Misty mountain meeting a turquoise sea at golden hour' },
+    { src: slide2Src, alt: 'A snow-capped mountain valley with a clear alpine stream and spring wildflowers' },
+    { src: slide3Src, alt: 'A sunlit winding path through a green forest meadow' },
+  ]
 
   useEffect(() => {
     if (prefersReduced) return
