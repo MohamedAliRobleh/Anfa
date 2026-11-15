@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Default theme values. src/theme/ThemeProvider.jsx may overwrite any of
+ * these at runtime (via inline style properties on :root) with values an
+ * admin picked in /admin — these defaults are also the "reset" values.
+ * Colors are stored as "R G B" triplets so Tailwind's <alpha-value> opacity
+ * modifiers (e.g. bg-sea/10) keep working after an override.
+ */
+:root {
+  --color-sea: 14 122 133;
+  --color-sea-deep: 8 95 104;
+  --color-sunlit: 95 94 130;
+  --color-lavender: 133 132 170;
+  --color-lavender-ink: 95 94 130;
+  --color-lavender-soft: 233 232 240;
+  --color-lavender-wash: 242 241 246;
+  --color-mist: 225 239 236;
+  --color-sand: 247 244 237;
+  --color-ink: 28 41 38;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Hanken Grotesk', Arial, sans-serif;
+}
+
 @layer base {
   body {
     @apply bg-sand text-ink font-body antialiased;

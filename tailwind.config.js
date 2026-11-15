@@ -4,22 +4,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        sea: '#0E7A85',
-        'sea-deep': '#085F68',
-        sunlit: '#5F5E82',
+        // Each color reads a CSS variable (defined in src/index.css, and
+        // overridable at runtime by src/theme/ThemeProvider.jsx) instead of a
+        // fixed hex, so an admin-chosen palette applies everywhere this
+        // token is used without a rebuild. <alpha-value> keeps bg-sea/10 etc. working.
+        sea: 'rgb(var(--color-sea) / <alpha-value>)',
+        'sea-deep': 'rgb(var(--color-sea-deep) / <alpha-value>)',
+        sunlit: 'rgb(var(--color-sunlit) / <alpha-value>)',
         lavender: {
-          DEFAULT: '#8584AA',
-          ink: '#5F5E82',
-          soft: '#E9E8F0',
-          wash: '#F2F1F6',
+          DEFAULT: 'rgb(var(--color-lavender) / <alpha-value>)',
+          ink: 'rgb(var(--color-lavender-ink) / <alpha-value>)',
+          soft: 'rgb(var(--color-lavender-soft) / <alpha-value>)',
+          wash: 'rgb(var(--color-lavender-wash) / <alpha-value>)',
         },
-        mist: '#E1EFEC',
-        sand: '#F7F4ED',
-        ink: '#1C2926',
+        mist: 'rgb(var(--color-mist) / <alpha-value>)',
+        sand: 'rgb(var(--color-sand) / <alpha-value>)',
+        ink: 'rgb(var(--color-ink) / <alpha-value>)',
       },
       fontFamily: {
-        display: ['Fraunces', 'Georgia', 'serif'],
-        body: ['"Hanken Grotesk"', 'Arial', 'sans-serif'],
+        // Reads a CSS variable too, so a font pairing chosen in /admin can
+        // swap these without a rebuild (see src/theme/ThemeProvider.jsx).
+        display: ['var(--font-display)', 'Fraunces', 'Georgia', 'serif'],
+        body: ['var(--font-body)', '"Hanken Grotesk"', 'Arial', 'sans-serif'],
       },
       fontSize: {
         xs: ['0.825rem', { lineHeight: '1.1rem' }],

@@ -1,13 +1,17 @@
 import { useParams, Link } from 'react-router-dom'
 import { useTranslation } from '../i18n/useTranslation'
 import { SEO } from '../components/SEO'
-import { blogPosts } from '../content/blogPosts'
+import { getBlogPost } from '../content/blogContent'
+import { useContentOverrides } from '../content/ContentOverridesProvider'
+import { useMediaOverridesContext } from '../media/MediaOverridesProvider'
 import { ArrowLeftIcon } from '../components/icons'
 
 export default function BlogPost() {
   const { slug } = useParams()
   const { t, lang } = useTranslation()
-  const post = blogPosts.find((p) => p.slug === slug)
+  const overrides = useContentOverrides()?.overrides ?? {}
+  const mediaOverrides = useMediaOverridesContext()?.overrides ?? {}
+  const post = getBlogPost(slug, lang, overrides, mediaOverrides)
 
   if (!post) {
     return (

@@ -1,10 +1,15 @@
 import { useTranslation } from '../i18n/useTranslation'
 import { SEO } from '../components/SEO'
 import { Card } from '../components/Card'
-import { blogPosts } from '../content/blogPosts'
+import { getAllBlogPosts } from '../content/blogContent'
+import { useContentOverrides } from '../content/ContentOverridesProvider'
+import { useMediaOverridesContext } from '../media/MediaOverridesProvider'
 
 export default function Blog() {
   const { t, lang } = useTranslation()
+  const overrides = useContentOverrides()?.overrides ?? {}
+  const mediaOverrides = useMediaOverridesContext()?.overrides ?? {}
+  const blogPosts = getAllBlogPosts(lang, overrides, mediaOverrides)
   return (
     <div className="bg-gradient-to-b from-mist/60 via-sand to-sand py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4">

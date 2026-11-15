@@ -3,6 +3,9 @@ import { BrowserRouter, MemoryRouter, Routes, Route, useLocation } from 'react-r
 import { HelmetProvider } from 'react-helmet-async'
 import { Analytics } from '@vercel/analytics/react'
 import { I18nProvider } from './i18n/I18nProvider'
+import { ContentOverridesProvider } from './content/ContentOverridesProvider'
+import { MediaOverridesProvider } from './media/MediaOverridesProvider'
+import { ThemeProvider } from './theme/ThemeProvider'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { CookieConsent } from './components/CookieConsent'
@@ -47,11 +50,13 @@ const Emergency = lazy(() => import('./pages/Emergency'))
 const SafetyPlan = lazy(() => import('./pages/SafetyPlan'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const NotFound = lazy(() => import('./pages/NotFound'))
+const AdminApp = lazy(() => import('./admin/AdminApp'))
 
 function AppRoutes() {
   return (
     <Suspense fallback={<div className="p-12 text-center">Loading…</div>}>
       <Routes>
+        <Route path="/admin/*" element={<AdminApp />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -75,6 +80,28 @@ function AppRoutes() {
   )
 }
 
+// The admin area (/admin/*) renders its own full-page layout (see
+// src/admin/AdminLayout.jsx) — the public header/footer/cookie banner would
+// just duplicate navigation there, so it's skipped on those routes.
+function SiteChrome() {
+  const { pathname } = useLocation()
+  const isAdmin = pathname.startsWith('/admin')
+
+  if (isAdmin) {
+    return <AppRoutes />
+  }
+
+  return (
+    <>
+      <Header />
+      <main>
+        <AppRoutes />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
 export default function App({ initialEntries }) {
   const [analyticsOn, setAnalyticsOn] = useState(false)
   const Router = initialEntries ? MemoryRouter : BrowserRouter
@@ -82,18 +109,20 @@ export default function App({ initialEntries }) {
 
   return (
     <HelmetProvider>
-      <I18nProvider>
-        <Router {...routerProps}>
-          <ScrollToTop />
-          <Header />
-          <main>
-            <AppRoutes />
-          </main>
-          <Footer />
-        </Router>
-        <CookieConsent onAccept={() => setAnalyticsOn(true)} />
-        {analyticsOn && <Analytics />}
-      </I18nProvider>
+      <ContentOverridesProvider>
+        <MediaOverridesProvider>
+          <ThemeProvider>
+            <I18nProvider>
+              <Router {...routerProps}>
+                <ScrollToTop />
+                <SiteChrome />
+              </Router>
+              <CookieConsent onAccept={() => setAnalyticsOn(true)} />
+              {analyticsOn && <Analytics />}
+            </I18nProvider>
+          </ThemeProvider>
+        </MediaOverridesProvider>
+      </ContentOverridesProvider>
     </HelmetProvider>
   )
 }
