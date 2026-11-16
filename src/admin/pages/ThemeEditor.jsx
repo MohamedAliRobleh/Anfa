@@ -108,13 +108,12 @@ export default function ThemeEditor() {
       await saveSiteTheme({ colors, fonts })
       setStatus({
         type: 'success',
-        message: 'Enregistré. Ces couleurs et polices sont maintenant visibles sur le site.',
+        message: 'Saved. These colors and fonts are now visible on the site.',
       })
     } catch {
       setStatus({
         type: 'error',
-        message:
-          "Une erreur est survenue : l'enregistrement a échoué. Vérifiez votre connexion et réessayez.",
+        message: 'Something went wrong: saving failed. Check your connection and try again.',
       })
     } finally {
       setSaving(false)
@@ -134,12 +133,12 @@ export default function ThemeEditor() {
       applyFonts(DEFAULT_FONTS)
       setStatus({
         type: 'success',
-        message: "Les couleurs et polices d'origine du site ont été restaurées.",
+        message: "The site's original colors and fonts have been restored.",
       })
     } catch {
       setStatus({
         type: 'error',
-        message: "Une erreur est survenue : la réinitialisation a échoué. Réessayez.",
+        message: 'Something went wrong: resetting failed. Please try again.',
       })
     } finally {
       setResetting(false)
@@ -157,11 +156,11 @@ export default function ThemeEditor() {
         <link rel="stylesheet" href={ALL_FONT_PREVIEW_HREF} />
       </Helmet>
 
-      <h1 className="font-display text-2xl text-sea-deep">Couleurs &amp; polices</h1>
+      <h1 className="font-display text-2xl text-sea-deep">Colors &amp; fonts</h1>
       <p className="mt-2 max-w-2xl text-ink/60">
-        Choisissez une palette de couleurs et une paire de polices parmi les propositions
-        ci-dessous. Vous verrez le résultat immédiatement dans l&rsquo;aperçu, et rien n&rsquo;est
-        visible par vos visiteurs avant d&rsquo;appuyer sur « Enregistrer ».
+        Choose a color palette and a font pairing from the options below. You&rsquo;ll see the
+        result immediately in the preview, and nothing is visible to your visitors until you
+        click &ldquo;Save&rdquo;.
       </p>
 
       {status && (
@@ -177,11 +176,11 @@ export default function ThemeEditor() {
 
       <section className="mt-6">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/50">
-          Aperçu en direct
+          Live preview
         </h2>
         <div className="mt-3 rounded-3xl bg-white p-3 shadow-sm ring-1 ring-ink/5 sm:p-4">
           {loading ? (
-            <p className="px-4 py-10 text-center text-sm text-ink/50">Chargement…</p>
+            <p className="px-4 py-10 text-center text-sm text-ink/50">Loading…</p>
           ) : (
             <ThemePreview />
           )}
@@ -190,11 +189,10 @@ export default function ThemeEditor() {
 
       <section className="mt-10">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/50">
-          Palettes de couleurs
+          Color palettes
         </h2>
         <p className="mt-1 text-sm text-ink/60">
-          Chaque palette a été conçue pour rester élégante et facile à lire. Cliquez sur celle qui
-          vous plaît.
+          Each palette was designed to stay elegant and easy to read. Click the one you like.
         </p>
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {COLOR_PRESETS.map((preset) => {
@@ -229,10 +227,10 @@ export default function ThemeEditor() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/50">Polices</h2>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/50">Fonts</h2>
         <p className="mt-1 text-sm text-ink/60">
-          Choisissez la paire de polices (titres + texte) qui vous convient, en regardant
-          directement l&rsquo;exemple.
+          Choose the font pairing (headings + body text) that suits you, by looking directly at
+          the example.
         </p>
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {FONT_PRESETS.map((preset) => {
@@ -249,10 +247,10 @@ export default function ThemeEditor() {
               >
                 {isSelected && <CheckBadge />}
                 <p className="text-xl text-ink" style={{ fontFamily: preset.fonts.displayCss }}>
-                  Vous méritez un espace où être vraiment entendu(e).
+                  You deserve a space where you are truly heard.
                 </p>
                 <p className="mt-2 text-sm text-ink/70" style={{ fontFamily: preset.fonts.bodyCss }}>
-                  Chez Anfa, l&rsquo;accompagnement thérapeutique se fait à votre rythme.
+                  At Anfa, therapeutic support happens at your own pace.
                 </p>
                 <p className="mt-3 text-sm font-semibold text-ink">{preset.name}</p>
                 <p className="mt-0.5 text-sm text-ink/60">{preset.description}</p>
@@ -270,14 +268,14 @@ export default function ThemeEditor() {
           className="flex items-center gap-2 text-sm font-semibold text-sea-deep hover:underline"
         >
           <span aria-hidden="true">{advancedOpen ? '▾' : '▸'}</span>
-          Avancé : ajuster chaque couleur individuellement
+          Advanced: adjust each color individually
         </button>
 
         {advancedOpen && (
           <div className="mt-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-ink/5">
             {colorPresetId === 'custom' && (
               <p className="mb-4 text-sm text-ink/60">
-                Vous utilisez actuellement une combinaison de couleurs personnalisée.
+                You are currently using a custom color combination.
               </p>
             )}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -308,7 +306,7 @@ export default function ThemeEditor() {
           disabled={saving}
           className="rounded-full bg-sea-deep px-6 py-2.5 font-semibold text-sand transition-colors duration-300 hover:bg-sea disabled:opacity-60"
         >
-          {saving ? 'Enregistrement…' : 'Enregistrer et appliquer sur le site'}
+          {saving ? 'Saving…' : 'Save and apply to the site'}
         </button>
         <button
           type="button"
@@ -316,7 +314,7 @@ export default function ThemeEditor() {
           disabled={resetting}
           className="rounded-full px-5 py-2.5 font-semibold text-ink/60 transition-colors duration-300 hover:text-ink disabled:opacity-60"
         >
-          {resetting ? 'Réinitialisation…' : "Réinitialiser aux couleurs et polices d'origine"}
+          {resetting ? 'Resetting…' : 'Reset to original colors and fonts'}
         </button>
       </section>
     </div>

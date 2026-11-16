@@ -41,17 +41,17 @@ function Dropzone({ onFile, disabled }) {
     >
       <UploadIcon className="h-5 w-5 text-sea-deep" />
       <p className="text-sm text-ink/70">
-        Glissez une photo ici, ou{' '}
+        Drag a photo here, or{' '}
         <button
           type="button"
           onClick={() => inputRef.current?.click()}
           disabled={disabled}
           className="font-semibold text-sea-deep underline hover:text-sea"
         >
-          choisissez un fichier
+          choose a file
         </button>
       </p>
-      <p className="text-xs text-ink/40">JPG, PNG, WEBP ou GIF — 5 Mo maximum</p>
+      <p className="text-xs text-ink/40">JPG, PNG, WEBP, or GIF — 5 MB maximum</p>
       <input
         ref={inputRef}
         type="file"
@@ -115,17 +115,17 @@ function MediaSlotCard({ slot, override, onSaved, onReset }) {
       setFile(null)
       setPreviewUrl('')
       setStatus('success')
-      setMessage('Photo mise à jour avec succès.')
+      setMessage('Photo updated successfully.')
       onSaved(slot.key, { url, altFr, altEn })
     } catch (err) {
       setStatus('error')
-      setMessage(err.message || 'Une erreur est survenue. Veuillez réessayer.')
+      setMessage(err.message || 'Something went wrong. Please try again.')
     }
   }
 
   async function handleReset() {
     const confirmed = window.confirm(
-      `Réinitialiser « ${slot.label} » à l’image d’origine ? Vous pourrez toujours la remplacer à nouveau plus tard.`
+      `Reset "${slot.label}" to the original image? You can always replace it again later.`
     )
     if (!confirmed) return
     setStatus('resetting')
@@ -137,7 +137,7 @@ function MediaSlotCard({ slot, override, onSaved, onReset }) {
       onReset(slot.key)
     } catch {
       setStatus('error')
-      setMessage('Impossible de réinitialiser cette image. Veuillez réessayer.')
+      setMessage('Unable to reset this image. Please try again.')
     }
   }
 
@@ -154,7 +154,7 @@ function MediaSlotCard({ slot, override, onSaved, onReset }) {
           <p className="mt-0.5 text-xs text-ink/50">{slot.where}</p>
           {hasOverride && (
             <span className="mt-1.5 inline-flex items-center gap-1 rounded-full bg-lavender-soft px-2.5 py-0.5 text-[11px] font-semibold text-sea-deep">
-              Photo personnalisée
+              Custom photo
             </span>
           )}
         </div>
@@ -167,32 +167,32 @@ function MediaSlotCard({ slot, override, onSaved, onReset }) {
           <img src={previewUrl} alt="" className="h-16 w-16 rounded-lg object-cover" />
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-medium text-ink/80">{file.name}</p>
-            <p className="text-xs text-ink/50">Aperçu avant l’enregistrement</p>
+            <p className="text-xs text-ink/50">Preview before saving</p>
           </div>
         </div>
       )}
 
       <details className="text-sm">
         <summary className="cursor-pointer font-medium text-ink/60 hover:text-ink">
-          Description de l’image (pour l’accessibilité et les moteurs de recherche)
+          Image description (for accessibility and search engines)
         </summary>
         <div className="mt-2 grid gap-2 sm:grid-cols-2">
           <div>
             <label className="mb-1 block text-xs font-semibold text-ink/50" htmlFor={`alt-fr-${slot.key}`}>
-              Français
+              French
             </label>
             <input
               id={`alt-fr-${slot.key}`}
               type="text"
               value={altFr}
               onChange={(event) => setAltFr(event.target.value)}
-              placeholder="Ex. : Sahra souriant dans son bureau"
+              placeholder="E.g.: Sahra souriant dans son bureau"
               className="w-full rounded-lg border border-ink/15 px-2.5 py-1.5 text-sm focus:border-sea focus:outline-none"
             />
           </div>
           <div>
             <label className="mb-1 block text-xs font-semibold text-ink/50" htmlFor={`alt-en-${slot.key}`}>
-              Anglais
+              English
             </label>
             <input
               id={`alt-en-${slot.key}`}
@@ -224,10 +224,10 @@ function MediaSlotCard({ slot, override, onSaved, onReset }) {
               disabled={busy}
               className="rounded-full bg-sea-deep px-4 py-2 text-sm font-semibold text-sand transition-colors duration-300 hover:bg-sea disabled:opacity-60"
             >
-              {status === 'saving' ? 'Enregistrement…' : 'Confirmer le remplacement'}
+              {status === 'saving' ? 'Saving…' : 'Confirm replacement'}
             </button>
             <button type="button" onClick={cancelPreview} disabled={busy} className="text-sm font-semibold text-ink/50 hover:text-ink">
-              Annuler
+              Cancel
             </button>
           </>
         )}
@@ -238,7 +238,7 @@ function MediaSlotCard({ slot, override, onSaved, onReset }) {
             disabled={busy}
             className="text-sm font-semibold text-ink/50 underline hover:text-ink disabled:opacity-60"
           >
-            {status === 'resetting' ? 'Réinitialisation…' : 'Réinitialiser à l’image d’origine'}
+            {status === 'resetting' ? 'Resetting…' : 'Reset to original image'}
           </button>
         )}
       </div>
@@ -279,14 +279,14 @@ export default function MediaManager() {
 
   return (
     <div>
-      <h1 className="font-display text-2xl text-sea-deep">Images du site</h1>
+      <h1 className="font-display text-2xl text-sea-deep">Site images</h1>
       <p className="mt-2 max-w-2xl text-ink/60">
-        Remplacez n’importe quelle photo du site : faites-la glisser sur une carte, ou cliquez pour en choisir une sur
-        votre ordinateur. Vous pourrez toujours revenir à la photo d’origine en un clic.
+        Replace any photo on the site: drag it onto a card, or click to choose one from your
+        computer. You can always go back to the original photo with one click.
       </p>
 
       {loading ? (
-        <p className="mt-8 text-sm text-ink/50">Chargement des images…</p>
+        <p className="mt-8 text-sm text-ink/50">Loading images…</p>
       ) : (
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
           {MEDIA_SLOTS.map((slot) => (

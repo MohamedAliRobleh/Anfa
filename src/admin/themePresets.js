@@ -13,7 +13,7 @@
 // file's COLOR_VARS map for which CSS variable each role controls).
 
 // Matches the :root defaults in src/index.css exactly. Shown as "current"
-// before anything has ever been saved, and restored by "Réinitialiser".
+// before anything has ever been saved, and restored by "Reset".
 export const DEFAULT_COLORS = {
   sea: '14 122 133',
   seaDeep: '8 95 104',
@@ -35,58 +35,58 @@ export const DEFAULT_FONTS = {
 }
 
 // Describes each of the 10 named color roles in plain, visual language
-// (never raw CSS variable names) for the "Avancé" individual pickers.
+// (never raw CSS variable names) for the "Advanced" individual pickers.
 // `key` matches the keys used in DEFAULT_COLORS / site_theme.colors.
 export const COLOR_ROLES = [
   {
     key: 'sea',
-    label: 'Couleur principale — boutons et liens',
-    helper: 'La couleur des boutons, liens et éléments sur lesquels on clique.',
+    label: 'Main color — buttons and links',
+    helper: 'The color of buttons, links, and clickable elements.',
   },
   {
     key: 'seaDeep',
-    label: 'Couleur principale foncée — titres',
-    helper: 'Une version plus foncée de la couleur principale, utilisée pour les titres.',
+    label: 'Dark main color — headings',
+    helper: 'A darker version of the main color, used for headings.',
   },
   {
     key: 'sunlit',
-    label: "Couleur d'accent — mise en valeur",
-    helper: 'Une touche utilisée pour attirer le regard sur un détail.',
+    label: 'Accent color — highlights',
+    helper: 'A touch used to draw attention to a detail.',
   },
   {
     key: 'lavender',
-    label: 'Couleur secondaire',
-    helper: "Une couleur d'appoint, utilisée plus discrètement que la principale.",
+    label: 'Secondary color',
+    helper: 'A supporting color, used more subtly than the main one.',
   },
   {
     key: 'lavenderInk',
-    label: 'Texte sur fond secondaire',
-    helper: 'La couleur du texte quand il apparaît sur un fond secondaire.',
+    label: 'Text on secondary background',
+    helper: 'The color of text when it appears on a secondary background.',
   },
   {
     key: 'lavenderSoft',
-    label: 'Fond secondaire clair',
-    helper: 'Un fond clair et doux, utilisé pour certaines cartes ou encadrés.',
+    label: 'Light secondary background',
+    helper: 'A light, soft background used for certain cards or boxes.',
   },
   {
     key: 'lavenderWash',
-    label: 'Fond secondaire très clair',
-    helper: 'Un fond encore plus clair, presque blanc, pour de grandes zones.',
+    label: 'Very light secondary background',
+    helper: 'An even lighter background, almost white, for large areas.',
   },
   {
     key: 'mist',
-    label: 'Fond doux (sections)',
-    helper: 'Le fond utilisé pour certaines sections de page, en alternance avec le fond général.',
+    label: 'Soft background (sections)',
+    helper: 'The background used for certain page sections, alternating with the general background.',
   },
   {
     key: 'sand',
-    label: 'Fond général du site',
-    helper: 'Le fond principal, derrière tout le contenu du site.',
+    label: 'Overall site background',
+    helper: 'The main background, behind all the site content.',
   },
   {
     key: 'ink',
-    label: 'Couleur du texte',
-    helper: 'La couleur du texte courant, partout sur le site.',
+    label: 'Text color',
+    helper: 'The color of regular text, everywhere on the site.',
   },
 ]
 
@@ -95,14 +95,14 @@ export const COLOR_ROLES = [
 export const COLOR_PRESETS = [
   {
     id: 'teal-apaisant',
-    name: 'Teal apaisant',
-    description: "La palette d'origine du site : un teal profond rehaussé d'une touche de lavande.",
+    name: 'Calming teal',
+    description: "The site's original palette: a deep teal lifted by a touch of lavender.",
     colors: { ...DEFAULT_COLORS },
   },
   {
     id: 'lavande-sereine',
-    name: 'Lavande sereine',
-    description: 'Un violet doux et une touche de terracotta, pour une ambiance introspective.',
+    name: 'Serene lavender',
+    description: 'A soft purple with a touch of terracotta, for an introspective mood.',
     colors: {
       sea: '108 97 160',
       seaDeep: '74 64 122',
@@ -118,8 +118,8 @@ export const COLOR_PRESETS = [
   },
   {
     id: 'argile-chaleureuse',
-    name: 'Argile chaleureuse',
-    description: 'Des tons de terre cuite et de sauge, chaleureux et enveloppants.',
+    name: 'Warm clay',
+    description: 'Terracotta and sage tones, warm and enveloping.',
     colors: {
       sea: '168 108 74',
       seaDeep: '128 78 52',
@@ -135,8 +135,8 @@ export const COLOR_PRESETS = [
   },
   {
     id: 'sauge-apaisante',
-    name: 'Sauge apaisante',
-    description: 'Un vert sauge reposant, relevé par un accent ocre chaud.',
+    name: 'Calming sage',
+    description: 'A restful sage green, lifted by a warm ochre accent.',
     colors: {
       sea: '90 128 104',
       seaDeep: '61 94 76',
@@ -152,8 +152,8 @@ export const COLOR_PRESETS = [
   },
   {
     id: 'bleu-horizon',
-    name: 'Bleu horizon',
-    description: 'Un bleu profond et reposant, pour une impression de clarté et de calme.',
+    name: 'Horizon blue',
+    description: 'A deep, restful blue, for a feeling of clarity and calm.',
     colors: {
       sea: '42 101 140',
       seaDeep: '27 72 102',
@@ -169,8 +169,8 @@ export const COLOR_PRESETS = [
   },
   {
     id: 'rose-poudre',
-    name: 'Rose poudré',
-    description: 'Un rose poudré et un mauve doux, pour une atmosphère tout en délicatesse.',
+    name: 'Powder pink',
+    description: 'A powder pink and soft mauve, for a delicate atmosphere.',
     colors: {
       sea: '158 98 110',
       seaDeep: '118 68 78',
@@ -194,13 +194,13 @@ export const FONT_PRESETS = [
   {
     id: 'fraunces-hanken',
     name: 'Fraunces & Hanken Grotesk',
-    description: "La paire d'origine du site : chaleureuse et contemporaine.",
+    description: "The site's original pairing: warm and contemporary.",
     fonts: { ...DEFAULT_FONTS },
   },
   {
     id: 'playfair-inter',
     name: 'Playfair Display & Inter',
-    description: 'Élégance éditoriale, nette et intemporelle.',
+    description: 'Editorial elegance, crisp and timeless.',
     fonts: {
       displayCss: "'Playfair Display', Georgia, serif",
       bodyCss: "'Inter', Arial, sans-serif",
@@ -211,7 +211,7 @@ export const FONT_PRESETS = [
   {
     id: 'lora-nunito',
     name: 'Lora & Nunito Sans',
-    description: 'Douceur arrondie, accueillante et très facile à lire.',
+    description: 'Rounded softness, welcoming and very easy to read.',
     fonts: {
       displayCss: "'Lora', Georgia, serif",
       bodyCss: "'Nunito Sans', Arial, sans-serif",
@@ -222,7 +222,7 @@ export const FONT_PRESETS = [
   {
     id: 'cormorant-jost',
     name: 'Cormorant & Jost',
-    description: 'Minimalisme raffiné, délicat et aérien.',
+    description: 'Refined minimalism, delicate and airy.',
     fonts: {
       displayCss: "'Cormorant', Georgia, serif",
       bodyCss: "'Jost', Arial, sans-serif",
@@ -233,7 +233,7 @@ export const FONT_PRESETS = [
   {
     id: 'source-serif-work',
     name: 'Source Serif 4 & Work Sans',
-    description: 'Sobriété contemporaine, claire et professionnelle.',
+    description: 'Contemporary sobriety, clear and professional.',
     fonts: {
       displayCss: "'Source Serif 4', Georgia, serif",
       bodyCss: "'Work Sans', Arial, sans-serif",

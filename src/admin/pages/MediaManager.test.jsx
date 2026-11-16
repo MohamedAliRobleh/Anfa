@@ -35,7 +35,7 @@ function renderMediaManager() {
 
 test('renders a card for every slot in MEDIA_SLOTS', async () => {
   renderMediaManager()
-  await waitFor(() => expect(screen.getByText('Logo du site')).toBeInTheDocument())
+  await waitFor(() => expect(screen.getByText('Site logo')).toBeInTheDocument())
   for (const slot of MEDIA_SLOTS) {
     expect(screen.getByText(slot.label)).toBeInTheDocument()
   }
@@ -44,12 +44,12 @@ test('renders a card for every slot in MEDIA_SLOTS', async () => {
 test('shows the built-in default image when there is no override', async () => {
   selectMock.mockResolvedValueOnce({ data: [], error: null })
   renderMediaManager()
-  await waitFor(() => expect(screen.getByText('Photo de Sahra')).toBeInTheDocument())
-  const portrait = screen.getByAltText('Photo de Sahra')
+  await waitFor(() => expect(screen.getByText('Photo of Sahra')).toBeInTheDocument())
+  const portrait = screen.getByAltText('Photo of Sahra')
   expect(portrait).toHaveAttribute('src', '/img/sahra-portrait.webp')
   // No "custom photo" badge and no reset action when nothing has been overridden.
-  expect(screen.queryByText('Photo personnalisée')).not.toBeInTheDocument()
-  expect(screen.queryByText('Réinitialiser à l’image d’origine')).not.toBeInTheDocument()
+  expect(screen.queryByText('Custom photo')).not.toBeInTheDocument()
+  expect(screen.queryByText('Reset to original image')).not.toBeInTheDocument()
 })
 
 test('shows the saved override image and a reset action when one exists', async () => {
@@ -58,7 +58,7 @@ test('shows the saved override image and a reset action when one exists', async 
     error: null,
   })
   renderMediaManager()
-  await waitFor(() => expect(screen.getByAltText('Logo du site')).toHaveAttribute('src', 'https://example.com/custom-logo.png'))
-  expect(screen.getAllByText('Photo personnalisée').length).toBeGreaterThan(0)
-  expect(screen.getAllByText('Réinitialiser à l’image d’origine').length).toBeGreaterThan(0)
+  await waitFor(() => expect(screen.getByAltText('Site logo')).toHaveAttribute('src', 'https://example.com/custom-logo.png'))
+  expect(screen.getAllByText('Custom photo').length).toBeGreaterThan(0)
+  expect(screen.getAllByText('Reset to original image').length).toBeGreaterThan(0)
 })

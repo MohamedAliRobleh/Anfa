@@ -72,42 +72,42 @@ test('opening the advanced section exposes a color picker for every role, seeded
   renderEditor()
   await waitFor(() => expect(fetchSiteThemeMock).toHaveBeenCalledTimes(1))
 
-  fireEvent.click(screen.getByRole('button', { name: /Avancé/i }))
+  fireEvent.click(screen.getByRole('button', { name: /Advanced/i }))
 
-  const mainColorPicker = screen.getByLabelText('Couleur principale — boutons et liens')
+  const mainColorPicker = screen.getByLabelText('Main color — buttons and links')
   expect(mainColorPicker).toHaveAttribute('type', 'color')
 })
 
-test('clicking "Enregistrer" saves the currently selected colors and fonts', async () => {
+test('clicking "Save" saves the currently selected colors and fonts', async () => {
   renderEditor()
   await waitFor(() => expect(fetchSiteThemeMock).toHaveBeenCalledTimes(1))
 
-  fireEvent.click(screen.getByRole('button', { name: /Enregistrer et appliquer sur le site/i }))
+  fireEvent.click(screen.getByRole('button', { name: /Save and apply to the site/i }))
 
   await waitFor(() =>
     expect(saveSiteThemeMock).toHaveBeenCalledWith({ colors: DEFAULT_COLORS, fonts: DEFAULT_FONTS })
   )
-  expect(await screen.findByRole('status')).toHaveTextContent(/enregistré/i)
+  expect(await screen.findByRole('status')).toHaveTextContent(/saved/i)
 })
 
-test('shows a friendly French error if saving fails', async () => {
+test('shows a friendly error if saving fails', async () => {
   saveSiteThemeMock.mockRejectedValueOnce(new Error('network down'))
   renderEditor()
   await waitFor(() => expect(fetchSiteThemeMock).toHaveBeenCalledTimes(1))
 
-  fireEvent.click(screen.getByRole('button', { name: /Enregistrer et appliquer sur le site/i }))
+  fireEvent.click(screen.getByRole('button', { name: /Save and apply to the site/i }))
 
-  expect(await screen.findByRole('status')).toHaveTextContent(/erreur/i)
+  expect(await screen.findByRole('status')).toHaveTextContent(/something went wrong/i)
 })
 
-test('clicking "Réinitialiser" calls resetSiteTheme and restores the built-in defaults', async () => {
+test('clicking "Reset" calls resetSiteTheme and restores the built-in defaults', async () => {
   renderEditor()
   await waitFor(() => expect(fetchSiteThemeMock).toHaveBeenCalledTimes(1))
 
-  fireEvent.click(screen.getByRole('button', { name: /Réinitialiser aux couleurs et polices d'origine/i }))
+  fireEvent.click(screen.getByRole('button', { name: /Reset to original colors and fonts/i }))
 
   await waitFor(() => expect(resetSiteThemeMock).toHaveBeenCalledTimes(1))
-  expect(await screen.findByRole('status')).toHaveTextContent(/restaurées/i)
+  expect(await screen.findByRole('status')).toHaveTextContent(/restored/i)
 })
 
 test('preselects the matching preset when a saved custom theme is loaded', async () => {
@@ -118,7 +118,7 @@ test('preselects the matching preset when a saved custom theme is loaded', async
   renderEditor()
 
   await waitFor(() =>
-    expect(screen.getByRole('button', { name: /Sauge apaisante/ })).toHaveAttribute(
+    expect(screen.getByRole('button', { name: /Calming sage/ })).toHaveAttribute(
       'aria-pressed',
       'true'
     )

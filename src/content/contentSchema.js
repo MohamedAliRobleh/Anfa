@@ -1,6 +1,6 @@
 // Auto-generated from src/i18n/fr.json by a one-off script (see
 // docs/ADMIN_SETUP.md) — every translatable string on the site, grouped by
-// page, with a plain-French label for each. Consumed by
+// page, with a plain-English label for each. Consumed by
 // src/admin/pages/ContentEditor.jsx so the admin never sees raw i18n keys.
 //
 // Each field's "key" is the exact dotted i18n key (or, for blog posts, the
@@ -10,307 +10,307 @@
 export const CONTENT_SCHEMA = [
   {
     "page": "common",
-    "pageLabel": "Commun (menu, boutons, pied de page)",
+    "pageLabel": "Common (menu, buttons, footer)",
     "fields": [
       {
         "key": "common.nav.home",
-        "label": "Menu de navigation — Home",
+        "label": "Navigation menu — Home",
         "multiline": false
       },
       {
         "key": "common.nav.about",
-        "label": "Menu de navigation — About",
+        "label": "Navigation menu — About",
         "multiline": false
       },
       {
         "key": "common.nav.services",
-        "label": "Menu de navigation — Services",
+        "label": "Navigation menu — Services",
         "multiline": false
       },
       {
         "key": "common.nav.approach",
-        "label": "Menu de navigation — Approach",
+        "label": "Navigation menu — Approach",
         "multiline": false
       },
       {
         "key": "common.nav.whatWeHelpWith",
-        "label": "Menu de navigation — What we help with",
+        "label": "Navigation menu — What we help with",
         "multiline": false
       },
       {
         "key": "common.nav.fees",
-        "label": "Menu de navigation — Fees",
+        "label": "Navigation menu — Fees",
         "multiline": false
       },
       {
         "key": "common.nav.products",
-        "label": "Menu de navigation — Products",
+        "label": "Navigation menu — Products",
         "multiline": false
       },
       {
         "key": "common.nav.booking",
-        "label": "Menu de navigation — Booking",
+        "label": "Navigation menu — Booking",
         "multiline": false
       },
       {
         "key": "common.nav.contact",
-        "label": "Menu de navigation — Contact",
+        "label": "Navigation menu — Contact",
         "multiline": false
       },
       {
         "key": "common.nav.faq",
-        "label": "Menu de navigation — Faq",
+        "label": "Navigation menu — Faq",
         "multiline": false
       },
       {
         "key": "common.nav.blog",
-        "label": "Menu de navigation — Blog",
+        "label": "Navigation menu — Blog",
         "multiline": false
       },
       {
         "key": "common.nav.testimonials",
-        "label": "Menu de navigation — Testimonials",
+        "label": "Navigation menu — Testimonials",
         "multiline": false
       },
       {
         "key": "common.nav.resources",
-        "label": "Menu de navigation — Resources",
+        "label": "Navigation menu — Resources",
         "multiline": false
       },
       {
         "key": "common.nav.emergency",
-        "label": "Menu de navigation — Emergency",
+        "label": "Navigation menu — Emergency",
         "multiline": false
       },
       {
         "key": "common.nav.safetyPlan",
-        "label": "Menu de navigation — Safety plan",
+        "label": "Navigation menu — Safety plan",
         "multiline": false
       },
       {
         "key": "common.nav.learnMore",
-        "label": "Menu de navigation — Learn more",
+        "label": "Navigation menu — Learn more",
         "multiline": false
       },
       {
         "key": "common.nav.openMenu",
-        "label": "Menu de navigation — Open menu",
+        "label": "Navigation menu — Open menu",
         "multiline": false
       },
       {
         "key": "common.nav.closeMenu",
-        "label": "Menu de navigation — Close menu",
+        "label": "Navigation menu — Close menu",
         "multiline": false
       },
       {
         "key": "common.cta.bookFree",
-        "label": "Bouton — Book free",
+        "label": "Button — Book free",
         "multiline": false
       },
       {
         "key": "common.cta.discoverServices",
-        "label": "Bouton — Discover services",
+        "label": "Button — Discover services",
         "multiline": false
       },
       {
         "key": "common.cta.bookNow",
-        "label": "Bouton — Book now",
+        "label": "Button — Book now",
         "multiline": false
       },
       {
         "key": "common.cta.sendMessage",
-        "label": "Bouton — Send message",
+        "label": "Button — Send message",
         "multiline": false
       },
       {
         "key": "common.cta.readMore",
-        "label": "Bouton — Read more",
+        "label": "Button — Read more",
         "multiline": false
       },
       {
         "key": "common.cta.viewAll",
-        "label": "Bouton — View all",
+        "label": "Button — View all",
         "multiline": false
       },
       {
         "key": "common.cta.getDirections",
-        "label": "Bouton — Get directions",
+        "label": "Button — Get directions",
         "multiline": false
       },
       {
         "key": "common.cta.shopProduct",
-        "label": "Bouton — Shop product",
+        "label": "Button — Shop product",
         "multiline": false
       },
       {
         "key": "common.tagline",
-        "label": "Slogan du site",
+        "label": "Site tagline",
         "multiline": false
       },
       {
         "key": "common.crisis.text",
-        "label": "Message d’urgence — Texte",
+        "label": "Emergency banner — Text",
         "multiline": true
       },
       {
         "key": "common.footer.address",
-        "label": "Pied de page — Adresse",
+        "label": "Footer — Address",
         "multiline": false
       },
       {
         "key": "common.footer.privacy",
-        "label": "Pied de page — Privacy",
+        "label": "Footer — Privacy",
         "multiline": false
       },
       {
         "key": "common.footer.rights",
-        "label": "Pied de page — Rights",
+        "label": "Footer — Rights",
         "multiline": false
       },
       {
         "key": "common.cookie.text",
-        "label": "Bandeau de cookies — Texte",
+        "label": "Cookie banner — Text",
         "multiline": true
       },
       {
         "key": "common.cookie.accept",
-        "label": "Bandeau de cookies — Accept",
+        "label": "Cookie banner — Accept",
         "multiline": false
       }
     ]
   },
   {
     "page": "booking",
-    "pageLabel": "Formulaire de réservation",
+    "pageLabel": "Booking form",
     "fields": [
       {
         "key": "booking.title",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "booking.subtitle",
-        "label": "Sous-titre",
+        "label": "Subtitle",
         "multiline": false
       },
       {
         "key": "booking.progress.service",
-        "label": "Barre de progression — Service",
+        "label": "Progress bar — Service",
         "multiline": false
       },
       {
         "key": "booking.progress.modality",
-        "label": "Barre de progression — Modality",
+        "label": "Progress bar — Modality",
         "multiline": false
       },
       {
         "key": "booking.progress.datetime",
-        "label": "Barre de progression — Datetime",
+        "label": "Progress bar — Datetime",
         "multiline": false
       },
       {
         "key": "booking.progress.details",
-        "label": "Barre de progression — Details",
+        "label": "Progress bar — Details",
         "multiline": false
       },
       {
         "key": "booking.step1.heading",
-        "label": "Étape 1 — Titre",
+        "label": "Step 1 — Title",
         "multiline": false
       },
       {
         "key": "booking.step1.individual",
-        "label": "Étape 1 — Individuel",
+        "label": "Step 1 — Individual",
         "multiline": false
       },
       {
         "key": "booking.step1.couple",
-        "label": "Étape 1 — Couple",
+        "label": "Step 1 — Couple",
         "multiline": false
       },
       {
         "key": "booking.step1.group",
-        "label": "Étape 1 — Groupe",
+        "label": "Step 1 — Group",
         "multiline": false
       },
       {
         "key": "booking.step1.spiritual",
-        "label": "Étape 1 — Spiritualité",
+        "label": "Step 1 — Spirituality",
         "multiline": false
       },
       {
         "key": "booking.step1.freeConsult",
-        "label": "Étape 1 — Consultation gratuite",
+        "label": "Step 1 — Free consultation",
         "multiline": false
       },
       {
         "key": "booking.step1.noCommitment",
-        "label": "Étape 1 — No commitment",
+        "label": "Step 1 — No commitment",
         "multiline": false
       },
       {
         "key": "booking.step2.heading",
-        "label": "Étape 2 — Titre",
+        "label": "Step 2 — Title",
         "multiline": false
       },
       {
         "key": "booking.step2.inPerson",
-        "label": "Étape 2 — In person",
+        "label": "Step 2 — In person",
         "multiline": false
       },
       {
         "key": "booking.step2.online",
-        "label": "Étape 2 — Online",
+        "label": "Step 2 — Online",
         "multiline": false
       },
       {
         "key": "booking.step2.inPersonHelper",
-        "label": "Étape 2 — In person helper",
+        "label": "Step 2 — In person helper",
         "multiline": false
       },
       {
         "key": "booking.step2.onlineHelper",
-        "label": "Étape 2 — Online helper",
+        "label": "Step 2 — Online helper",
         "multiline": false
       },
       {
         "key": "booking.step3.heading",
-        "label": "Étape 3 — Titre",
+        "label": "Step 3 — Title",
         "multiline": false
       },
       {
         "key": "booking.step3.noSlots",
-        "label": "Étape 3 — No slots",
+        "label": "Step 3 — No slots",
         "multiline": false
       },
       {
         "key": "booking.step4.heading",
-        "label": "Étape 4 — Titre",
+        "label": "Step 4 — Title",
         "multiline": false
       },
       {
         "key": "booking.step4.fullName",
-        "label": "Étape 4 — Full name",
+        "label": "Step 4 — Full name",
         "multiline": false
       },
       {
         "key": "booking.step4.email",
-        "label": "Étape 4 — Email",
+        "label": "Step 4 — Email",
         "multiline": false
       },
       {
         "key": "booking.step4.phone",
-        "label": "Étape 4 — Phone",
+        "label": "Step 4 — Phone",
         "multiline": false
       },
       {
         "key": "booking.step4.message",
-        "label": "Étape 4 — Message",
+        "label": "Step 4 — Message",
         "multiline": false
       },
       {
         "key": "booking.step4.consent",
-        "label": "Étape 4 — Consent",
+        "label": "Step 4 — Consent",
         "multiline": false
       },
       {
@@ -330,17 +330,17 @@ export const CONTENT_SCHEMA = [
       },
       {
         "key": "booking.success.title",
-        "label": "Message de succès — Titre",
+        "label": "Success message — Title",
         "multiline": false
       },
       {
         "key": "booking.success.body",
-        "label": "Message de succès — Texte",
+        "label": "Success message — Text",
         "multiline": true
       },
       {
         "key": "booking.success.backHome",
-        "label": "Message de succès — Back home",
+        "label": "Success message — Back home",
         "multiline": false
       },
       {
@@ -350,38 +350,38 @@ export const CONTENT_SCHEMA = [
       },
       {
         "key": "booking.submitError",
-        "label": "Message d’erreur d’envoi",
+        "label": "Submit error message",
         "multiline": true
       }
     ]
   },
   {
     "page": "contact",
-    "pageLabel": "Formulaire de contact",
+    "pageLabel": "Contact form",
     "fields": [
       {
         "key": "contact.title",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "contact.subtitle",
-        "label": "Sous-titre",
+        "label": "Subtitle",
         "multiline": false
       },
       {
         "key": "contact.preferTalk",
-        "label": "Phrase « préférez en parler »",
+        "label": "\"Prefer to talk\" line",
         "multiline": false
       },
       {
         "key": "contact.formHeading",
-        "label": "Titre du formulaire",
+        "label": "Form title",
         "multiline": false
       },
       {
         "key": "contact.formIntro",
-        "label": "Introduction du formulaire",
+        "label": "Form intro",
         "multiline": true
       },
       {
@@ -411,280 +411,280 @@ export const CONTENT_SCHEMA = [
       },
       {
         "key": "contact.success",
-        "label": "Message de succès",
+        "label": "Success message",
         "multiline": true
       },
       {
         "key": "contact.hours",
-        "label": "Heures d’ouverture",
+        "label": "Opening hours",
         "multiline": false
       },
       {
         "key": "contact.address",
-        "label": "Adresse",
+        "label": "Address",
         "multiline": false
       },
       {
         "key": "contact.submitError",
-        "label": "Message d’erreur d’envoi",
+        "label": "Submit error message",
         "multiline": true
       }
     ]
   },
   {
     "page": "home",
-    "pageLabel": "Page d’accueil",
+    "pageLabel": "Home page",
     "fields": [
       {
         "key": "home.hero.title",
-        "label": "En-tête (bandeau principal) — Titre",
+        "label": "Hero banner — Title",
         "multiline": false
       },
       {
         "key": "home.hero.subtitle",
-        "label": "En-tête (bandeau principal) — Sous-titre",
+        "label": "Hero banner — Subtitle",
         "multiline": false
       },
       {
         "key": "home.intro.heading",
-        "label": "Introduction — Titre",
+        "label": "Intro — Title",
         "multiline": false
       },
       {
         "key": "home.intro.body",
-        "label": "Introduction — Texte",
+        "label": "Intro — Text",
         "multiline": true
       },
       {
         "key": "home.intro.badge1",
-        "label": "Introduction — Badge1",
+        "label": "Intro — Badge 1",
         "multiline": false
       },
       {
         "key": "home.intro.badge2",
-        "label": "Introduction — Badge2",
+        "label": "Intro — Badge 2",
         "multiline": false
       },
       {
         "key": "home.intro.badge3",
-        "label": "Introduction — Badge3",
+        "label": "Intro — Badge 3",
         "multiline": false
       },
       {
         "key": "home.servicesPreview.heading",
-        "label": "Aperçu des services — Titre",
+        "label": "Services preview — Title",
         "multiline": false
       },
       {
         "key": "home.servicesPreview.individual.title",
-        "label": "Aperçu des services / Individuel — Titre",
+        "label": "Services preview / Individual — Title",
         "multiline": false
       },
       {
         "key": "home.servicesPreview.individual.description",
-        "label": "Aperçu des services / Individuel — Description",
+        "label": "Services preview / Individual — Description",
         "multiline": true
       },
       {
         "key": "home.servicesPreview.couple.title",
-        "label": "Aperçu des services / Couple — Titre",
+        "label": "Services preview / Couple — Title",
         "multiline": false
       },
       {
         "key": "home.servicesPreview.couple.description",
-        "label": "Aperçu des services / Couple — Description",
+        "label": "Services preview / Couple — Description",
         "multiline": true
       },
       {
         "key": "home.servicesPreview.group.title",
-        "label": "Aperçu des services / Groupe — Titre",
+        "label": "Services preview / Group — Title",
         "multiline": false
       },
       {
         "key": "home.servicesPreview.group.description",
-        "label": "Aperçu des services / Groupe — Description",
+        "label": "Services preview / Group — Description",
         "multiline": true
       },
       {
         "key": "home.servicesPreview.spiritual.title",
-        "label": "Aperçu des services / Spiritualité — Titre",
+        "label": "Services preview / Spirituality — Title",
         "multiline": false
       },
       {
         "key": "home.servicesPreview.spiritual.description",
-        "label": "Aperçu des services / Spiritualité — Description",
+        "label": "Services preview / Spirituality — Description",
         "multiline": true
       },
       {
         "key": "home.approachSummary.heading",
-        "label": "Résumé de l’approche — Titre",
+        "label": "Approach summary — Title",
         "multiline": false
       },
       {
         "key": "home.approachSummary.cbt.title",
-        "label": "Résumé de l’approche / TCC — Titre",
+        "label": "Approach summary / CBT — Title",
         "multiline": false
       },
       {
         "key": "home.approachSummary.cbt.description",
-        "label": "Résumé de l’approche / TCC — Description",
+        "label": "Approach summary / CBT — Description",
         "multiline": true
       },
       {
         "key": "home.approachSummary.narrative.title",
-        "label": "Résumé de l’approche / Narrative — Titre",
+        "label": "Approach summary / Narrative — Title",
         "multiline": false
       },
       {
         "key": "home.approachSummary.narrative.description",
-        "label": "Résumé de l’approche / Narrative — Description",
+        "label": "Approach summary / Narrative — Description",
         "multiline": true
       },
       {
         "key": "home.approachSummary.mindfulness.title",
-        "label": "Résumé de l’approche / Pleine conscience — Titre",
+        "label": "Approach summary / Mindfulness — Title",
         "multiline": false
       },
       {
         "key": "home.approachSummary.mindfulness.description",
-        "label": "Résumé de l’approche / Pleine conscience — Description",
+        "label": "Approach summary / Mindfulness — Description",
         "multiline": true
       },
       {
         "key": "home.approachSummary.artTherapy.title",
-        "label": "Résumé de l’approche / Art-thérapie — Titre",
+        "label": "Approach summary / Art therapy — Title",
         "multiline": false
       },
       {
         "key": "home.approachSummary.artTherapy.description",
-        "label": "Résumé de l’approche / Art-thérapie — Description",
+        "label": "Approach summary / Art therapy — Description",
         "multiline": true
       },
       {
         "key": "home.reassurance.modalities",
-        "label": "Bande de réassurance — Modalités",
+        "label": "Reassurance strip — Modalities",
         "multiline": false
       },
       {
         "key": "home.reassurance.languages",
-        "label": "Bande de réassurance — Langues",
+        "label": "Reassurance strip — Languages",
         "multiline": false
       },
       {
         "key": "home.reassurance.insurance",
-        "label": "Bande de réassurance — Assurance",
+        "label": "Reassurance strip — Insurance",
         "multiline": false
       },
       {
         "key": "home.reassurance.confidentiality",
-        "label": "Bande de réassurance — Confidentialité",
+        "label": "Reassurance strip — Confidentiality",
         "multiline": false
       },
       {
         "key": "home.testimonialsPreview.heading",
-        "label": "Aperçu des témoignages — Titre",
+        "label": "Testimonials preview — Title",
         "multiline": false
       },
       {
         "key": "home.blogPreview.heading",
-        "label": "Aperçu du blogue — Titre",
+        "label": "Blog preview — Title",
         "multiline": false
       },
       {
         "key": "home.finalCta.heading",
-        "label": "Bandeau final d’appel à l’action — Titre",
+        "label": "Final call-to-action banner — Title",
         "multiline": false
       }
     ]
   },
   {
     "page": "about",
-    "pageLabel": "Page À propos",
+    "pageLabel": "About page",
     "fields": [
       {
         "key": "about.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "about.bio",
-        "label": "Biographie",
+        "label": "Biography",
         "multiline": true
       },
       {
         "key": "about.philosophy",
-        "label": "Phrase de philosophie",
+        "label": "Philosophy line",
         "multiline": true
       },
       {
         "key": "about.credentialsHeading",
-        "label": "Titre : titres et formation",
+        "label": "Title: credentials and training",
         "multiline": false
       },
       {
         "key": "about.credentials.rsw",
-        "label": "Titres et formation — Travailleuse sociale autorisée (RSW)",
+        "label": "Credentials and training — Registered Social Worker (RSW)",
         "multiline": false
       },
       {
         "key": "about.credentials.msw",
-        "label": "Titres et formation — Maîtrise en travail social (MSW)",
+        "label": "Credentials and training — Master of Social Work (MSW)",
         "multiline": false
       },
       {
         "key": "about.credentials.rece",
-        "label": "Titres et formation — Éducatrice de la petite enfance (RECE)",
+        "label": "Credentials and training — Registered Early Childhood Educator (RECE)",
         "multiline": false
       },
       {
         "key": "about.credentials.addiction",
-        "label": "Titres et formation — Dépendance et santé mentale",
+        "label": "Credentials and training — Addiction and mental health",
         "multiline": false
       },
       {
         "key": "about.communitiesHeading",
-        "label": "Titre : auprès de qui",
+        "label": "Title: who we work with",
         "multiline": true
       },
       {
         "key": "about.communities",
-        "label": "Texte : auprès de qui",
+        "label": "Text: who we work with",
         "multiline": true
       },
       {
         "key": "about.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       }
     ]
   },
   {
     "page": "services",
-    "pageLabel": "Page Services",
+    "pageLabel": "Services page",
     "fields": [
       {
         "key": "services.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "services.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "services.items.individual.title",
-        "label": "Individuel — Titre",
+        "label": "Individual — Title",
         "multiline": false
       },
       {
         "key": "services.items.individual.description",
-        "label": "Individuel — Description",
+        "label": "Individual — Description",
         "multiline": true
       },
       {
         "key": "services.items.couple.title",
-        "label": "Couple — Titre",
+        "label": "Couple — Title",
         "multiline": false
       },
       {
@@ -694,260 +694,260 @@ export const CONTENT_SCHEMA = [
       },
       {
         "key": "services.items.group.title",
-        "label": "Groupe — Titre",
+        "label": "Group — Title",
         "multiline": false
       },
       {
         "key": "services.items.group.description",
-        "label": "Groupe — Description",
+        "label": "Group — Description",
         "multiline": true
       },
       {
         "key": "services.items.spiritual.title",
-        "label": "Spiritualité — Titre",
+        "label": "Spirituality — Title",
         "multiline": false
       },
       {
         "key": "services.items.spiritual.description",
-        "label": "Spiritualité — Description",
+        "label": "Spirituality — Description",
         "multiline": true
       },
       {
         "key": "services.expertiseHeading",
-        "label": "Titre : champs d’expertise",
+        "label": "Title: areas of expertise",
         "multiline": false
       },
       {
         "key": "services.expertiseList",
-        "label": "Liste des champs d’expertise",
+        "label": "List of areas of expertise",
         "multiline": true
       }
     ]
   },
   {
     "page": "approach",
-    "pageLabel": "Page Approche",
+    "pageLabel": "Approach page",
     "fields": [
       {
         "key": "approach.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "approach.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "approach.methods.cbt.title",
-        "label": "Méthode / TCC — Titre",
+        "label": "Method / CBT — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.cbt.description",
-        "label": "Méthode / TCC — Description",
+        "label": "Method / CBT — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.narrative.title",
-        "label": "Méthode / Narrative — Titre",
+        "label": "Method / Narrative — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.narrative.description",
-        "label": "Méthode / Narrative — Description",
+        "label": "Method / Narrative — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.act.title",
-        "label": "Méthode / ACT — Titre",
+        "label": "Method / ACT — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.act.description",
-        "label": "Méthode / ACT — Description",
+        "label": "Method / ACT — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.mindfulness.title",
-        "label": "Méthode / Pleine conscience — Titre",
+        "label": "Method / Mindfulness — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.mindfulness.description",
-        "label": "Méthode / Pleine conscience — Description",
+        "label": "Method / Mindfulness — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.artTherapy.title",
-        "label": "Méthode / Art-thérapie — Titre",
+        "label": "Method / Art therapy — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.artTherapy.description",
-        "label": "Méthode / Art-thérapie — Description",
+        "label": "Method / Art therapy — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.playTherapy.title",
-        "label": "Méthode / Jeu thérapeutique — Titre",
+        "label": "Method / Play therapy — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.playTherapy.description",
-        "label": "Méthode / Jeu thérapeutique — Description",
+        "label": "Method / Play therapy — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.motivational.title",
-        "label": "Méthode / Entretien motivationnel — Titre",
+        "label": "Method / Motivational interviewing — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.motivational.description",
-        "label": "Méthode / Entretien motivationnel — Description",
+        "label": "Method / Motivational interviewing — Description",
         "multiline": true
       },
       {
         "key": "approach.methods.culturallySensitive.title",
-        "label": "Méthode / Sensibilité culturelle — Titre",
+        "label": "Method / Cultural sensitivity — Title",
         "multiline": false
       },
       {
         "key": "approach.methods.culturallySensitive.description",
-        "label": "Méthode / Sensibilité culturelle — Description",
+        "label": "Method / Cultural sensitivity — Description",
         "multiline": true
       },
       {
         "key": "approach.firstSessionHeading",
-        "label": "Titre : première séance",
+        "label": "Title: first session",
         "multiline": true
       },
       {
         "key": "approach.firstSession",
-        "label": "Première séance",
+        "label": "First session",
         "multiline": true
       }
     ]
   },
   {
     "page": "whatWeHelpWith",
-    "pageLabel": "Page Nos domaines d’aide",
+    "pageLabel": "What we help with page",
     "fields": [
       {
         "key": "whatWeHelpWith.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.treatmentsLabel",
-        "label": "Libellé « comment nous aidons »",
+        "label": "\"How we help\" label",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.anxiety.title",
-        "label": "Anxiété — Titre",
+        "label": "Anxiety — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.anxiety.description",
-        "label": "Anxiété — Description",
+        "label": "Anxiety — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.depression.title",
-        "label": "Dépression — Titre",
+        "label": "Depression — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.depression.description",
-        "label": "Dépression — Description",
+        "label": "Depression — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.grief.title",
-        "label": "Deuil et perte — Titre",
+        "label": "Grief and loss — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.grief.description",
-        "label": "Deuil et perte — Description",
+        "label": "Grief and loss — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.relationships.title",
-        "label": "Relations et couple — Titre",
+        "label": "Relationships and couples — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.relationships.description",
-        "label": "Relations et couple — Description",
+        "label": "Relationships and couples — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.trauma.title",
-        "label": "Traumatisme — Titre",
+        "label": "Trauma — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.trauma.description",
-        "label": "Traumatisme — Description",
+        "label": "Trauma — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.stressBurnout.title",
-        "label": "Épuisement professionnel — Titre",
+        "label": "Burnout — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.stressBurnout.description",
-        "label": "Épuisement professionnel — Description",
+        "label": "Burnout — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.lifeTransitions.title",
-        "label": "Transitions de vie — Titre",
+        "label": "Life transitions — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.lifeTransitions.description",
-        "label": "Transitions de vie — Description",
+        "label": "Life transitions — Description",
         "multiline": true
       },
       {
         "key": "whatWeHelpWith.items.childrenTeens.title",
-        "label": "Enfants et adolescents — Titre",
+        "label": "Children and teens — Title",
         "multiline": false
       },
       {
         "key": "whatWeHelpWith.items.childrenTeens.description",
-        "label": "Enfants et adolescents — Description",
+        "label": "Children and teens — Description",
         "multiline": true
       }
     ]
   },
   {
     "page": "fees",
-    "pageLabel": "Page Tarifs et assurances",
+    "pageLabel": "Fees and insurance page",
     "fields": [
       {
         "key": "fees.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "fees.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "fees.individual",
-        "label": "Individuel",
+        "label": "Individual",
         "multiline": false
       },
       {
@@ -984,194 +984,194 @@ export const CONTENT_SCHEMA = [
   },
   {
     "page": "faq",
-    "pageLabel": "Page FAQ",
+    "pageLabel": "FAQ page",
     "fields": [
       {
         "key": "faq.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "faq.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "faq.items.firstSession.question",
-        "label": "Première séance — Question",
+        "label": "First session — Question",
         "multiline": false
       },
       {
         "key": "faq.items.firstSession.answer",
-        "label": "Première séance — Réponse",
+        "label": "First session — Answer",
         "multiline": true
       },
       {
         "key": "faq.items.onlineSessions.question",
-        "label": "Séances en ligne — Question",
+        "label": "Online sessions — Question",
         "multiline": false
       },
       {
         "key": "faq.items.onlineSessions.answer",
-        "label": "Séances en ligne — Réponse",
+        "label": "Online sessions — Answer",
         "multiline": true
       },
       {
         "key": "faq.items.feesInsurance.question",
-        "label": "Tarifs et assurances — Question",
+        "label": "Fees and insurance — Question",
         "multiline": false
       },
       {
         "key": "faq.items.feesInsurance.answer",
-        "label": "Tarifs et assurances — Réponse",
+        "label": "Fees and insurance — Answer",
         "multiline": true
       },
       {
         "key": "faq.items.freeConsult.question",
-        "label": "Consultation gratuite — Question",
+        "label": "Free consultation — Question",
         "multiline": false
       },
       {
         "key": "faq.items.freeConsult.answer",
-        "label": "Consultation gratuite — Réponse",
+        "label": "Free consultation — Answer",
         "multiline": true
       },
       {
         "key": "faq.items.confidentiality.question",
-        "label": "Confidentialité — Question",
+        "label": "Confidentiality — Question",
         "multiline": false
       },
       {
         "key": "faq.items.confidentiality.answer",
-        "label": "Confidentialité — Réponse",
+        "label": "Confidentiality — Answer",
         "multiline": true
       },
       {
         "key": "faq.items.languages.question",
-        "label": "Langues — Question",
+        "label": "Languages — Question",
         "multiline": false
       },
       {
         "key": "faq.items.languages.answer",
-        "label": "Langues — Réponse",
+        "label": "Languages — Answer",
         "multiline": true
       },
       {
         "key": "faq.items.culturalSensitivity.question",
-        "label": "Sensibilité culturelle — Question",
+        "label": "Cultural sensitivity — Question",
         "multiline": false
       },
       {
         "key": "faq.items.culturalSensitivity.answer",
-        "label": "Sensibilité culturelle — Réponse",
+        "label": "Cultural sensitivity — Answer",
         "multiline": true
       }
     ]
   },
   {
     "page": "testimonials",
-    "pageLabel": "Page Témoignages",
+    "pageLabel": "Testimonials page",
     "fields": [
       {
         "key": "testimonials.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "testimonials.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "testimonials.disclaimer",
-        "label": "Avertissement",
+        "label": "Disclaimer",
         "multiline": false
       },
       {
         "key": "testimonials.items.anxiety1.quote",
-        "label": "Témoignage — anxiété — Citation",
+        "label": "Testimonial — anxiety — Quote",
         "multiline": true
       },
       {
         "key": "testimonials.items.anxiety1.reason",
-        "label": "Témoignage — anxiété — Raison (contexte du témoignage)",
+        "label": "Testimonial — anxiety — Reason (testimonial context)",
         "multiline": true
       },
       {
         "key": "testimonials.items.couple1.quote",
-        "label": "Témoignage — couple — Citation",
+        "label": "Testimonial — couple — Quote",
         "multiline": true
       },
       {
         "key": "testimonials.items.couple1.reason",
-        "label": "Témoignage — couple — Raison (contexte du témoignage)",
+        "label": "Testimonial — couple — Reason (testimonial context)",
         "multiline": true
       },
       {
         "key": "testimonials.items.grief1.quote",
-        "label": "Témoignage — deuil — Citation",
+        "label": "Testimonial — grief — Quote",
         "multiline": true
       },
       {
         "key": "testimonials.items.grief1.reason",
-        "label": "Témoignage — deuil — Raison (contexte du témoignage)",
+        "label": "Testimonial — grief — Reason (testimonial context)",
         "multiline": true
       }
     ]
   },
   {
     "page": "resources",
-    "pageLabel": "Page Ressources",
+    "pageLabel": "Resources page",
     "fields": [
       {
         "key": "resources.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "resources.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "resources.body",
-        "label": "Texte",
+        "label": "Text",
         "multiline": true
       },
       {
         "key": "resources.guideHeading",
-        "label": "Titre du guide",
+        "label": "Guide title",
         "multiline": false
       },
       {
         "key": "resources.guideIntro",
-        "label": "Introduction du guide",
+        "label": "Guide intro",
         "multiline": true
       }
     ]
   },
   {
     "page": "emergency",
-    "pageLabel": "Page Urgence",
+    "pageLabel": "Emergency page",
     "fields": [
       {
         "key": "emergency.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "emergency.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "emergency.call911Label",
-        "label": "Call911 label",
+        "label": "Call 911 label",
         "multiline": false
       },
       {
         "key": "emergency.call911Desc",
-        "label": "Call911 desc",
+        "label": "Call 911 description",
         "multiline": false
       },
       {
@@ -1181,7 +1181,7 @@ export const CONTENT_SCHEMA = [
       },
       {
         "key": "emergency.callCrisisDesc",
-        "label": "Call crisis desc",
+        "label": "Call crisis description",
         "multiline": false
       },
       {
@@ -1191,65 +1191,65 @@ export const CONTENT_SCHEMA = [
       },
       {
         "key": "emergency.callDistressDesc",
-        "label": "Call distress desc",
+        "label": "Call distress description",
         "multiline": false
       }
     ]
   },
   {
     "page": "safetyPlan",
-    "pageLabel": "Page Plan de sécurité",
+    "pageLabel": "Safety plan page",
     "fields": [
       {
         "key": "safetyPlan.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "safetyPlan.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       }
     ]
   },
   {
     "page": "products",
-    "pageLabel": "Page Produits",
+    "pageLabel": "Products page",
     "fields": [
       {
         "key": "products.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "products.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "products.disclaimer",
-        "label": "Avertissement",
+        "label": "Disclaimer",
         "multiline": false
       }
     ]
   },
   {
     "page": "privacy",
-    "pageLabel": "Page Politique de confidentialité",
+    "pageLabel": "Privacy policy page",
     "fields": [
       {
         "key": "privacy.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "privacy.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
         "key": "privacy.body",
-        "label": "Texte",
+        "label": "Text",
         "multiline": true
       },
       {
@@ -1261,16 +1261,16 @@ export const CONTENT_SCHEMA = [
   },
   {
     "page": "blog",
-    "pageLabel": "Page Blogue (liste)",
+    "pageLabel": "Blog page (list)",
     "fields": [
       {
         "key": "blog.heading",
-        "label": "Titre",
+        "label": "Title",
         "multiline": false
       },
       {
         "key": "blog.intro",
-        "label": "Introduction",
+        "label": "Intro",
         "multiline": true
       },
       {
@@ -1282,11 +1282,11 @@ export const CONTENT_SCHEMA = [
   },
   {
     "page": "notFound",
-    "pageLabel": "Page 404",
+    "pageLabel": "404 page",
     "fields": [
       {
         "key": "notFound.body",
-        "label": "Texte",
+        "label": "Text",
         "multiline": true
       }
     ]
@@ -1303,26 +1303,26 @@ export const CONTENT_SCHEMA = [
 export const BLOG_POSTS = [
   {
     "slug": "managing-anxiety",
-    "label": "Cinq techniques d’ancrage pour l’anxiété"
+    "label": "Five grounding techniques for anxiety"
   },
   {
     "slug": "couple-therapy",
-    "label": "Ce qui se passe vraiment en thérapie de couple"
+    "label": "What really happens in couple therapy"
   },
   {
     "slug": "navigating-grief",
-    "label": "Traverser le deuil"
+    "label": "Navigating grief"
   }
 ]
 
 export function getBlogPostSchema() {
   return {
     page: 'blogPosts',
-    pageLabel: 'Articles du blogue (texte de chaque article)',
+    pageLabel: 'Blog posts (text for each article)',
     fields: BLOG_POSTS.flatMap(({ slug, label }) => [
-      { key: `blog.${slug}.title`, label: `${label} — Titre`, multiline: false },
-      { key: `blog.${slug}.excerpt`, label: `${label} — Résumé (affiché dans la liste)`, multiline: true },
-      { key: `blog.${slug}.body`, label: `${label} — Texte complet (un paragraphe par ligne vide)`, multiline: true },
+      { key: `blog.${slug}.title`, label: `${label} — Title`, multiline: false },
+      { key: `blog.${slug}.excerpt`, label: `${label} — Excerpt (shown in the list)`, multiline: true },
+      { key: `blog.${slug}.body`, label: `${label} — Full text (one paragraph per blank line)`, multiline: true },
     ]),
   }
 }

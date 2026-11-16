@@ -4,9 +4,9 @@ import { useAdminAuth } from './AdminAuthProvider'
 import { Logo } from '../components/Logo'
 
 const NAV = [
-  { to: '/admin/content', label: 'Textes du site' },
+  { to: '/admin/content', label: 'Site text' },
   { to: '/admin/media', label: 'Images' },
-  { to: '/admin/theme', label: 'Couleurs & polices' },
+  { to: '/admin/theme', label: 'Colors & fonts' },
 ]
 
 export function AdminLayout() {
@@ -21,7 +21,7 @@ export function AdminLayout() {
         <aside className="flex flex-row items-center justify-between gap-3 border-b border-ink/10 bg-white px-4 py-3 md:w-64 md:flex-col md:items-stretch md:justify-start md:border-b-0 md:border-r md:px-5 md:py-6">
           <div className="flex items-center gap-2 md:mb-8">
             <Logo variant="icon" className="h-9" />
-            <span className="font-display text-sm text-sea-deep">Administration</span>
+            <span className="font-display text-sm text-sea-deep">Admin</span>
           </div>
           <nav className="flex gap-2 md:flex-col md:gap-1">
             {NAV.map((item) => (
@@ -40,10 +40,10 @@ export function AdminLayout() {
           </nav>
           <div className="mt-auto flex flex-col gap-2 md:mt-10 md:border-t md:border-ink/10 md:pt-6">
             <a href="/" target="_blank" rel="noreferrer" className="text-sm font-semibold text-sea-deep hover:underline">
-              Voir le site →
+              View site →
             </a>
             <button type="button" onClick={signOut} className="text-left text-sm font-semibold text-ink/50 hover:text-ink">
-              Se déconnecter
+              Sign out
             </button>
           </div>
         </aside>

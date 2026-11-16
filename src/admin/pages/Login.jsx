@@ -47,7 +47,7 @@ export default function Login() {
     const now = Date.now()
     if (attempts.lockedUntil > now) {
       const minutes = Math.ceil((attempts.lockedUntil - now) / 60000)
-      setError(`Trop de tentatives. Veuillez réessayer dans ${minutes} minute${minutes > 1 ? 's' : ''}.`)
+      setError(`Too many attempts. Please try again in ${minutes} minute${minutes > 1 ? 's' : ''}.`)
       return
     }
 
@@ -61,8 +61,8 @@ export default function Login() {
       setAttemptState({ count: lockedUntil ? 0 : nextCount, lockedUntil })
       setError(
         lockedUntil
-          ? `Trop de tentatives. Veuillez réessayer dans ${Math.ceil(LOCKOUT_MS / 60000)} minutes.`
-          : 'Courriel ou mot de passe incorrect.'
+          ? `Too many attempts. Please try again in ${Math.ceil(LOCKOUT_MS / 60000)} minutes.`
+          : 'Incorrect email or password.'
       )
       return
     }
@@ -75,18 +75,18 @@ export default function Login() {
     <div className="flex min-h-screen items-center justify-center bg-lavender-wash px-4">
       <Helmet>
         <meta name="robots" content="noindex, nofollow" />
-        <title>Administration | Anfa Counselling &amp; Psychotherapy</title>
+        <title>Admin | Anfa Counselling &amp; Psychotherapy</title>
       </Helmet>
       <div className="w-full max-w-sm rounded-3xl bg-white p-8 shadow-[0_25px_50px_-15px_rgba(8,95,104,0.2)] ring-1 ring-ink/5">
         <div className="mb-6 flex flex-col items-center text-center">
           <Logo variant="icon" className="mb-3 h-14" />
-          <h1 className="font-display text-xl text-sea-deep">Administration du site</h1>
+          <h1 className="font-display text-xl text-sea-deep">Site administration</h1>
           <p className="mt-1 text-sm text-ink/60">Anfa Counselling &amp; Psychotherapy</p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4" noValidate>
           <div>
             <label htmlFor="admin-email" className="mb-1 block text-sm font-semibold text-ink/80">
-              Courriel
+              Email
             </label>
             <input
               id="admin-email"
@@ -100,7 +100,7 @@ export default function Login() {
           </div>
           <div>
             <label htmlFor="admin-password" className="mb-1 block text-sm font-semibold text-ink/80">
-              Mot de passe
+              Password
             </label>
             <div className="relative">
               <input
@@ -115,7 +115,7 @@ export default function Login() {
               <button
                 type="button"
                 onClick={() => setShowPassword((shown) => !shown)}
-                aria-label={showPassword ? 'Masquer le mot de passe' : 'Afficher le mot de passe'}
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
                 aria-pressed={showPassword}
                 className="absolute inset-y-0 right-0 flex items-center px-3 text-ink/40 hover:text-ink/70"
               >
@@ -147,7 +147,7 @@ export default function Login() {
             disabled={loading}
             className="w-full rounded-full bg-sea-deep px-5 py-2.5 font-semibold text-sand transition-colors duration-300 hover:bg-sea disabled:opacity-60"
           >
-            {loading ? 'Connexion…' : 'Se connecter'}
+            {loading ? 'Signing in…' : 'Sign in'}
           </button>
         </form>
       </div>

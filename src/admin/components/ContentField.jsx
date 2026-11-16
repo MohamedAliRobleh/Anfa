@@ -65,7 +65,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
       setStatus('saved')
     } catch {
       setStatus('error')
-      setErrorMessage('Une erreur est survenue pendant l’enregistrement. Vos modifications n’ont pas été perdues — veuillez réessayer.')
+      setErrorMessage("Something went wrong while saving. Your changes haven't been lost — please try again.")
     }
   }
 
@@ -87,7 +87,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
       setStatus('reset')
     } catch {
       setStatus('error')
-      setErrorMessage('Une erreur est survenue pendant la réinitialisation. Veuillez réessayer.')
+      setErrorMessage('Something went wrong while resetting. Please try again.')
     }
   }
 
@@ -100,7 +100,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
         <h3 className="text-sm font-semibold text-ink/90 sm:text-base">{label}</h3>
         {hasOverride && (
           <span className="shrink-0 rounded-full bg-lavender-soft px-2.5 py-1 text-xs font-semibold text-lavender-ink">
-            Texte personnalisé
+            Custom text
           </span>
         )}
       </div>
@@ -108,7 +108,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
       <div className="mt-3 grid gap-3 sm:grid-cols-2">
         <div>
           <label htmlFor={frId} className="mb-1 block text-xs font-semibold uppercase tracking-wide text-ink/50">
-            Texte en français
+            French text
           </label>
           <Field
             id={frId}
@@ -120,7 +120,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
         </div>
         <div>
           <label htmlFor={enId} className="mb-1 block text-xs font-semibold uppercase tracking-wide text-ink/50">
-            Texte en anglais
+            English text
           </label>
           <Field
             id={enId}
@@ -138,10 +138,10 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
         </p>
       )}
       {status === 'saved' && !dirty && (
-        <p className="mt-3 text-sm font-medium text-green-700">Enregistré.</p>
+        <p className="mt-3 text-sm font-medium text-green-700">Saved.</p>
       )}
       {status === 'reset' && (
-        <p className="mt-3 text-sm font-medium text-green-700">Texte d’origine restauré.</p>
+        <p className="mt-3 text-sm font-medium text-green-700">Original text restored.</p>
       )}
 
       {showActions && (
@@ -154,7 +154,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
                 disabled={status === 'saving'}
                 className="rounded-full bg-sea-deep px-4 py-2 text-sm font-semibold text-sand transition-colors duration-200 hover:bg-sea disabled:opacity-60"
               >
-                {status === 'saving' ? 'Enregistrement…' : 'Enregistrer'}
+                {status === 'saving' ? 'Saving…' : 'Save'}
               </button>
               <button
                 type="button"
@@ -162,7 +162,7 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
                 disabled={status === 'saving'}
                 className="text-sm font-semibold text-ink/50 hover:text-ink"
               >
-                Annuler
+                Cancel
               </button>
             </>
           )}
@@ -173,26 +173,26 @@ export function ContentField({ fieldKey, label, multiline, initialOverride }) {
               onClick={handleReset}
               className="text-sm font-semibold text-ink/50 underline underline-offset-2 hover:text-ink"
             >
-              Réinitialiser (revenir au texte d’origine)
+              Reset (restore original text)
             </button>
           )}
           {hasOverride && confirmingReset && (
             <span className="flex flex-wrap items-center gap-2">
-              <span className="text-sm text-ink/60">Revenir au texte d’origine pour ce champ ?</span>
+              <span className="text-sm text-ink/60">Restore the original text for this field?</span>
               <button
                 type="button"
                 onClick={handleReset}
                 disabled={status === 'resetting'}
                 className="rounded-full bg-red-50 px-3.5 py-1.5 text-sm font-semibold text-red-700 hover:bg-red-100 disabled:opacity-60"
               >
-                {status === 'resetting' ? 'Réinitialisation…' : 'Oui, réinitialiser'}
+                {status === 'resetting' ? 'Resetting…' : 'Yes, reset'}
               </button>
               <button
                 type="button"
                 onClick={() => setConfirmingReset(false)}
                 className="text-sm font-semibold text-ink/50 hover:text-ink"
               >
-                Non, garder mon texte
+                No, keep my text
               </button>
             </span>
           )}
